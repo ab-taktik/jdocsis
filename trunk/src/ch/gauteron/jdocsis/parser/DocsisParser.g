@@ -37,7 +37,7 @@ options {
 	tokenVocab = DocsisLexer;
 }
 
-@header {package ch.gauteron.docsis.parser;}
+@header {package ch.gauteron.jdocsis.parser;}
 
 // Main rules
 main				:	STATIC_MAIN! S_OPENBRACE! (statement)+ S_CLOSEBRACE! EOF!;

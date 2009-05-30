@@ -1,5 +1,5 @@
-// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 DocsisParser.g 2009-05-30 13:01:03
-package ch.gauteron.docsis.parser;
+// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 DocsisParser.g 2009-05-30 14:16:33
+package ch.gauteron.jdocsis.parser;
 
 import org.antlr.runtime.*;
 import java.util.Stack;
