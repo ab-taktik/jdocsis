@@ -31,7 +31,7 @@
 
 lexer grammar DocsisLexer;
 
-@header {package ch.gauteron.docsis.parser;}
+@header {package ch.gauteron.jdocsis.parser;}
 
 /*********************************
  * Declaration of special tokens *
