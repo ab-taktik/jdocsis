@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - DocsisLexer.g                                                 *
+ *  jdocsis - DocsisLexer.[g|java]                                          *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,7 +31,7 @@
 
 lexer grammar DocsisLexer;
 
-@header { package ch.gauteron.docsis.parser; }
+@header {package ch.gauteron.docsis.parser;}
 
 /*********************************
  * Declaration of special tokens *
