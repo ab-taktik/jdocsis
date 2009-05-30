@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - DocsisParser.g                                                *
+ *  jdocsis - DocsisParser.[g|java]                                         *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -37,7 +37,7 @@ options {
 	tokenVocab = DocsisLexer;
 }
 
-@header { package ch.gauteron.docsis.parser; }
+@header {package ch.gauteron.docsis.parser;}
 
 // Main rules
 main				:	STATIC_MAIN! S_OPENBRACE! (statement)+ S_CLOSEBRACE! EOF!;
