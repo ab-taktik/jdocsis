@@ -41,7 +41,12 @@ JFLAGS = -d $(DESTCLASS)
 # JFLAGS = -d $(DESTCLASS) -g
 
 
-default: DocsisLexer.class DocsisParser.class
+default: \
+        DocsisLexer.class \
+        DocsisParser.class \
+        TLVClassLoader.class \
+        TLV.class \
+        Lexer2TLVMapper.class
 
 ch/gauteron/jdocsis/parser/DocsisLexer.java: ch/gauteron/jdocsis/parser/DocsisLexer.g
 	$(ANTLR) $(ANTLRFLAGS) ch/gauteron/jdocsis/parser/DocsisLexer.g
@@ -55,6 +60,16 @@ ch/gauteron/jdocsis/parser/DocsisParser.java: ch/gauteron/jdocsis/parser/DocsisP
 DocsisParser.class: ch/gauteron/jdocsis/parser/DocsisParser.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/parser/DocsisParser.java
 
+TLVClassLoader.class: ch/gauteron/jdocsis/common/TLVClassLoader.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/common/TLVClassLoader.java
+	
+TLV.class: ch/gauteron/jdocsis/TLVs/TLV.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV.java
+	
+Lexer2TLVMapper.class: ch/gauteron/jdocsis/encoder/Lexer2TLVMapper.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/encoder/Lexer2TLVMapper.java	
 
 clean: 
 	$(RM) *.class
+
+

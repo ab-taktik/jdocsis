@@ -39,9 +39,8 @@ package ch.gauteron.jdocsis.encoder;
 import java.util.Hashtable;
 import java.lang.reflect.Constructor;
 import ch.gauteron.jdocsis.parser.DocsisLexer;
-
-import ch.gauteron.jdocsis.common.*;
-import ch.gauteron.jdocsis.TLVs.*;
+import ch.gauteron.jdocsis.common.TLVClassLoader;
+import ch.gauteron.jdocsis.TLVs.TLV;
 
 public class Lexer2TLVMapper
 {
