@@ -1,4 +1,4 @@
-// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 ch/gauteron/jdocsis/parser/DocsisParser.g 2009-05-31 19:27:41
+// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 ch/gauteron/jdocsis/parser/DocsisParser.g 2009-06-01 14:54:52
 package ch.gauteron.jdocsis.parser;
 
 import org.antlr.runtime.*;
@@ -41,13 +41,13 @@ import org.antlr.runtime.tree.*;
  ****************************************************************************/
 public class DocsisParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "WS", "COMMENT", "LINE_COMMENT", "STATIC_MAIN", "ID_DOWNSTREAMFREQUENCY", "ID_UPSTREAMCHANNELID", "ID_NETWORKACCESS", "ID_CLASSOFSERVICE", "ID_CLASSID", "ID_MAXRATEDOWN", "ID_MAXRATEUP", "ID_PRIORITYUP", "ID_GUARANTEEDUP", "ID_MAXBURSTUP", "ID_PRIVACYENABLE", "ID_MODEMCAPABILITIES", "ID_CONCATENATIONSUPPORT", "ID_MODEMDOCSISVERSION", "ID_FRAGMENTATIONSUPPORT", "ID_PHSSUPPORT", "ID_IGMPSUPPORT", "ID_BASELINEPRIVACYSUPPORT", "ID_DOWNSTREAMSAIDSUPPORT", "ID_UPSTREAMSIDSUPPORT", "ID_DCCSUPPORT", "ID_SWUPGRADEFILENAME", "ID_SNMPWRITECONTROL", "ID_SNMPMIBOBJECT", "ID_CPEMACADDRESS", "ID_BASELINEPRIVACY", "ID_AUTHTIMEOUT", "ID_REAUTHTIMEOUT", "ID_AUTHGRACETIME", "ID_OPERTIMEOUT", "ID_REKEYTIMEOUT", "ID_TEKGRACETIME", "ID_AUTHREJECTTIMEOUT", "ID_SAMAPWAITTIMEOUT", "ID_SAMAPMAXRETRIES", "ID_MAXCPE", "ID_TFTPTIMESTAMP", "ID_TFTPMODEMADDRESS", "ID_SWUPGRADESERVER", "ID_USPACKETCLASS", "ID_DSPACKETCLASS", "ID_CLASSIFIERREF", "ID_CLASSIFIERID", "ID_SERVICEFLOWREF", "ID_SERVICEFLOWID", "ID_RULEPRIORITY", "ID_ACTIVATIONSTATE", "ID_DSCACTION", "ID_IPPACKETCLASSIFIER", "ID_IPTOS", "ID_IPPROTO", "ID_IPSRCADDR", "ID_IPSRCMASK", "ID_IPDSTADDR", "ID_IPDSTMASK", "ID_SRCPORTSTART", "ID_SRCPORTEND", "ID_DSTPORTSTART", "ID_DSTPORTEND", "ID_LLCPACKETCLASSIFIER", "ID_DSTMACADDRESS", "ID_SRCMACADDRESS", "ID_ETHERTYPE", "ID_IEEE802CLASSIFIER", "ID_USERPRIORITY", "ID_VLANID", "ID_IPV6PACKETCLASSIFIER", "ID_IPV6TRAFFICCLASSRANGEMASK", "ID_IPV6FLOWLABEL", "ID_IPV6NEXTHEADERTYPE", "ID_IPV6SRCADDR", "ID_IPV6SRCPREFLENGTH", "ID_IPV6DSTADDR", "ID_IPV6DSTPREFLENGTH", "ID_USSERVICEFLOW", "ID_DSSERVICEFLOW", "ID_USSERVICEFLOWREF", "ID_USSERVICEFLOWID", "ID_DSSERVICEFLOWREF", "ID_DSSERVICEFLOWID", "ID_SERVICECLASSNAME", "ID_QOSPARAMSETTYPE", "ID_TRAFFICPRIORITY", "ID_MAXRATESUSTAINED", "ID_MAXTRAFFICBURST", "ID_MINRESERVEDRATE", "ID_MINRESPACKETSIZE", "ID_ACTQOSPARAMSTIMEOUT", "ID_ADMQOSPARAMSTIMEOUT", "ID_MAXCONCATENATEDBURST", "ID_SCHEDULINGTYPE", "ID_REQUESTORTXPOLICY", "ID_NOMINALPOLLINTERVAL", "ID_TOLERATEDPOLLJITTER", "ID_UNSOLICITEDGRANTSIZE", "ID_NOMINALGRANTINTERVAL", "ID_TOLERATEDGRANTJITTER", "ID_GRANTSPERINTERVAL", "ID_IPTOSOVERWRITE", "ID_MAXDSLATENCY", "ID_PHS", "ID_PHSCLASSIFIERREF", "ID_PHSCLASSIFIERID", "ID_PHSERVICEFLOWREF", "ID_PHSSERVICEFLOWID", "ID_PHSFIELD", "ID_PHSINDEX", "ID_PHSMASK", "ID_PHSSIZE", "ID_PHSVERIFY", "ID_MAXCLASSIFIERS", "ID_GLOBALPRIVACYENABLE", "ID_MFGCVCDATA", "ID_MANUFACTURERCVC", "ID_COSIGNERCVCDATA", "ID_COSIGNERCVC", "ID_SNMPV3KICKSTART", "ID_SNMPV3SECURITYNAME", "ID_SNMPV3MGRPUBLICNUMBER", "ID_SUBMGMTCONTROL", "ID_SUBMGMTFILTERS", "ID_SNMPV3TRAPRECEIVER", "ID_SNMPV3TRAPRXIP", "ID_SNMPV3TRAPRXPORT", "ID_SNMPV3TRAPRXTYPE", "ID_SNMPV3TRAPRXTIMEOUT", "ID_SNMPV3TRAPRXRETRIES", "ID_SNMPV3TRAPRXFILTEROID", "ID_SNMPV3TRAPRXSECURITYNAME", "ID_DOCSISTWOENABLE", "ID_TESTMODEENABLE", "ID_DSCHANNELLIST", "ID_DEFAULTSCANTIMEOUT", "ID_SINGLEDSCHANNEL", "ID_SINGLEDSTIMEOUT", "ID_SINGLEDSFREQUENCY", "ID_DSFREQRANGE", "ID_DSFREQRANGETIMEOUT", "ID_DSFREQRANGESTART", "ID_DSFREQRANGEEND", "ID_DSFREQRANGESTEPSIZE", "ID_VENDORSPECIFIC", "ID_VENDORIDENTIFIER", "ID_SNMPCPEACCESSCONTROL", "ID_IPV6SWUPGRADESERVER", "ID_MTACONFIGDELIMITER", "ID_GENERICTLV", "TLV_CODE", "TLV_LENGTH", "TLV_VALUE", "SNMP_INTEGER", "SNMP_COUNTER32", "SNMP_GAUGE32", "SNMP_TIMETICKS", "SNMP_UNSIGNED32", "SNMP_COUNTER64", "SNMP_OCTETSTRING", "SNMP_IPADDRESS", "SNMP_Opaque", "SNMP_OID", "SNMP_BITSTRING", "SNMP_STRING", "SNMP_HEXSTRING", "T_INT", "T_INTLIST4", "S_SIGN", "S_DIGIT", "S_HEXDIGIT", "T_HEXSTR", "S_HEX2", "T_MACADDR", "T_MACMASK", "T_IP", "S_HEX4FAC", "T_IPV6", "S_ALPHANUM", "T_OID", "T_TIMETICKS", "T_STRING", "S_LOWER", "S_UPPER", "S_LETTER", "S_LOWERHEXDIGIT", "S_UPPERHEXDIGIT", "S_SEMICOLON", "S_OPENBRACE", "S_CLOSEBRACE"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "WS", "COMMENT", "LINE_COMMENT", "STATIC_MAIN", "ID_DOWNSTREAMFREQUENCY", "ID_UPSTREAMCHANNELID", "ID_NETWORKACCESS", "ID_CLASSOFSERVICE", "ID_CLASSID", "ID_MAXRATEDOWN", "ID_MAXRATEUP", "ID_PRIORITYUP", "ID_GUARANTEEDUP", "ID_MAXBURSTUP", "ID_PRIVACYENABLE", "ID_MODEMCAPABILITIES", "ID_CONCATENATIONSUPPORT", "ID_MODEMDOCSISVERSION", "ID_FRAGMENTATIONSUPPORT", "ID_PHSSUPPORT", "ID_IGMPSUPPORT", "ID_BASELINEPRIVACYSUPPORT", "ID_DOWNSTREAMSAIDSUPPORT", "ID_UPSTREAMSIDSUPPORT", "ID_DCCSUPPORT", "ID_SWUPGRADEFILENAME", "ID_SNMPWRITECONTROL", "ID_SNMPMIBOBJECT", "ID_CPEMACADDRESS", "ID_BASELINEPRIVACY", "ID_AUTHTIMEOUT", "ID_REAUTHTIMEOUT", "ID_AUTHGRACETIME", "ID_OPERTIMEOUT", "ID_REKEYTIMEOUT", "ID_TEKGRACETIME", "ID_AUTHREJECTTIMEOUT", "ID_SAMAPWAITTIMEOUT", "ID_SAMAPMAXRETRIES", "ID_MAXCPE", "ID_TFTPTIMESTAMP", "ID_TFTPMODEMADDRESS", "ID_SWUPGRADESERVER", "ID_USPACKETCLASS", "ID_DSPACKETCLASS", "ID_CLASSIFIERREF", "ID_CLASSIFIERID", "ID_SERVICEFLOWREF", "ID_SERVICEFLOWID", "ID_RULEPRIORITY", "ID_ACTIVATIONSTATE", "ID_DSCACTION", "ID_IPPACKETCLASSIFIER", "ID_IPTOS", "ID_IPPROTO", "ID_IPSRCADDR", "ID_IPSRCMASK", "ID_IPDSTADDR", "ID_IPDSTMASK", "ID_SRCPORTSTART", "ID_SRCPORTEND", "ID_DSTPORTSTART", "ID_DSTPORTEND", "ID_LLCPACKETCLASSIFIER", "ID_DSTMACADDRESS", "ID_SRCMACADDRESS", "ID_ETHERTYPE", "ID_IEEE802CLASSIFIER", "ID_USERPRIORITY", "ID_VLANID", "ID_IPV6PACKETCLASSIFIER", "ID_IPV6TRAFFICCLASSRANGEMASK", "ID_IPV6FLOWLABEL", "ID_IPV6NEXTHEADERTYPE", "ID_IPV6SRCADDR", "ID_IPV6SRCPREFLENGTH", "ID_IPV6DSTADDR", "ID_IPV6DSTPREFLENGTH", "ID_USSERVICEFLOW", "ID_DSSERVICEFLOW", "ID_USSERVICEFLOWREF", "ID_USSERVICEFLOWID", "ID_DSSERVICEFLOWREF", "ID_DSSERVICEFLOWID", "ID_SERVICECLASSNAME", "ID_QOSPARAMSETTYPE", "ID_TRAFFICPRIORITY", "ID_MAXRATESUSTAINED", "ID_MAXTRAFFICBURST", "ID_MINRESERVEDRATE", "ID_MINRESPACKETSIZE", "ID_ACTQOSPARAMSTIMEOUT", "ID_ADMQOSPARAMSTIMEOUT", "ID_MAXCONCATENATEDBURST", "ID_SCHEDULINGTYPE", "ID_REQUESTORTXPOLICY", "ID_NOMINALPOLLINTERVAL", "ID_TOLERATEDPOLLJITTER", "ID_UNSOLICITEDGRANTSIZE", "ID_NOMINALGRANTINTERVAL", "ID_TOLERATEDGRANTJITTER", "ID_GRANTSPERINTERVAL", "ID_IPTOSOVERWRITE", "ID_MAXDSLATENCY", "ID_PHS", "ID_PHSCLASSIFIERREF", "ID_PHSCLASSIFIERID", "ID_PHSERVICEFLOWREF", "ID_PHSSERVICEFLOWID", "ID_PHSFIELD", "ID_PHSINDEX", "ID_PHSMASK", "ID_PHSSIZE", "ID_PHSVERIFY", "ID_MAXCLASSIFIERS", "ID_GLOBALPRIVACYENABLE", "ID_MFGCVCDATA", "ID_MANUFACTURERCVC", "ID_COSIGNERCVCDATA", "ID_COSIGNERCVC", "ID_SNMPV3KICKSTART", "ID_SNMPV3SECURITYNAME", "ID_SNMPV3MGRPUBLICNUMBER", "ID_SUBMGMTCONTROL", "ID_SUBMGMTFILTERS", "ID_SNMPV3TRAPRECEIVER", "ID_SNMPV3TRAPRXIP", "ID_SNMPV3TRAPRXPORT", "ID_SNMPV3TRAPRXTYPE", "ID_SNMPV3TRAPRXTIMEOUT", "ID_SNMPV3TRAPRXRETRIES", "ID_SNMPV3TRAPRXFILTEROID", "ID_SNMPV3TRAPRXSECURITYNAME", "ID_SNMPV3TRAPRXIPV6", "ID_DOCSISTWOENABLE", "ID_TESTMODEENABLE", "ID_DSCHANNELLIST", "ID_DEFAULTSCANTIMEOUT", "ID_SINGLEDSCHANNEL", "ID_SINGLEDSTIMEOUT", "ID_SINGLEDSFREQUENCY", "ID_DSFREQRANGE", "ID_DSFREQRANGETIMEOUT", "ID_DSFREQRANGESTART", "ID_DSFREQRANGEEND", "ID_DSFREQRANGESTEPSIZE", "ID_VENDORSPECIFIC", "ID_VENDORIDENTIFIER", "ID_SNMPCPEACCESSCONTROL", "ID_IPV6SWUPGRADESERVER", "ID_MTACONFIGDELIMITER", "ID_GENERICTLV", "TLV_CODE", "TLV_LENGTH", "TLV_VALUE", "SNMP_INTEGER", "SNMP_COUNTER32", "SNMP_GAUGE32", "SNMP_TIMETICKS", "SNMP_UNSIGNED32", "SNMP_COUNTER64", "SNMP_OCTETSTRING", "SNMP_IPADDRESS", "SNMP_Opaque", "SNMP_OID", "SNMP_BITSTRING", "SNMP_STRING", "SNMP_HEXSTRING", "T_INT", "T_INTLIST4", "S_SIGN", "S_DIGIT", "S_HEXDIGIT", "T_HEXSTR", "S_HEX2", "T_MACADDR", "T_MACMASK", "T_IP", "S_HEX4FAC", "T_IPV6", "S_ALPHANUM", "T_OID", "T_TIMETICKS", "T_STRING", "S_LOWER", "S_UPPER", "S_LETTER", "S_LOWERHEXDIGIT", "S_UPPERHEXDIGIT", "S_SEMICOLON", "S_OPENBRACE", "S_CLOSEBRACE"
     };
     public static final int ID_PHSINDEX=114;
     public static final int ID_DSSERVICEFLOW=83;
     public static final int ID_USPACKETCLASS=47;
     public static final int ID_QOSPARAMSETTYPE=89;
-    public static final int T_TIMETICKS=185;
+    public static final int T_TIMETICKS=186;
     public static final int ID_SUBMGMTFILTERS=128;
     public static final int ID_LLCPACKETCLASSIFIER=67;
     public static final int ID_DSSERVICEFLOWREF=86;
@@ -55,10 +55,10 @@ public class DocsisParser extends Parser {
     public static final int ID_PHSSIZE=116;
     public static final int ID_GRANTSPERINTERVAL=105;
     public static final int ID_PHSSERVICEFLOWID=112;
-    public static final int SNMP_HEXSTRING=170;
-    public static final int TLV_CODE=155;
+    public static final int SNMP_HEXSTRING=171;
+    public static final int TLV_CODE=156;
     public static final int ID_SERVICEFLOWREF=51;
-    public static final int S_LOWERHEXDIGIT=190;
+    public static final int S_LOWERHEXDIGIT=191;
     public static final int ID_SRCMACADDRESS=69;
     public static final int ID_DSTMACADDRESS=68;
     public static final int ID_PHSVERIFY=117;
@@ -69,32 +69,33 @@ public class DocsisParser extends Parser {
     public static final int ID_DOWNSTREAMFREQUENCY=8;
     public static final int ID_SRCPORTSTART=63;
     public static final int ID_MAXCPE=43;
-    public static final int T_IP=180;
+    public static final int T_IP=181;
     public static final int ID_REKEYTIMEOUT=38;
     public static final int ID_SAMAPMAXRETRIES=42;
     public static final int WS=4;
     public static final int ID_ETHERTYPE=70;
     public static final int ID_BASELINEPRIVACYSUPPORT=25;
-    public static final int SNMP_COUNTER32=159;
+    public static final int SNMP_COUNTER32=160;
     public static final int ID_SWUPGRADEFILENAME=29;
     public static final int ID_TOLERATEDGRANTJITTER=104;
+    public static final int ID_SNMPV3TRAPRXIPV6=137;
     public static final int ID_CLASSID=12;
     public static final int ID_IPDSTMASK=62;
     public static final int ID_MAXRATEDOWN=13;
     public static final int ID_USERPRIORITY=72;
-    public static final int ID_DSPACKETCLASS=48;
     public static final int ID_SNMPV3TRAPRXSECURITYNAME=136;
+    public static final int ID_DSPACKETCLASS=48;
     public static final int ID_ACTQOSPARAMSTIMEOUT=95;
     public static final int ID_VLANID=73;
-    public static final int S_HEX4FAC=181;
-    public static final int ID_DSCHANNELLIST=139;
+    public static final int S_HEX4FAC=182;
+    public static final int ID_DSCHANNELLIST=140;
     public static final int ID_GUARANTEEDUP=16;
     public static final int ID_PRIVACYENABLE=18;
     public static final int ID_MAXCONCATENATEDBURST=97;
-    public static final int SNMP_GAUGE32=160;
+    public static final int SNMP_GAUGE32=161;
     public static final int ID_CLASSOFSERVICE=11;
     public static final int ID_SNMPMIBOBJECT=31;
-    public static final int S_UPPER=188;
+    public static final int S_UPPER=189;
     public static final int ID_IPDSTADDR=61;
     public static final int ID_SNMPV3MGRPUBLICNUMBER=126;
     public static final int ID_MAXCLASSIFIERS=118;
@@ -103,26 +104,26 @@ public class DocsisParser extends Parser {
     public static final int ID_SNMPV3TRAPRXIP=130;
     public static final int ID_BASELINEPRIVACY=33;
     public static final int ID_NETWORKACCESS=10;
-    public static final int ID_MTACONFIGDELIMITER=153;
+    public static final int ID_MTACONFIGDELIMITER=154;
     public static final int ID_MAXRATEUP=14;
     public static final int ID_ACTIVATIONSTATE=54;
-    public static final int T_OID=184;
-    public static final int S_DIGIT=174;
-    public static final int S_UPPERHEXDIGIT=191;
-    public static final int SNMP_COUNTER64=163;
+    public static final int T_OID=185;
+    public static final int S_DIGIT=175;
+    public static final int S_UPPERHEXDIGIT=192;
+    public static final int SNMP_COUNTER64=164;
     public static final int ID_TEKGRACETIME=39;
     public static final int ID_SNMPV3TRAPRECEIVER=129;
     public static final int ID_MODEMCAPABILITIES=19;
-    public static final int SNMP_OCTETSTRING=164;
-    public static final int S_SEMICOLON=192;
-    public static final int S_HEXDIGIT=175;
+    public static final int SNMP_OCTETSTRING=165;
+    public static final int S_SEMICOLON=193;
+    public static final int S_HEXDIGIT=176;
     public static final int ID_SNMPV3KICKSTART=124;
-    public static final int TLV_VALUE=157;
-    public static final int ID_IPV6SWUPGRADESERVER=152;
-    public static final int ID_GENERICTLV=154;
+    public static final int TLV_VALUE=158;
+    public static final int ID_IPV6SWUPGRADESERVER=153;
+    public static final int ID_GENERICTLV=155;
     public static final int ID_PHSMASK=115;
     public static final int ID_AUTHGRACETIME=36;
-    public static final int T_IPV6=182;
+    public static final int T_IPV6=183;
     public static final int ID_SRCPORTEND=64;
     public static final int ID_PRIORITYUP=15;
     public static final int ID_MODEMDOCSISVERSION=21;
@@ -132,54 +133,54 @@ public class DocsisParser extends Parser {
     public static final int ID_TFTPMODEMADDRESS=45;
     public static final int STATIC_MAIN=7;
     public static final int ID_MAXBURSTUP=17;
-    public static final int ID_DSFREQRANGEEND=147;
+    public static final int ID_DSFREQRANGEEND=148;
     public static final int ID_IPPACKETCLASSIFIER=56;
     public static final int ID_USSERVICEFLOW=82;
-    public static final int T_STRING=186;
+    public static final int T_STRING=187;
     public static final int ID_SERVICEFLOWID=52;
-    public static final int S_OPENBRACE=193;
-    public static final int SNMP_IPADDRESS=165;
+    public static final int S_OPENBRACE=194;
+    public static final int SNMP_IPADDRESS=166;
     public static final int ID_DSTPORTEND=66;
-    public static final int SNMP_UNSIGNED32=162;
+    public static final int SNMP_UNSIGNED32=163;
     public static final int ID_UNSOLICITEDGRANTSIZE=102;
     public static final int ID_MAXDSLATENCY=107;
     public static final int ID_SNMPV3TRAPRXPORT=131;
-    public static final int SNMP_STRING=169;
+    public static final int SNMP_STRING=170;
     public static final int ID_NOMINALGRANTINTERVAL=103;
-    public static final int SNMP_TIMETICKS=161;
-    public static final int ID_TESTMODEENABLE=138;
-    public static final int S_LOWER=187;
+    public static final int SNMP_TIMETICKS=162;
+    public static final int S_LOWER=188;
+    public static final int ID_TESTMODEENABLE=139;
     public static final int ID_COSIGNERCVCDATA=122;
     public static final int COMMENT=5;
-    public static final int ID_DSFREQRANGESTART=146;
-    public static final int S_CLOSEBRACE=194;
-    public static final int T_INTLIST4=172;
+    public static final int ID_DSFREQRANGESTART=147;
+    public static final int S_CLOSEBRACE=195;
+    public static final int T_INTLIST4=173;
     public static final int ID_PHS=108;
-    public static final int ID_DEFAULTSCANTIMEOUT=140;
+    public static final int ID_DEFAULTSCANTIMEOUT=141;
     public static final int ID_MAXRATESUSTAINED=91;
     public static final int LINE_COMMENT=6;
     public static final int ID_REAUTHTIMEOUT=35;
-    public static final int S_HEX2=177;
+    public static final int S_HEX2=178;
     public static final int ID_UPSTREAMSIDSUPPORT=27;
-    public static final int SNMP_Opaque=166;
+    public static final int SNMP_Opaque=167;
     public static final int ID_IPTOSOVERWRITE=106;
     public static final int ID_MFGCVCDATA=120;
     public static final int ID_IGMPSUPPORT=24;
     public static final int ID_DOWNSTREAMSAIDSUPPORT=26;
     public static final int ID_USSERVICEFLOWID=85;
     public static final int ID_GLOBALPRIVACYENABLE=119;
-    public static final int ID_DSFREQRANGE=144;
-    public static final int ID_SINGLEDSTIMEOUT=142;
+    public static final int ID_DSFREQRANGE=145;
+    public static final int ID_SINGLEDSTIMEOUT=143;
     public static final int ID_IPSRCADDR=59;
-    public static final int S_ALPHANUM=183;
-    public static final int ID_SNMPCPEACCESSCONTROL=151;
-    public static final int T_MACADDR=178;
+    public static final int S_ALPHANUM=184;
+    public static final int ID_SNMPCPEACCESSCONTROL=152;
+    public static final int T_MACADDR=179;
     public static final int ID_SCHEDULINGTYPE=98;
-    public static final int ID_SINGLEDSCHANNEL=141;
+    public static final int ID_SINGLEDSCHANNEL=142;
     public static final int ID_IPV6SRCPREFLENGTH=79;
-    public static final int TLV_LENGTH=156;
+    public static final int TLV_LENGTH=157;
     public static final int ID_IPV6NEXTHEADERTYPE=77;
-    public static final int SNMP_BITSTRING=168;
+    public static final int SNMP_BITSTRING=169;
     public static final int ID_IPV6TRAFFICCLASSRANGEMASK=75;
     public static final int ID_SWUPGRADESERVER=46;
     public static final int ID_USSERVICEFLOWREF=84;
@@ -191,42 +192,42 @@ public class DocsisParser extends Parser {
     public static final int ID_CONCATENATIONSUPPORT=20;
     public static final int ID_DSCACTION=55;
     public static final int ID_SNMPWRITECONTROL=30;
-    public static final int SNMP_INTEGER=158;
-    public static final int T_MACMASK=179;
+    public static final int SNMP_INTEGER=159;
+    public static final int T_MACMASK=180;
     public static final int ID_CLASSIFIERID=50;
     public static final int ID_SNMPV3SECURITYNAME=125;
-    public static final int ID_VENDORSPECIFIC=149;
-    public static final int T_INT=171;
-    public static final int T_HEXSTR=176;
+    public static final int ID_VENDORSPECIFIC=150;
+    public static final int T_INT=172;
+    public static final int T_HEXSTR=177;
     public static final int ID_TFTPTIMESTAMP=44;
     public static final int ID_IPV6PACKETCLASSIFIER=74;
     public static final int ID_AUTHREJECTTIMEOUT=40;
     public static final int ID_MINRESERVEDRATE=93;
-    public static final int ID_SINGLEDSFREQUENCY=143;
+    public static final int ID_SINGLEDSFREQUENCY=144;
     public static final int ID_MINRESPACKETSIZE=94;
     public static final int ID_PHSFIELD=113;
-    public static final int S_LETTER=189;
+    public static final int S_LETTER=190;
     public static final int ID_IPV6SRCADDR=78;
     public static final int ID_OPERTIMEOUT=37;
     public static final int ID_ADMQOSPARAMSTIMEOUT=96;
     public static final int ID_PHSCLASSIFIERID=110;
-    public static final int ID_DOCSISTWOENABLE=137;
+    public static final int ID_DOCSISTWOENABLE=138;
     public static final int ID_IPV6DSTADDR=80;
     public static final int ID_IPV6FLOWLABEL=76;
-    public static final int SNMP_OID=167;
+    public static final int SNMP_OID=168;
     public static final int ID_SNMPV3TRAPRXRETRIES=134;
     public static final int ID_SNMPV3TRAPRXFILTEROID=135;
     public static final int ID_SUBMGMTCONTROL=127;
     public static final int ID_DSTPORTSTART=65;
-    public static final int ID_DSFREQRANGETIMEOUT=145;
-    public static final int ID_DSFREQRANGESTEPSIZE=148;
+    public static final int ID_DSFREQRANGETIMEOUT=146;
+    public static final int ID_DSFREQRANGESTEPSIZE=149;
     public static final int ID_MANUFACTURERCVC=121;
     public static final int ID_SNMPV3TRAPRXTIMEOUT=133;
     public static final int ID_IPTOS=57;
     public static final int ID_SNMPV3TRAPRXTYPE=132;
     public static final int ID_IPV6DSTPREFLENGTH=81;
     public static final int ID_TOLERATEDPOLLJITTER=101;
-    public static final int S_SIGN=173;
+    public static final int S_SIGN=174;
     public static final int ID_UPSTREAMCHANNELID=9;
     public static final int ID_PHSCLASSIFIERREF=109;
     public static final int ID_NOMINALPOLLINTERVAL=100;
@@ -234,7 +235,7 @@ public class DocsisParser extends Parser {
     public static final int ID_PHSSUPPORT=23;
     public static final int ID_RULEPRIORITY=53;
     public static final int ID_CPEMACADDRESS=32;
-    public static final int ID_VENDORIDENTIFIER=150;
+    public static final int ID_VENDORIDENTIFIER=151;
 
     // delegates
     // delegators
@@ -1773,7 +1774,7 @@ public class DocsisParser extends Parser {
                         int alt11=2;
                         int LA11_0 = input.LA(1);
 
-                        if ( ((LA11_0>=ID_SNMPV3TRAPRXIP && LA11_0<=ID_SNMPV3TRAPRXSECURITYNAME)||LA11_0==ID_GENERICTLV) ) {
+                        if ( ((LA11_0>=ID_SNMPV3TRAPRXIP && LA11_0<=ID_SNMPV3TRAPRXIPV6)||LA11_0==ID_GENERICTLV) ) {
                             alt11=1;
                         }
 
@@ -5845,7 +5846,7 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "snmpV3TrapReceiverStat"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:239:1: snmpV3TrapReceiverStat : ( ID_SNMPV3TRAPRXIP T_STRING S_SEMICOLON | ID_SNMPV3TRAPRXPORT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTYPE T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTIMEOUT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXRETRIES T_INT S_SEMICOLON | ID_SNMPV3TRAPRXFILTEROID T_OID S_SEMICOLON | ID_SNMPV3TRAPRXSECURITYNAME T_STRING S_SEMICOLON | genericTLVStat );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:239:1: snmpV3TrapReceiverStat : ( ID_SNMPV3TRAPRXIP T_IP S_SEMICOLON | ID_SNMPV3TRAPRXPORT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTYPE T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTIMEOUT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXRETRIES T_INT S_SEMICOLON | ID_SNMPV3TRAPRXFILTEROID T_OID S_SEMICOLON | ID_SNMPV3TRAPRXSECURITYNAME T_STRING S_SEMICOLON | ID_SNMPV3TRAPRXIPV6 T_IPV6 S_SEMICOLON | genericTLVStat );
     public final DocsisParser.snmpV3TrapReceiverStat_return snmpV3TrapReceiverStat() throws RecognitionException {
         DocsisParser.snmpV3TrapReceiverStat_return retval = new DocsisParser.snmpV3TrapReceiverStat_return();
         retval.start = input.LT(1);
@@ -5853,7 +5854,7 @@ public class DocsisParser extends Parser {
         CommonTree root_0 = null;
 
         Token ID_SNMPV3TRAPRXIP450=null;
-        Token T_STRING451=null;
+        Token T_IP451=null;
         Token S_SEMICOLON452=null;
         Token ID_SNMPV3TRAPRXPORT453=null;
         Token T_INT454=null;
@@ -5873,11 +5874,14 @@ public class DocsisParser extends Parser {
         Token ID_SNMPV3TRAPRXSECURITYNAME468=null;
         Token T_STRING469=null;
         Token S_SEMICOLON470=null;
-        DocsisParser.genericTLVStat_return genericTLVStat471 = null;
+        Token ID_SNMPV3TRAPRXIPV6471=null;
+        Token T_IPV6472=null;
+        Token S_SEMICOLON473=null;
+        DocsisParser.genericTLVStat_return genericTLVStat474 = null;
 
 
         CommonTree ID_SNMPV3TRAPRXIP450_tree=null;
-        CommonTree T_STRING451_tree=null;
+        CommonTree T_IP451_tree=null;
         CommonTree S_SEMICOLON452_tree=null;
         CommonTree ID_SNMPV3TRAPRXPORT453_tree=null;
         CommonTree T_INT454_tree=null;
@@ -5897,10 +5901,13 @@ public class DocsisParser extends Parser {
         CommonTree ID_SNMPV3TRAPRXSECURITYNAME468_tree=null;
         CommonTree T_STRING469_tree=null;
         CommonTree S_SEMICOLON470_tree=null;
+        CommonTree ID_SNMPV3TRAPRXIPV6471_tree=null;
+        CommonTree T_IPV6472_tree=null;
+        CommonTree S_SEMICOLON473_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:239:25: ( ID_SNMPV3TRAPRXIP T_STRING S_SEMICOLON | ID_SNMPV3TRAPRXPORT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTYPE T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTIMEOUT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXRETRIES T_INT S_SEMICOLON | ID_SNMPV3TRAPRXFILTEROID T_OID S_SEMICOLON | ID_SNMPV3TRAPRXSECURITYNAME T_STRING S_SEMICOLON | genericTLVStat )
-            int alt34=8;
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:239:25: ( ID_SNMPV3TRAPRXIP T_IP S_SEMICOLON | ID_SNMPV3TRAPRXPORT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTYPE T_INT S_SEMICOLON | ID_SNMPV3TRAPRXTIMEOUT T_INT S_SEMICOLON | ID_SNMPV3TRAPRXRETRIES T_INT S_SEMICOLON | ID_SNMPV3TRAPRXFILTEROID T_OID S_SEMICOLON | ID_SNMPV3TRAPRXSECURITYNAME T_STRING S_SEMICOLON | ID_SNMPV3TRAPRXIPV6 T_IPV6 S_SEMICOLON | genericTLVStat )
+            int alt34=9;
             switch ( input.LA(1) ) {
             case ID_SNMPV3TRAPRXIP:
                 {
@@ -5937,9 +5944,14 @@ public class DocsisParser extends Parser {
                 alt34=7;
                 }
                 break;
-            case ID_GENERICTLV:
+            case ID_SNMPV3TRAPRXIPV6:
                 {
                 alt34=8;
+                }
+                break;
+            case ID_GENERICTLV:
+                {
+                alt34=9;
                 }
                 break;
             default:
@@ -5951,7 +5963,7 @@ public class DocsisParser extends Parser {
 
             switch (alt34) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:239:27: ID_SNMPV3TRAPRXIP T_STRING S_SEMICOLON
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:239:27: ID_SNMPV3TRAPRXIP T_IP S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -5959,11 +5971,11 @@ public class DocsisParser extends Parser {
                     ID_SNMPV3TRAPRXIP450_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXIP450);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXIP450_tree, root_0);
 
-                    T_STRING451=(Token)match(input,T_STRING,FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3210); 
-                    T_STRING451_tree = (CommonTree)adaptor.create(T_STRING451);
-                    adaptor.addChild(root_0, T_STRING451_tree);
+                    T_IP451=(Token)match(input,T_IP,FOLLOW_T_IP_in_snmpV3TrapReceiverStat3210); 
+                    T_IP451_tree = (CommonTree)adaptor.create(T_IP451);
+                    adaptor.addChild(root_0, T_IP451_tree);
 
-                    S_SEMICOLON452=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3217); 
+                    S_SEMICOLON452=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3218); 
 
                     }
                     break;
@@ -5972,15 +5984,15 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXPORT453=(Token)match(input,ID_SNMPV3TRAPRXPORT,FOLLOW_ID_SNMPV3TRAPRXPORT_in_snmpV3TrapReceiverStat3226); 
+                    ID_SNMPV3TRAPRXPORT453=(Token)match(input,ID_SNMPV3TRAPRXPORT,FOLLOW_ID_SNMPV3TRAPRXPORT_in_snmpV3TrapReceiverStat3227); 
                     ID_SNMPV3TRAPRXPORT453_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXPORT453);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXPORT453_tree, root_0);
 
-                    T_INT454=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3230); 
+                    T_INT454=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3231); 
                     T_INT454_tree = (CommonTree)adaptor.create(T_INT454);
                     adaptor.addChild(root_0, T_INT454_tree);
 
-                    S_SEMICOLON455=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3238); 
+                    S_SEMICOLON455=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3239); 
 
                     }
                     break;
@@ -5989,15 +6001,15 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXTYPE456=(Token)match(input,ID_SNMPV3TRAPRXTYPE,FOLLOW_ID_SNMPV3TRAPRXTYPE_in_snmpV3TrapReceiverStat3247); 
+                    ID_SNMPV3TRAPRXTYPE456=(Token)match(input,ID_SNMPV3TRAPRXTYPE,FOLLOW_ID_SNMPV3TRAPRXTYPE_in_snmpV3TrapReceiverStat3248); 
                     ID_SNMPV3TRAPRXTYPE456_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXTYPE456);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXTYPE456_tree, root_0);
 
-                    T_INT457=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3251); 
+                    T_INT457=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3252); 
                     T_INT457_tree = (CommonTree)adaptor.create(T_INT457);
                     adaptor.addChild(root_0, T_INT457_tree);
 
-                    S_SEMICOLON458=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3259); 
+                    S_SEMICOLON458=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3260); 
 
                     }
                     break;
@@ -6006,15 +6018,15 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXTIMEOUT459=(Token)match(input,ID_SNMPV3TRAPRXTIMEOUT,FOLLOW_ID_SNMPV3TRAPRXTIMEOUT_in_snmpV3TrapReceiverStat3268); 
+                    ID_SNMPV3TRAPRXTIMEOUT459=(Token)match(input,ID_SNMPV3TRAPRXTIMEOUT,FOLLOW_ID_SNMPV3TRAPRXTIMEOUT_in_snmpV3TrapReceiverStat3269); 
                     ID_SNMPV3TRAPRXTIMEOUT459_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXTIMEOUT459);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXTIMEOUT459_tree, root_0);
 
-                    T_INT460=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3272); 
+                    T_INT460=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3273); 
                     T_INT460_tree = (CommonTree)adaptor.create(T_INT460);
                     adaptor.addChild(root_0, T_INT460_tree);
 
-                    S_SEMICOLON461=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3280); 
+                    S_SEMICOLON461=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3281); 
 
                     }
                     break;
@@ -6023,15 +6035,15 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXRETRIES462=(Token)match(input,ID_SNMPV3TRAPRXRETRIES,FOLLOW_ID_SNMPV3TRAPRXRETRIES_in_snmpV3TrapReceiverStat3289); 
+                    ID_SNMPV3TRAPRXRETRIES462=(Token)match(input,ID_SNMPV3TRAPRXRETRIES,FOLLOW_ID_SNMPV3TRAPRXRETRIES_in_snmpV3TrapReceiverStat3290); 
                     ID_SNMPV3TRAPRXRETRIES462_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXRETRIES462);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXRETRIES462_tree, root_0);
 
-                    T_INT463=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3293); 
+                    T_INT463=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpV3TrapReceiverStat3294); 
                     T_INT463_tree = (CommonTree)adaptor.create(T_INT463);
                     adaptor.addChild(root_0, T_INT463_tree);
 
-                    S_SEMICOLON464=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3301); 
+                    S_SEMICOLON464=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3302); 
 
                     }
                     break;
@@ -6040,15 +6052,15 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXFILTEROID465=(Token)match(input,ID_SNMPV3TRAPRXFILTEROID,FOLLOW_ID_SNMPV3TRAPRXFILTEROID_in_snmpV3TrapReceiverStat3310); 
+                    ID_SNMPV3TRAPRXFILTEROID465=(Token)match(input,ID_SNMPV3TRAPRXFILTEROID,FOLLOW_ID_SNMPV3TRAPRXFILTEROID_in_snmpV3TrapReceiverStat3311); 
                     ID_SNMPV3TRAPRXFILTEROID465_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXFILTEROID465);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXFILTEROID465_tree, root_0);
 
-                    T_OID466=(Token)match(input,T_OID,FOLLOW_T_OID_in_snmpV3TrapReceiverStat3313); 
+                    T_OID466=(Token)match(input,T_OID,FOLLOW_T_OID_in_snmpV3TrapReceiverStat3314); 
                     T_OID466_tree = (CommonTree)adaptor.create(T_OID466);
                     adaptor.addChild(root_0, T_OID466_tree);
 
-                    S_SEMICOLON467=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3321); 
+                    S_SEMICOLON467=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3322); 
 
                     }
                     break;
@@ -6057,29 +6069,46 @@ public class DocsisParser extends Parser {
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SNMPV3TRAPRXSECURITYNAME468=(Token)match(input,ID_SNMPV3TRAPRXSECURITYNAME,FOLLOW_ID_SNMPV3TRAPRXSECURITYNAME_in_snmpV3TrapReceiverStat3330); 
+                    ID_SNMPV3TRAPRXSECURITYNAME468=(Token)match(input,ID_SNMPV3TRAPRXSECURITYNAME,FOLLOW_ID_SNMPV3TRAPRXSECURITYNAME_in_snmpV3TrapReceiverStat3331); 
                     ID_SNMPV3TRAPRXSECURITYNAME468_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXSECURITYNAME468);
                     root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXSECURITYNAME468_tree, root_0);
 
-                    T_STRING469=(Token)match(input,T_STRING,FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3333); 
+                    T_STRING469=(Token)match(input,T_STRING,FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3334); 
                     T_STRING469_tree = (CommonTree)adaptor.create(T_STRING469);
                     adaptor.addChild(root_0, T_STRING469_tree);
 
-                    S_SEMICOLON470=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3340); 
+                    S_SEMICOLON470=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3341); 
 
                     }
                     break;
                 case 8 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:246:7: genericTLVStat
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:246:7: ID_SNMPV3TRAPRXIPV6 T_IPV6 S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_genericTLVStat_in_snmpV3TrapReceiverStat3349);
-                    genericTLVStat471=genericTLVStat();
+                    ID_SNMPV3TRAPRXIPV6471=(Token)match(input,ID_SNMPV3TRAPRXIPV6,FOLLOW_ID_SNMPV3TRAPRXIPV6_in_snmpV3TrapReceiverStat3350); 
+                    ID_SNMPV3TRAPRXIPV6471_tree = (CommonTree)adaptor.create(ID_SNMPV3TRAPRXIPV6471);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SNMPV3TRAPRXIPV6471_tree, root_0);
+
+                    T_IPV6472=(Token)match(input,T_IPV6,FOLLOW_T_IPV6_in_snmpV3TrapReceiverStat3354); 
+                    T_IPV6472_tree = (CommonTree)adaptor.create(T_IPV6472);
+                    adaptor.addChild(root_0, T_IPV6472_tree);
+
+                    S_SEMICOLON473=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3362); 
+
+                    }
+                    break;
+                case 9 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:247:7: genericTLVStat
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+                    pushFollow(FOLLOW_genericTLVStat_in_snmpV3TrapReceiverStat3371);
+                    genericTLVStat474=genericTLVStat();
 
                     state._fsp--;
 
-                    adaptor.addChild(root_0, genericTLVStat471.getTree());
+                    adaptor.addChild(root_0, genericTLVStat474.getTree());
 
                     }
                     break;
@@ -6109,41 +6138,41 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "dsChannelListStat"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:250:1: dsChannelListStat : ( ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE | ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE | genericTLVStat );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:251:1: dsChannelListStat : ( ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE | ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE | genericTLVStat );
     public final DocsisParser.dsChannelListStat_return dsChannelListStat() throws RecognitionException {
         DocsisParser.dsChannelListStat_return retval = new DocsisParser.dsChannelListStat_return();
         retval.start = input.LT(1);
 
         CommonTree root_0 = null;
 
-        Token ID_DEFAULTSCANTIMEOUT472=null;
-        Token T_INT473=null;
-        Token S_SEMICOLON474=null;
-        Token ID_SINGLEDSCHANNEL475=null;
-        Token S_OPENBRACE476=null;
-        Token S_CLOSEBRACE478=null;
-        Token ID_DSFREQRANGE479=null;
-        Token S_OPENBRACE480=null;
-        Token S_CLOSEBRACE482=null;
-        DocsisParser.singleDsChannelStat_return singleDsChannelStat477 = null;
+        Token ID_DEFAULTSCANTIMEOUT475=null;
+        Token T_INT476=null;
+        Token S_SEMICOLON477=null;
+        Token ID_SINGLEDSCHANNEL478=null;
+        Token S_OPENBRACE479=null;
+        Token S_CLOSEBRACE481=null;
+        Token ID_DSFREQRANGE482=null;
+        Token S_OPENBRACE483=null;
+        Token S_CLOSEBRACE485=null;
+        DocsisParser.singleDsChannelStat_return singleDsChannelStat480 = null;
 
-        DocsisParser.dsFreqRangeStat_return dsFreqRangeStat481 = null;
+        DocsisParser.dsFreqRangeStat_return dsFreqRangeStat484 = null;
 
-        DocsisParser.genericTLVStat_return genericTLVStat483 = null;
+        DocsisParser.genericTLVStat_return genericTLVStat486 = null;
 
 
-        CommonTree ID_DEFAULTSCANTIMEOUT472_tree=null;
-        CommonTree T_INT473_tree=null;
-        CommonTree S_SEMICOLON474_tree=null;
-        CommonTree ID_SINGLEDSCHANNEL475_tree=null;
-        CommonTree S_OPENBRACE476_tree=null;
-        CommonTree S_CLOSEBRACE478_tree=null;
-        CommonTree ID_DSFREQRANGE479_tree=null;
-        CommonTree S_OPENBRACE480_tree=null;
-        CommonTree S_CLOSEBRACE482_tree=null;
+        CommonTree ID_DEFAULTSCANTIMEOUT475_tree=null;
+        CommonTree T_INT476_tree=null;
+        CommonTree S_SEMICOLON477_tree=null;
+        CommonTree ID_SINGLEDSCHANNEL478_tree=null;
+        CommonTree S_OPENBRACE479_tree=null;
+        CommonTree S_CLOSEBRACE481_tree=null;
+        CommonTree ID_DSFREQRANGE482_tree=null;
+        CommonTree S_OPENBRACE483_tree=null;
+        CommonTree S_CLOSEBRACE485_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:250:20: ( ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE | ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE | genericTLVStat )
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:251:20: ( ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE | ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE | genericTLVStat )
             int alt37=4;
             switch ( input.LA(1) ) {
             case ID_DEFAULTSCANTIMEOUT:
@@ -6175,33 +6204,33 @@ public class DocsisParser extends Parser {
 
             switch (alt37) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:250:22: ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:251:22: ID_DEFAULTSCANTIMEOUT T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_DEFAULTSCANTIMEOUT472=(Token)match(input,ID_DEFAULTSCANTIMEOUT,FOLLOW_ID_DEFAULTSCANTIMEOUT_in_dsChannelListStat3364); 
-                    ID_DEFAULTSCANTIMEOUT472_tree = (CommonTree)adaptor.create(ID_DEFAULTSCANTIMEOUT472);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DEFAULTSCANTIMEOUT472_tree, root_0);
+                    ID_DEFAULTSCANTIMEOUT475=(Token)match(input,ID_DEFAULTSCANTIMEOUT,FOLLOW_ID_DEFAULTSCANTIMEOUT_in_dsChannelListStat3386); 
+                    ID_DEFAULTSCANTIMEOUT475_tree = (CommonTree)adaptor.create(ID_DEFAULTSCANTIMEOUT475);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DEFAULTSCANTIMEOUT475_tree, root_0);
 
-                    T_INT473=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsChannelListStat3368); 
-                    T_INT473_tree = (CommonTree)adaptor.create(T_INT473);
-                    adaptor.addChild(root_0, T_INT473_tree);
+                    T_INT476=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsChannelListStat3390); 
+                    T_INT476_tree = (CommonTree)adaptor.create(T_INT476);
+                    adaptor.addChild(root_0, T_INT476_tree);
 
-                    S_SEMICOLON474=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_dsChannelListStat3376); 
+                    S_SEMICOLON477=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_dsChannelListStat3398); 
 
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:251:7: ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:7: ID_SINGLEDSCHANNEL S_OPENBRACE ( singleDsChannelStat )+ S_CLOSEBRACE
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SINGLEDSCHANNEL475=(Token)match(input,ID_SINGLEDSCHANNEL,FOLLOW_ID_SINGLEDSCHANNEL_in_dsChannelListStat3385); 
-                    ID_SINGLEDSCHANNEL475_tree = (CommonTree)adaptor.create(ID_SINGLEDSCHANNEL475);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSCHANNEL475_tree, root_0);
+                    ID_SINGLEDSCHANNEL478=(Token)match(input,ID_SINGLEDSCHANNEL,FOLLOW_ID_SINGLEDSCHANNEL_in_dsChannelListStat3407); 
+                    ID_SINGLEDSCHANNEL478_tree = (CommonTree)adaptor.create(ID_SINGLEDSCHANNEL478);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSCHANNEL478_tree, root_0);
 
-                    S_OPENBRACE476=(Token)match(input,S_OPENBRACE,FOLLOW_S_OPENBRACE_in_dsChannelListStat3389); 
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:251:41: ( singleDsChannelStat )+
+                    S_OPENBRACE479=(Token)match(input,S_OPENBRACE,FOLLOW_S_OPENBRACE_in_dsChannelListStat3411); 
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:41: ( singleDsChannelStat )+
                     int cnt35=0;
                     loop35:
                     do {
@@ -6215,14 +6244,14 @@ public class DocsisParser extends Parser {
 
                         switch (alt35) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisParser.g:251:42: singleDsChannelStat
+                    	    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:42: singleDsChannelStat
                     	    {
-                    	    pushFollow(FOLLOW_singleDsChannelStat_in_dsChannelListStat3393);
-                    	    singleDsChannelStat477=singleDsChannelStat();
+                    	    pushFollow(FOLLOW_singleDsChannelStat_in_dsChannelListStat3415);
+                    	    singleDsChannelStat480=singleDsChannelStat();
 
                     	    state._fsp--;
 
-                    	    adaptor.addChild(root_0, singleDsChannelStat477.getTree());
+                    	    adaptor.addChild(root_0, singleDsChannelStat480.getTree());
 
                     	    }
                     	    break;
@@ -6236,21 +6265,21 @@ public class DocsisParser extends Parser {
                         cnt35++;
                     } while (true);
 
-                    S_CLOSEBRACE478=(Token)match(input,S_CLOSEBRACE,FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3399); 
+                    S_CLOSEBRACE481=(Token)match(input,S_CLOSEBRACE,FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3421); 
 
                     }
                     break;
                 case 3 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:7: ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:253:7: ID_DSFREQRANGE S_OPENBRACE ( dsFreqRangeStat )+ S_CLOSEBRACE
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_DSFREQRANGE479=(Token)match(input,ID_DSFREQRANGE,FOLLOW_ID_DSFREQRANGE_in_dsChannelListStat3408); 
-                    ID_DSFREQRANGE479_tree = (CommonTree)adaptor.create(ID_DSFREQRANGE479);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGE479_tree, root_0);
+                    ID_DSFREQRANGE482=(Token)match(input,ID_DSFREQRANGE,FOLLOW_ID_DSFREQRANGE_in_dsChannelListStat3430); 
+                    ID_DSFREQRANGE482_tree = (CommonTree)adaptor.create(ID_DSFREQRANGE482);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGE482_tree, root_0);
 
-                    S_OPENBRACE480=(Token)match(input,S_OPENBRACE,FOLLOW_S_OPENBRACE_in_dsChannelListStat3413); 
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:38: ( dsFreqRangeStat )+
+                    S_OPENBRACE483=(Token)match(input,S_OPENBRACE,FOLLOW_S_OPENBRACE_in_dsChannelListStat3435); 
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:253:38: ( dsFreqRangeStat )+
                     int cnt36=0;
                     loop36:
                     do {
@@ -6264,14 +6293,14 @@ public class DocsisParser extends Parser {
 
                         switch (alt36) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisParser.g:252:39: dsFreqRangeStat
+                    	    // ch/gauteron/jdocsis/parser/DocsisParser.g:253:39: dsFreqRangeStat
                     	    {
-                    	    pushFollow(FOLLOW_dsFreqRangeStat_in_dsChannelListStat3417);
-                    	    dsFreqRangeStat481=dsFreqRangeStat();
+                    	    pushFollow(FOLLOW_dsFreqRangeStat_in_dsChannelListStat3439);
+                    	    dsFreqRangeStat484=dsFreqRangeStat();
 
                     	    state._fsp--;
 
-                    	    adaptor.addChild(root_0, dsFreqRangeStat481.getTree());
+                    	    adaptor.addChild(root_0, dsFreqRangeStat484.getTree());
 
                     	    }
                     	    break;
@@ -6285,21 +6314,21 @@ public class DocsisParser extends Parser {
                         cnt36++;
                     } while (true);
 
-                    S_CLOSEBRACE482=(Token)match(input,S_CLOSEBRACE,FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3424); 
+                    S_CLOSEBRACE485=(Token)match(input,S_CLOSEBRACE,FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3446); 
 
                     }
                     break;
                 case 4 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:253:7: genericTLVStat
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:254:7: genericTLVStat
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_genericTLVStat_in_dsChannelListStat3433);
-                    genericTLVStat483=genericTLVStat();
+                    pushFollow(FOLLOW_genericTLVStat_in_dsChannelListStat3455);
+                    genericTLVStat486=genericTLVStat();
 
                     state._fsp--;
 
-                    adaptor.addChild(root_0, genericTLVStat483.getTree());
+                    adaptor.addChild(root_0, genericTLVStat486.getTree());
 
                     }
                     break;
@@ -6329,31 +6358,31 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "singleDsChannelStat"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:257:1: singleDsChannelStat : ( ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON | genericTLVStat );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:258:1: singleDsChannelStat : ( ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON | genericTLVStat );
     public final DocsisParser.singleDsChannelStat_return singleDsChannelStat() throws RecognitionException {
         DocsisParser.singleDsChannelStat_return retval = new DocsisParser.singleDsChannelStat_return();
         retval.start = input.LT(1);
 
         CommonTree root_0 = null;
 
-        Token ID_SINGLEDSTIMEOUT484=null;
-        Token T_INT485=null;
-        Token S_SEMICOLON486=null;
-        Token ID_SINGLEDSFREQUENCY487=null;
+        Token ID_SINGLEDSTIMEOUT487=null;
         Token T_INT488=null;
         Token S_SEMICOLON489=null;
-        DocsisParser.genericTLVStat_return genericTLVStat490 = null;
+        Token ID_SINGLEDSFREQUENCY490=null;
+        Token T_INT491=null;
+        Token S_SEMICOLON492=null;
+        DocsisParser.genericTLVStat_return genericTLVStat493 = null;
 
 
-        CommonTree ID_SINGLEDSTIMEOUT484_tree=null;
-        CommonTree T_INT485_tree=null;
-        CommonTree S_SEMICOLON486_tree=null;
-        CommonTree ID_SINGLEDSFREQUENCY487_tree=null;
+        CommonTree ID_SINGLEDSTIMEOUT487_tree=null;
         CommonTree T_INT488_tree=null;
         CommonTree S_SEMICOLON489_tree=null;
+        CommonTree ID_SINGLEDSFREQUENCY490_tree=null;
+        CommonTree T_INT491_tree=null;
+        CommonTree S_SEMICOLON492_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:258:5: ( ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON | genericTLVStat )
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:259:5: ( ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON | ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON | genericTLVStat )
             int alt38=3;
             switch ( input.LA(1) ) {
             case ID_SINGLEDSTIMEOUT:
@@ -6380,30 +6409,13 @@ public class DocsisParser extends Parser {
 
             switch (alt38) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:258:7: ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:259:7: ID_SINGLEDSTIMEOUT T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_SINGLEDSTIMEOUT484=(Token)match(input,ID_SINGLEDSTIMEOUT,FOLLOW_ID_SINGLEDSTIMEOUT_in_singleDsChannelStat3451); 
-                    ID_SINGLEDSTIMEOUT484_tree = (CommonTree)adaptor.create(ID_SINGLEDSTIMEOUT484);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSTIMEOUT484_tree, root_0);
-
-                    T_INT485=(Token)match(input,T_INT,FOLLOW_T_INT_in_singleDsChannelStat3455); 
-                    T_INT485_tree = (CommonTree)adaptor.create(T_INT485);
-                    adaptor.addChild(root_0, T_INT485_tree);
-
-                    S_SEMICOLON486=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_singleDsChannelStat3463); 
-
-                    }
-                    break;
-                case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:259:7: ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-                    ID_SINGLEDSFREQUENCY487=(Token)match(input,ID_SINGLEDSFREQUENCY,FOLLOW_ID_SINGLEDSFREQUENCY_in_singleDsChannelStat3473); 
-                    ID_SINGLEDSFREQUENCY487_tree = (CommonTree)adaptor.create(ID_SINGLEDSFREQUENCY487);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSFREQUENCY487_tree, root_0);
+                    ID_SINGLEDSTIMEOUT487=(Token)match(input,ID_SINGLEDSTIMEOUT,FOLLOW_ID_SINGLEDSTIMEOUT_in_singleDsChannelStat3473); 
+                    ID_SINGLEDSTIMEOUT487_tree = (CommonTree)adaptor.create(ID_SINGLEDSTIMEOUT487);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSTIMEOUT487_tree, root_0);
 
                     T_INT488=(Token)match(input,T_INT,FOLLOW_T_INT_in_singleDsChannelStat3477); 
                     T_INT488_tree = (CommonTree)adaptor.create(T_INT488);
@@ -6413,17 +6425,34 @@ public class DocsisParser extends Parser {
 
                     }
                     break;
-                case 3 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:260:7: genericTLVStat
+                case 2 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:260:7: ID_SINGLEDSFREQUENCY T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_genericTLVStat_in_singleDsChannelStat3495);
-                    genericTLVStat490=genericTLVStat();
+                    ID_SINGLEDSFREQUENCY490=(Token)match(input,ID_SINGLEDSFREQUENCY,FOLLOW_ID_SINGLEDSFREQUENCY_in_singleDsChannelStat3495); 
+                    ID_SINGLEDSFREQUENCY490_tree = (CommonTree)adaptor.create(ID_SINGLEDSFREQUENCY490);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_SINGLEDSFREQUENCY490_tree, root_0);
+
+                    T_INT491=(Token)match(input,T_INT,FOLLOW_T_INT_in_singleDsChannelStat3499); 
+                    T_INT491_tree = (CommonTree)adaptor.create(T_INT491);
+                    adaptor.addChild(root_0, T_INT491_tree);
+
+                    S_SEMICOLON492=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_singleDsChannelStat3507); 
+
+                    }
+                    break;
+                case 3 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:261:7: genericTLVStat
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+                    pushFollow(FOLLOW_genericTLVStat_in_singleDsChannelStat3517);
+                    genericTLVStat493=genericTLVStat();
 
                     state._fsp--;
 
-                    adaptor.addChild(root_0, genericTLVStat490.getTree());
+                    adaptor.addChild(root_0, genericTLVStat493.getTree());
 
                     }
                     break;
@@ -6453,43 +6482,43 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "dsFreqRangeStat"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:264:1: dsFreqRangeStat : ( ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON | ID_DSFREQRANGESTART T_INT S_SEMICOLON | ID_DSFREQRANGEEND T_INT S_SEMICOLON | ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON | genericTLVStat );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:265:1: dsFreqRangeStat : ( ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON | ID_DSFREQRANGESTART T_INT S_SEMICOLON | ID_DSFREQRANGEEND T_INT S_SEMICOLON | ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON | genericTLVStat );
     public final DocsisParser.dsFreqRangeStat_return dsFreqRangeStat() throws RecognitionException {
         DocsisParser.dsFreqRangeStat_return retval = new DocsisParser.dsFreqRangeStat_return();
         retval.start = input.LT(1);
 
         CommonTree root_0 = null;
 
-        Token ID_DSFREQRANGETIMEOUT491=null;
-        Token T_INT492=null;
-        Token S_SEMICOLON493=null;
-        Token ID_DSFREQRANGESTART494=null;
+        Token ID_DSFREQRANGETIMEOUT494=null;
         Token T_INT495=null;
         Token S_SEMICOLON496=null;
-        Token ID_DSFREQRANGEEND497=null;
+        Token ID_DSFREQRANGESTART497=null;
         Token T_INT498=null;
         Token S_SEMICOLON499=null;
-        Token ID_DSFREQRANGESTEPSIZE500=null;
+        Token ID_DSFREQRANGEEND500=null;
         Token T_INT501=null;
         Token S_SEMICOLON502=null;
-        DocsisParser.genericTLVStat_return genericTLVStat503 = null;
+        Token ID_DSFREQRANGESTEPSIZE503=null;
+        Token T_INT504=null;
+        Token S_SEMICOLON505=null;
+        DocsisParser.genericTLVStat_return genericTLVStat506 = null;
 
 
-        CommonTree ID_DSFREQRANGETIMEOUT491_tree=null;
-        CommonTree T_INT492_tree=null;
-        CommonTree S_SEMICOLON493_tree=null;
-        CommonTree ID_DSFREQRANGESTART494_tree=null;
+        CommonTree ID_DSFREQRANGETIMEOUT494_tree=null;
         CommonTree T_INT495_tree=null;
         CommonTree S_SEMICOLON496_tree=null;
-        CommonTree ID_DSFREQRANGEEND497_tree=null;
+        CommonTree ID_DSFREQRANGESTART497_tree=null;
         CommonTree T_INT498_tree=null;
         CommonTree S_SEMICOLON499_tree=null;
-        CommonTree ID_DSFREQRANGESTEPSIZE500_tree=null;
+        CommonTree ID_DSFREQRANGEEND500_tree=null;
         CommonTree T_INT501_tree=null;
         CommonTree S_SEMICOLON502_tree=null;
+        CommonTree ID_DSFREQRANGESTEPSIZE503_tree=null;
+        CommonTree T_INT504_tree=null;
+        CommonTree S_SEMICOLON505_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:265:5: ( ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON | ID_DSFREQRANGESTART T_INT S_SEMICOLON | ID_DSFREQRANGEEND T_INT S_SEMICOLON | ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON | genericTLVStat )
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:266:5: ( ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON | ID_DSFREQRANGESTART T_INT S_SEMICOLON | ID_DSFREQRANGEEND T_INT S_SEMICOLON | ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON | genericTLVStat )
             int alt39=5;
             switch ( input.LA(1) ) {
             case ID_DSFREQRANGETIMEOUT:
@@ -6526,30 +6555,13 @@ public class DocsisParser extends Parser {
 
             switch (alt39) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:265:7: ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:266:7: ID_DSFREQRANGETIMEOUT T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_DSFREQRANGETIMEOUT491=(Token)match(input,ID_DSFREQRANGETIMEOUT,FOLLOW_ID_DSFREQRANGETIMEOUT_in_dsFreqRangeStat3513); 
-                    ID_DSFREQRANGETIMEOUT491_tree = (CommonTree)adaptor.create(ID_DSFREQRANGETIMEOUT491);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGETIMEOUT491_tree, root_0);
-
-                    T_INT492=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsFreqRangeStat3517); 
-                    T_INT492_tree = (CommonTree)adaptor.create(T_INT492);
-                    adaptor.addChild(root_0, T_INT492_tree);
-
-                    S_SEMICOLON493=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3525); 
-
-                    }
-                    break;
-                case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:266:7: ID_DSFREQRANGESTART T_INT S_SEMICOLON
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-                    ID_DSFREQRANGESTART494=(Token)match(input,ID_DSFREQRANGESTART,FOLLOW_ID_DSFREQRANGESTART_in_dsFreqRangeStat3535); 
-                    ID_DSFREQRANGESTART494_tree = (CommonTree)adaptor.create(ID_DSFREQRANGESTART494);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGESTART494_tree, root_0);
+                    ID_DSFREQRANGETIMEOUT494=(Token)match(input,ID_DSFREQRANGETIMEOUT,FOLLOW_ID_DSFREQRANGETIMEOUT_in_dsFreqRangeStat3535); 
+                    ID_DSFREQRANGETIMEOUT494_tree = (CommonTree)adaptor.create(ID_DSFREQRANGETIMEOUT494);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGETIMEOUT494_tree, root_0);
 
                     T_INT495=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsFreqRangeStat3539); 
                     T_INT495_tree = (CommonTree)adaptor.create(T_INT495);
@@ -6559,14 +6571,14 @@ public class DocsisParser extends Parser {
 
                     }
                     break;
-                case 3 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:267:7: ID_DSFREQRANGEEND T_INT S_SEMICOLON
+                case 2 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:267:7: ID_DSFREQRANGESTART T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_DSFREQRANGEEND497=(Token)match(input,ID_DSFREQRANGEEND,FOLLOW_ID_DSFREQRANGEEND_in_dsFreqRangeStat3557); 
-                    ID_DSFREQRANGEEND497_tree = (CommonTree)adaptor.create(ID_DSFREQRANGEEND497);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGEEND497_tree, root_0);
+                    ID_DSFREQRANGESTART497=(Token)match(input,ID_DSFREQRANGESTART,FOLLOW_ID_DSFREQRANGESTART_in_dsFreqRangeStat3557); 
+                    ID_DSFREQRANGESTART497_tree = (CommonTree)adaptor.create(ID_DSFREQRANGESTART497);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGESTART497_tree, root_0);
 
                     T_INT498=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsFreqRangeStat3561); 
                     T_INT498_tree = (CommonTree)adaptor.create(T_INT498);
@@ -6576,14 +6588,14 @@ public class DocsisParser extends Parser {
 
                     }
                     break;
-                case 4 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:268:7: ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON
+                case 3 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:268:7: ID_DSFREQRANGEEND T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_DSFREQRANGESTEPSIZE500=(Token)match(input,ID_DSFREQRANGESTEPSIZE,FOLLOW_ID_DSFREQRANGESTEPSIZE_in_dsFreqRangeStat3579); 
-                    ID_DSFREQRANGESTEPSIZE500_tree = (CommonTree)adaptor.create(ID_DSFREQRANGESTEPSIZE500);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGESTEPSIZE500_tree, root_0);
+                    ID_DSFREQRANGEEND500=(Token)match(input,ID_DSFREQRANGEEND,FOLLOW_ID_DSFREQRANGEEND_in_dsFreqRangeStat3579); 
+                    ID_DSFREQRANGEEND500_tree = (CommonTree)adaptor.create(ID_DSFREQRANGEEND500);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGEEND500_tree, root_0);
 
                     T_INT501=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsFreqRangeStat3583); 
                     T_INT501_tree = (CommonTree)adaptor.create(T_INT501);
@@ -6593,17 +6605,34 @@ public class DocsisParser extends Parser {
 
                     }
                     break;
-                case 5 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:269:7: genericTLVStat
+                case 4 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:269:7: ID_DSFREQRANGESTEPSIZE T_INT S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_genericTLVStat_in_dsFreqRangeStat3601);
-                    genericTLVStat503=genericTLVStat();
+                    ID_DSFREQRANGESTEPSIZE503=(Token)match(input,ID_DSFREQRANGESTEPSIZE,FOLLOW_ID_DSFREQRANGESTEPSIZE_in_dsFreqRangeStat3601); 
+                    ID_DSFREQRANGESTEPSIZE503_tree = (CommonTree)adaptor.create(ID_DSFREQRANGESTEPSIZE503);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_DSFREQRANGESTEPSIZE503_tree, root_0);
+
+                    T_INT504=(Token)match(input,T_INT,FOLLOW_T_INT_in_dsFreqRangeStat3605); 
+                    T_INT504_tree = (CommonTree)adaptor.create(T_INT504);
+                    adaptor.addChild(root_0, T_INT504_tree);
+
+                    S_SEMICOLON505=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3613); 
+
+                    }
+                    break;
+                case 5 :
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:270:7: genericTLVStat
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+                    pushFollow(FOLLOW_genericTLVStat_in_dsFreqRangeStat3623);
+                    genericTLVStat506=genericTLVStat();
 
                     state._fsp--;
 
-                    adaptor.addChild(root_0, genericTLVStat503.getTree());
+                    adaptor.addChild(root_0, genericTLVStat506.getTree());
 
                     }
                     break;
@@ -6633,25 +6662,25 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "vendorSpecificStat"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:273:1: vendorSpecificStat : ( ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON | genericTLVStat );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:274:1: vendorSpecificStat : ( ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON | genericTLVStat );
     public final DocsisParser.vendorSpecificStat_return vendorSpecificStat() throws RecognitionException {
         DocsisParser.vendorSpecificStat_return retval = new DocsisParser.vendorSpecificStat_return();
         retval.start = input.LT(1);
 
         CommonTree root_0 = null;
 
-        Token ID_VENDORIDENTIFIER504=null;
-        Token T_HEXSTR505=null;
-        Token S_SEMICOLON506=null;
-        DocsisParser.genericTLVStat_return genericTLVStat507 = null;
+        Token ID_VENDORIDENTIFIER507=null;
+        Token T_HEXSTR508=null;
+        Token S_SEMICOLON509=null;
+        DocsisParser.genericTLVStat_return genericTLVStat510 = null;
 
 
-        CommonTree ID_VENDORIDENTIFIER504_tree=null;
-        CommonTree T_HEXSTR505_tree=null;
-        CommonTree S_SEMICOLON506_tree=null;
+        CommonTree ID_VENDORIDENTIFIER507_tree=null;
+        CommonTree T_HEXSTR508_tree=null;
+        CommonTree S_SEMICOLON509_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:274:5: ( ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON | genericTLVStat )
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:275:5: ( ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON | genericTLVStat )
             int alt40=2;
             int LA40_0 = input.LA(1);
 
@@ -6669,33 +6698,33 @@ public class DocsisParser extends Parser {
             }
             switch (alt40) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:274:7: ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:275:7: ID_VENDORIDENTIFIER T_HEXSTR S_SEMICOLON
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    ID_VENDORIDENTIFIER504=(Token)match(input,ID_VENDORIDENTIFIER,FOLLOW_ID_VENDORIDENTIFIER_in_vendorSpecificStat3619); 
-                    ID_VENDORIDENTIFIER504_tree = (CommonTree)adaptor.create(ID_VENDORIDENTIFIER504);
-                    root_0 = (CommonTree)adaptor.becomeRoot(ID_VENDORIDENTIFIER504_tree, root_0);
+                    ID_VENDORIDENTIFIER507=(Token)match(input,ID_VENDORIDENTIFIER,FOLLOW_ID_VENDORIDENTIFIER_in_vendorSpecificStat3641); 
+                    ID_VENDORIDENTIFIER507_tree = (CommonTree)adaptor.create(ID_VENDORIDENTIFIER507);
+                    root_0 = (CommonTree)adaptor.becomeRoot(ID_VENDORIDENTIFIER507_tree, root_0);
 
-                    T_HEXSTR505=(Token)match(input,T_HEXSTR,FOLLOW_T_HEXSTR_in_vendorSpecificStat3623); 
-                    T_HEXSTR505_tree = (CommonTree)adaptor.create(T_HEXSTR505);
-                    adaptor.addChild(root_0, T_HEXSTR505_tree);
+                    T_HEXSTR508=(Token)match(input,T_HEXSTR,FOLLOW_T_HEXSTR_in_vendorSpecificStat3645); 
+                    T_HEXSTR508_tree = (CommonTree)adaptor.create(T_HEXSTR508);
+                    adaptor.addChild(root_0, T_HEXSTR508_tree);
 
-                    S_SEMICOLON506=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_vendorSpecificStat3630); 
+                    S_SEMICOLON509=(Token)match(input,S_SEMICOLON,FOLLOW_S_SEMICOLON_in_vendorSpecificStat3652); 
 
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:275:7: genericTLVStat
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:276:7: genericTLVStat
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    pushFollow(FOLLOW_genericTLVStat_in_vendorSpecificStat3639);
-                    genericTLVStat507=genericTLVStat();
+                    pushFollow(FOLLOW_genericTLVStat_in_vendorSpecificStat3661);
+                    genericTLVStat510=genericTLVStat();
 
                     state._fsp--;
 
-                    adaptor.addChild(root_0, genericTLVStat507.getTree());
+                    adaptor.addChild(root_0, genericTLVStat510.getTree());
 
                     }
                     break;
@@ -6725,57 +6754,57 @@ public class DocsisParser extends Parser {
     };
 
     // $ANTLR start "snmpType"
-    // ch/gauteron/jdocsis/parser/DocsisParser.g:281:1: snmpType : ( SNMP_INTEGER T_INT | SNMP_COUNTER32 T_INT | SNMP_GAUGE32 T_INT | SNMP_UNSIGNED32 T_INT | SNMP_COUNTER64 T_INT | SNMP_IPADDRESS T_IP | SNMP_OID T_OID | SNMP_STRING T_STRING | SNMP_HEXSTRING T_HEXSTR | SNMP_TIMETICKS T_TIMETICKS );
+    // ch/gauteron/jdocsis/parser/DocsisParser.g:282:1: snmpType : ( SNMP_INTEGER T_INT | SNMP_COUNTER32 T_INT | SNMP_GAUGE32 T_INT | SNMP_UNSIGNED32 T_INT | SNMP_COUNTER64 T_INT | SNMP_IPADDRESS T_IP | SNMP_OID T_OID | SNMP_STRING T_STRING | SNMP_HEXSTRING T_HEXSTR | SNMP_TIMETICKS T_TIMETICKS );
     public final DocsisParser.snmpType_return snmpType() throws RecognitionException {
         DocsisParser.snmpType_return retval = new DocsisParser.snmpType_return();
         retval.start = input.LT(1);
 
         CommonTree root_0 = null;
 
-        Token SNMP_INTEGER508=null;
-        Token T_INT509=null;
-        Token SNMP_COUNTER32510=null;
-        Token T_INT511=null;
-        Token SNMP_GAUGE32512=null;
-        Token T_INT513=null;
-        Token SNMP_UNSIGNED32514=null;
-        Token T_INT515=null;
-        Token SNMP_COUNTER64516=null;
-        Token T_INT517=null;
-        Token SNMP_IPADDRESS518=null;
-        Token T_IP519=null;
-        Token SNMP_OID520=null;
-        Token T_OID521=null;
-        Token SNMP_STRING522=null;
-        Token T_STRING523=null;
-        Token SNMP_HEXSTRING524=null;
-        Token T_HEXSTR525=null;
-        Token SNMP_TIMETICKS526=null;
-        Token T_TIMETICKS527=null;
+        Token SNMP_INTEGER511=null;
+        Token T_INT512=null;
+        Token SNMP_COUNTER32513=null;
+        Token T_INT514=null;
+        Token SNMP_GAUGE32515=null;
+        Token T_INT516=null;
+        Token SNMP_UNSIGNED32517=null;
+        Token T_INT518=null;
+        Token SNMP_COUNTER64519=null;
+        Token T_INT520=null;
+        Token SNMP_IPADDRESS521=null;
+        Token T_IP522=null;
+        Token SNMP_OID523=null;
+        Token T_OID524=null;
+        Token SNMP_STRING525=null;
+        Token T_STRING526=null;
+        Token SNMP_HEXSTRING527=null;
+        Token T_HEXSTR528=null;
+        Token SNMP_TIMETICKS529=null;
+        Token T_TIMETICKS530=null;
 
-        CommonTree SNMP_INTEGER508_tree=null;
-        CommonTree T_INT509_tree=null;
-        CommonTree SNMP_COUNTER32510_tree=null;
-        CommonTree T_INT511_tree=null;
-        CommonTree SNMP_GAUGE32512_tree=null;
-        CommonTree T_INT513_tree=null;
-        CommonTree SNMP_UNSIGNED32514_tree=null;
-        CommonTree T_INT515_tree=null;
-        CommonTree SNMP_COUNTER64516_tree=null;
-        CommonTree T_INT517_tree=null;
-        CommonTree SNMP_IPADDRESS518_tree=null;
-        CommonTree T_IP519_tree=null;
-        CommonTree SNMP_OID520_tree=null;
-        CommonTree T_OID521_tree=null;
-        CommonTree SNMP_STRING522_tree=null;
-        CommonTree T_STRING523_tree=null;
-        CommonTree SNMP_HEXSTRING524_tree=null;
-        CommonTree T_HEXSTR525_tree=null;
-        CommonTree SNMP_TIMETICKS526_tree=null;
-        CommonTree T_TIMETICKS527_tree=null;
+        CommonTree SNMP_INTEGER511_tree=null;
+        CommonTree T_INT512_tree=null;
+        CommonTree SNMP_COUNTER32513_tree=null;
+        CommonTree T_INT514_tree=null;
+        CommonTree SNMP_GAUGE32515_tree=null;
+        CommonTree T_INT516_tree=null;
+        CommonTree SNMP_UNSIGNED32517_tree=null;
+        CommonTree T_INT518_tree=null;
+        CommonTree SNMP_COUNTER64519_tree=null;
+        CommonTree T_INT520_tree=null;
+        CommonTree SNMP_IPADDRESS521_tree=null;
+        CommonTree T_IP522_tree=null;
+        CommonTree SNMP_OID523_tree=null;
+        CommonTree T_OID524_tree=null;
+        CommonTree SNMP_STRING525_tree=null;
+        CommonTree T_STRING526_tree=null;
+        CommonTree SNMP_HEXSTRING527_tree=null;
+        CommonTree T_HEXSTR528_tree=null;
+        CommonTree SNMP_TIMETICKS529_tree=null;
+        CommonTree T_TIMETICKS530_tree=null;
 
         try {
-            // ch/gauteron/jdocsis/parser/DocsisParser.g:281:19: ( SNMP_INTEGER T_INT | SNMP_COUNTER32 T_INT | SNMP_GAUGE32 T_INT | SNMP_UNSIGNED32 T_INT | SNMP_COUNTER64 T_INT | SNMP_IPADDRESS T_IP | SNMP_OID T_OID | SNMP_STRING T_STRING | SNMP_HEXSTRING T_HEXSTR | SNMP_TIMETICKS T_TIMETICKS )
+            // ch/gauteron/jdocsis/parser/DocsisParser.g:282:19: ( SNMP_INTEGER T_INT | SNMP_COUNTER32 T_INT | SNMP_GAUGE32 T_INT | SNMP_UNSIGNED32 T_INT | SNMP_COUNTER64 T_INT | SNMP_IPADDRESS T_IP | SNMP_OID T_OID | SNMP_STRING T_STRING | SNMP_HEXSTRING T_HEXSTR | SNMP_TIMETICKS T_TIMETICKS )
             int alt41=10;
             switch ( input.LA(1) ) {
             case SNMP_INTEGER:
@@ -6837,161 +6866,161 @@ public class DocsisParser extends Parser {
 
             switch (alt41) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:281:21: SNMP_INTEGER T_INT
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:282:21: SNMP_INTEGER T_INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_INTEGER508=(Token)match(input,SNMP_INTEGER,FOLLOW_SNMP_INTEGER_in_snmpType3664); 
-                    SNMP_INTEGER508_tree = (CommonTree)adaptor.create(SNMP_INTEGER508);
-                    adaptor.addChild(root_0, SNMP_INTEGER508_tree);
+                    SNMP_INTEGER511=(Token)match(input,SNMP_INTEGER,FOLLOW_SNMP_INTEGER_in_snmpType3686); 
+                    SNMP_INTEGER511_tree = (CommonTree)adaptor.create(SNMP_INTEGER511);
+                    adaptor.addChild(root_0, SNMP_INTEGER511_tree);
 
-                    T_INT509=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3668); 
-                    T_INT509_tree = (CommonTree)adaptor.create(T_INT509);
-                    adaptor.addChild(root_0, T_INT509_tree);
+                    T_INT512=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3690); 
+                    T_INT512_tree = (CommonTree)adaptor.create(T_INT512);
+                    adaptor.addChild(root_0, T_INT512_tree);
 
 
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:282:7: SNMP_COUNTER32 T_INT
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:283:7: SNMP_COUNTER32 T_INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_COUNTER32510=(Token)match(input,SNMP_COUNTER32,FOLLOW_SNMP_COUNTER32_in_snmpType3676); 
-                    SNMP_COUNTER32510_tree = (CommonTree)adaptor.create(SNMP_COUNTER32510);
-                    adaptor.addChild(root_0, SNMP_COUNTER32510_tree);
+                    SNMP_COUNTER32513=(Token)match(input,SNMP_COUNTER32,FOLLOW_SNMP_COUNTER32_in_snmpType3698); 
+                    SNMP_COUNTER32513_tree = (CommonTree)adaptor.create(SNMP_COUNTER32513);
+                    adaptor.addChild(root_0, SNMP_COUNTER32513_tree);
 
-                    T_INT511=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3680); 
-                    T_INT511_tree = (CommonTree)adaptor.create(T_INT511);
-                    adaptor.addChild(root_0, T_INT511_tree);
+                    T_INT514=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3702); 
+                    T_INT514_tree = (CommonTree)adaptor.create(T_INT514);
+                    adaptor.addChild(root_0, T_INT514_tree);
 
 
                     }
                     break;
                 case 3 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:283:7: SNMP_GAUGE32 T_INT
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:284:7: SNMP_GAUGE32 T_INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_GAUGE32512=(Token)match(input,SNMP_GAUGE32,FOLLOW_SNMP_GAUGE32_in_snmpType3688); 
-                    SNMP_GAUGE32512_tree = (CommonTree)adaptor.create(SNMP_GAUGE32512);
-                    adaptor.addChild(root_0, SNMP_GAUGE32512_tree);
+                    SNMP_GAUGE32515=(Token)match(input,SNMP_GAUGE32,FOLLOW_SNMP_GAUGE32_in_snmpType3710); 
+                    SNMP_GAUGE32515_tree = (CommonTree)adaptor.create(SNMP_GAUGE32515);
+                    adaptor.addChild(root_0, SNMP_GAUGE32515_tree);
 
-                    T_INT513=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3692); 
-                    T_INT513_tree = (CommonTree)adaptor.create(T_INT513);
-                    adaptor.addChild(root_0, T_INT513_tree);
+                    T_INT516=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3714); 
+                    T_INT516_tree = (CommonTree)adaptor.create(T_INT516);
+                    adaptor.addChild(root_0, T_INT516_tree);
 
 
                     }
                     break;
                 case 4 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:284:7: SNMP_UNSIGNED32 T_INT
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:285:7: SNMP_UNSIGNED32 T_INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_UNSIGNED32514=(Token)match(input,SNMP_UNSIGNED32,FOLLOW_SNMP_UNSIGNED32_in_snmpType3700); 
-                    SNMP_UNSIGNED32514_tree = (CommonTree)adaptor.create(SNMP_UNSIGNED32514);
-                    adaptor.addChild(root_0, SNMP_UNSIGNED32514_tree);
+                    SNMP_UNSIGNED32517=(Token)match(input,SNMP_UNSIGNED32,FOLLOW_SNMP_UNSIGNED32_in_snmpType3722); 
+                    SNMP_UNSIGNED32517_tree = (CommonTree)adaptor.create(SNMP_UNSIGNED32517);
+                    adaptor.addChild(root_0, SNMP_UNSIGNED32517_tree);
 
-                    T_INT515=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3704); 
-                    T_INT515_tree = (CommonTree)adaptor.create(T_INT515);
-                    adaptor.addChild(root_0, T_INT515_tree);
+                    T_INT518=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3726); 
+                    T_INT518_tree = (CommonTree)adaptor.create(T_INT518);
+                    adaptor.addChild(root_0, T_INT518_tree);
 
 
                     }
                     break;
                 case 5 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:285:7: SNMP_COUNTER64 T_INT
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:286:7: SNMP_COUNTER64 T_INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_COUNTER64516=(Token)match(input,SNMP_COUNTER64,FOLLOW_SNMP_COUNTER64_in_snmpType3712); 
-                    SNMP_COUNTER64516_tree = (CommonTree)adaptor.create(SNMP_COUNTER64516);
-                    adaptor.addChild(root_0, SNMP_COUNTER64516_tree);
+                    SNMP_COUNTER64519=(Token)match(input,SNMP_COUNTER64,FOLLOW_SNMP_COUNTER64_in_snmpType3734); 
+                    SNMP_COUNTER64519_tree = (CommonTree)adaptor.create(SNMP_COUNTER64519);
+                    adaptor.addChild(root_0, SNMP_COUNTER64519_tree);
 
-                    T_INT517=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3716); 
-                    T_INT517_tree = (CommonTree)adaptor.create(T_INT517);
-                    adaptor.addChild(root_0, T_INT517_tree);
+                    T_INT520=(Token)match(input,T_INT,FOLLOW_T_INT_in_snmpType3738); 
+                    T_INT520_tree = (CommonTree)adaptor.create(T_INT520);
+                    adaptor.addChild(root_0, T_INT520_tree);
 
 
                     }
                     break;
                 case 6 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:286:7: SNMP_IPADDRESS T_IP
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:287:7: SNMP_IPADDRESS T_IP
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_IPADDRESS518=(Token)match(input,SNMP_IPADDRESS,FOLLOW_SNMP_IPADDRESS_in_snmpType3724); 
-                    SNMP_IPADDRESS518_tree = (CommonTree)adaptor.create(SNMP_IPADDRESS518);
-                    adaptor.addChild(root_0, SNMP_IPADDRESS518_tree);
+                    SNMP_IPADDRESS521=(Token)match(input,SNMP_IPADDRESS,FOLLOW_SNMP_IPADDRESS_in_snmpType3746); 
+                    SNMP_IPADDRESS521_tree = (CommonTree)adaptor.create(SNMP_IPADDRESS521);
+                    adaptor.addChild(root_0, SNMP_IPADDRESS521_tree);
 
-                    T_IP519=(Token)match(input,T_IP,FOLLOW_T_IP_in_snmpType3728); 
-                    T_IP519_tree = (CommonTree)adaptor.create(T_IP519);
-                    adaptor.addChild(root_0, T_IP519_tree);
+                    T_IP522=(Token)match(input,T_IP,FOLLOW_T_IP_in_snmpType3750); 
+                    T_IP522_tree = (CommonTree)adaptor.create(T_IP522);
+                    adaptor.addChild(root_0, T_IP522_tree);
 
 
                     }
                     break;
                 case 7 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:287:7: SNMP_OID T_OID
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:288:7: SNMP_OID T_OID
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_OID520=(Token)match(input,SNMP_OID,FOLLOW_SNMP_OID_in_snmpType3736); 
-                    SNMP_OID520_tree = (CommonTree)adaptor.create(SNMP_OID520);
-                    adaptor.addChild(root_0, SNMP_OID520_tree);
+                    SNMP_OID523=(Token)match(input,SNMP_OID,FOLLOW_SNMP_OID_in_snmpType3758); 
+                    SNMP_OID523_tree = (CommonTree)adaptor.create(SNMP_OID523);
+                    adaptor.addChild(root_0, SNMP_OID523_tree);
 
-                    T_OID521=(Token)match(input,T_OID,FOLLOW_T_OID_in_snmpType3740); 
-                    T_OID521_tree = (CommonTree)adaptor.create(T_OID521);
-                    adaptor.addChild(root_0, T_OID521_tree);
+                    T_OID524=(Token)match(input,T_OID,FOLLOW_T_OID_in_snmpType3762); 
+                    T_OID524_tree = (CommonTree)adaptor.create(T_OID524);
+                    adaptor.addChild(root_0, T_OID524_tree);
 
 
                     }
                     break;
                 case 8 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:288:7: SNMP_STRING T_STRING
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:289:7: SNMP_STRING T_STRING
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_STRING522=(Token)match(input,SNMP_STRING,FOLLOW_SNMP_STRING_in_snmpType3748); 
-                    SNMP_STRING522_tree = (CommonTree)adaptor.create(SNMP_STRING522);
-                    adaptor.addChild(root_0, SNMP_STRING522_tree);
+                    SNMP_STRING525=(Token)match(input,SNMP_STRING,FOLLOW_SNMP_STRING_in_snmpType3770); 
+                    SNMP_STRING525_tree = (CommonTree)adaptor.create(SNMP_STRING525);
+                    adaptor.addChild(root_0, SNMP_STRING525_tree);
 
-                    T_STRING523=(Token)match(input,T_STRING,FOLLOW_T_STRING_in_snmpType3752); 
-                    T_STRING523_tree = (CommonTree)adaptor.create(T_STRING523);
-                    adaptor.addChild(root_0, T_STRING523_tree);
+                    T_STRING526=(Token)match(input,T_STRING,FOLLOW_T_STRING_in_snmpType3774); 
+                    T_STRING526_tree = (CommonTree)adaptor.create(T_STRING526);
+                    adaptor.addChild(root_0, T_STRING526_tree);
 
 
                     }
                     break;
                 case 9 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:289:7: SNMP_HEXSTRING T_HEXSTR
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:290:7: SNMP_HEXSTRING T_HEXSTR
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_HEXSTRING524=(Token)match(input,SNMP_HEXSTRING,FOLLOW_SNMP_HEXSTRING_in_snmpType3760); 
-                    SNMP_HEXSTRING524_tree = (CommonTree)adaptor.create(SNMP_HEXSTRING524);
-                    adaptor.addChild(root_0, SNMP_HEXSTRING524_tree);
+                    SNMP_HEXSTRING527=(Token)match(input,SNMP_HEXSTRING,FOLLOW_SNMP_HEXSTRING_in_snmpType3782); 
+                    SNMP_HEXSTRING527_tree = (CommonTree)adaptor.create(SNMP_HEXSTRING527);
+                    adaptor.addChild(root_0, SNMP_HEXSTRING527_tree);
 
-                    T_HEXSTR525=(Token)match(input,T_HEXSTR,FOLLOW_T_HEXSTR_in_snmpType3764); 
-                    T_HEXSTR525_tree = (CommonTree)adaptor.create(T_HEXSTR525);
-                    adaptor.addChild(root_0, T_HEXSTR525_tree);
+                    T_HEXSTR528=(Token)match(input,T_HEXSTR,FOLLOW_T_HEXSTR_in_snmpType3786); 
+                    T_HEXSTR528_tree = (CommonTree)adaptor.create(T_HEXSTR528);
+                    adaptor.addChild(root_0, T_HEXSTR528_tree);
 
 
                     }
                     break;
                 case 10 :
-                    // ch/gauteron/jdocsis/parser/DocsisParser.g:290:7: SNMP_TIMETICKS T_TIMETICKS
+                    // ch/gauteron/jdocsis/parser/DocsisParser.g:291:7: SNMP_TIMETICKS T_TIMETICKS
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    SNMP_TIMETICKS526=(Token)match(input,SNMP_TIMETICKS,FOLLOW_SNMP_TIMETICKS_in_snmpType3772); 
-                    SNMP_TIMETICKS526_tree = (CommonTree)adaptor.create(SNMP_TIMETICKS526);
-                    adaptor.addChild(root_0, SNMP_TIMETICKS526_tree);
+                    SNMP_TIMETICKS529=(Token)match(input,SNMP_TIMETICKS,FOLLOW_SNMP_TIMETICKS_in_snmpType3794); 
+                    SNMP_TIMETICKS529_tree = (CommonTree)adaptor.create(SNMP_TIMETICKS529);
+                    adaptor.addChild(root_0, SNMP_TIMETICKS529_tree);
 
-                    T_TIMETICKS527=(Token)match(input,T_TIMETICKS,FOLLOW_T_TIMETICKS_in_snmpType3776); 
-                    T_TIMETICKS527_tree = (CommonTree)adaptor.create(T_TIMETICKS527);
-                    adaptor.addChild(root_0, T_TIMETICKS527_tree);
+                    T_TIMETICKS530=(Token)match(input,T_TIMETICKS,FOLLOW_T_TIMETICKS_in_snmpType3798); 
+                    T_TIMETICKS530_tree = (CommonTree)adaptor.create(T_TIMETICKS530);
+                    adaptor.addChild(root_0, T_TIMETICKS530_tree);
 
 
                     }
@@ -7021,532 +7050,535 @@ public class DocsisParser extends Parser {
 
  
 
-    public static final BitSet FOLLOW_STATIC_MAIN_in_main51 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_main54 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_statement_in_main58 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_STATIC_MAIN_in_main51 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_main54 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_statement_in_main58 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_main62 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_main65 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_GENERICTLV_in_genericTLVStat76 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000008000000L});
-    public static final BitSet FOLLOW_TLV_CODE_in_genericTLVStat82 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_genericTLVStat84 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_TLV_LENGTH_in_genericTLVStat86 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_genericTLVStat88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000020000000L});
-    public static final BitSet FOLLOW_TLV_VALUE_in_genericTLVStat90 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_genericTLVStat92 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_GENERICTLV_in_genericTLVStat76 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_TLV_CODE_in_genericTLVStat82 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_genericTLVStat84 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000020000000L});
+    public static final BitSet FOLLOW_TLV_LENGTH_in_genericTLVStat86 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_genericTLVStat88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000040000000L});
+    public static final BitSet FOLLOW_TLV_VALUE_in_genericTLVStat90 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_genericTLVStat92 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_genericTLVStat94 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DOWNSTREAMFREQUENCY_in_statement106 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement110 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DOWNSTREAMFREQUENCY_in_statement106 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement110 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_UPSTREAMCHANNELID_in_statement127 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement131 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_UPSTREAMCHANNELID_in_statement127 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement131 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_NETWORKACCESS_in_statement148 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement152 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_NETWORKACCESS_in_statement148 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement152 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SWUPGRADEFILENAME_in_statement169 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_statement173 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SWUPGRADEFILENAME_in_statement169 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_T_STRING_in_statement173 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement180 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPWRITECONTROL_in_statement189 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_T_OID_in_statement193 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement195 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPWRITECONTROL_in_statement189 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
+    public static final BitSet FOLLOW_T_OID_in_statement193 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement195 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPMIBOBJECT_in_statement211 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_T_OID_in_statement215 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x000006AFC0000000L});
-    public static final BitSet FOLLOW_snmpType_in_statement217 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPMIBOBJECT_in_statement211 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
+    public static final BitSet FOLLOW_T_OID_in_statement215 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x00000D5F80000000L});
+    public static final BitSet FOLLOW_snmpType_in_statement217 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement224 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CPEMACADDRESS_in_statement233 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0004000000000000L});
-    public static final BitSet FOLLOW_T_MACADDR_in_statement237 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_CPEMACADDRESS_in_statement233 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0008000000000000L});
+    public static final BitSet FOLLOW_T_MACADDR_in_statement237 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXCPE_in_statement253 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement258 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXCPE_in_statement253 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement258 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement266 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TFTPTIMESTAMP_in_statement275 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement279 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TFTPTIMESTAMP_in_statement275 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement279 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement287 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TFTPMODEMADDRESS_in_statement296 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_statement300 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TFTPMODEMADDRESS_in_statement296 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_statement300 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement308 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SWUPGRADESERVER_in_statement317 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_statement321 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SWUPGRADESERVER_in_statement317 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_statement321 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXCLASSIFIERS_in_statement338 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement342 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXCLASSIFIERS_in_statement338 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement342 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement350 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_GLOBALPRIVACYENABLE_in_statement359 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement363 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_GLOBALPRIVACYENABLE_in_statement359 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement363 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MFGCVCDATA_in_statement380 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_statement385 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MFGCVCDATA_in_statement380 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_statement385 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MANUFACTURERCVC_in_statement401 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_statement405 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MANUFACTURERCVC_in_statement401 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_statement405 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_COSIGNERCVCDATA_in_statement421 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_statement425 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_COSIGNERCVCDATA_in_statement421 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_statement425 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement432 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_COSIGNERCVC_in_statement441 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_statement446 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_COSIGNERCVC_in_statement441 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_statement446 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SUBMGMTCONTROL_in_statement462 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_statement466 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SUBMGMTCONTROL_in_statement462 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_statement466 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SUBMGMTFILTERS_in_statement482 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
-    public static final BitSet FOLLOW_T_INTLIST4_in_statement486 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SUBMGMTFILTERS_in_statement482 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000200000000000L});
+    public static final BitSet FOLLOW_T_INTLIST4_in_statement486 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement493 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DOCSISTWOENABLE_in_statement502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement506 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DOCSISTWOENABLE_in_statement502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement506 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement514 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TESTMODEENABLE_in_statement523 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement527 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TESTMODEENABLE_in_statement523 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement527 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement535 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPCPEACCESSCONTROL_in_statement544 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement547 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPCPEACCESSCONTROL_in_statement544 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement547 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement555 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6SWUPGRADESERVER_in_statement564 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0040000000000000L});
-    public static final BitSet FOLLOW_T_IPV6_in_statement568 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6SWUPGRADESERVER_in_statement564 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_T_IPV6_in_statement568 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MTACONFIGDELIMITER_in_statement585 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_statement589 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MTACONFIGDELIMITER_in_statement585 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_statement589 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_statement597 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CLASSOFSERVICE_in_statement606 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement611 = new BitSet(new long[]{0x0001F803E00FFF00L,0x9FC01000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_classOfServiceStat_in_statement615 = new BitSet(new long[]{0x0001F803E00FFF00L,0x9FC01000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_CLASSOFSERVICE_in_statement606 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement611 = new BitSet(new long[]{0x0001F803E00FFF00L,0x9FC01000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_classOfServiceStat_in_statement615 = new BitSet(new long[]{0x0001F803E00FFF00L,0x9FC01000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement621 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MODEMCAPABILITIES_in_statement631 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement636 = new BitSet(new long[]{0x0001F803FFF80F00L,0x9FC01000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_modemCapabilitiesStat_in_statement640 = new BitSet(new long[]{0x0001F803FFF80F00L,0x9FC01000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_MODEMCAPABILITIES_in_statement631 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement636 = new BitSet(new long[]{0x0001F803FFF80F00L,0x9FC01000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_modemCapabilitiesStat_in_statement640 = new BitSet(new long[]{0x0001F803FFF80F00L,0x9FC01000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement646 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_BASELINEPRIVACY_in_statement655 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement660 = new BitSet(new long[]{0x0001FFFFE0080F00L,0x9FC01000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_baselinePrivacyStat_in_statement664 = new BitSet(new long[]{0x0001FFFFE0080F00L,0x9FC01000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_BASELINEPRIVACY_in_statement655 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement660 = new BitSet(new long[]{0x0001FFFFE0080F00L,0x9FC01000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_baselinePrivacyStat_in_statement664 = new BitSet(new long[]{0x0001FFFFE0080F00L,0x9FC01000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement670 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_USPACKETCLASS_in_statement679 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement684 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_usdsPacketClassStat_in_statement688 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_USPACKETCLASS_in_statement679 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement684 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_usdsPacketClassStat_in_statement688 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSPACKETCLASS_in_statement703 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement708 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_usdsPacketClassStat_in_statement712 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_DSPACKETCLASS_in_statement703 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement708 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_usdsPacketClassStat_in_statement712 = new BitSet(new long[]{0x01FFF803E0080F00L,0x9FC01000000C0488L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement718 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_USSERVICEFLOW_in_statement727 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement732 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC017FFFF3C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_usServiceFlowStat_in_statement736 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC017FFFF3C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_USSERVICEFLOW_in_statement727 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement732 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC017FFFF3C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_usServiceFlowStat_in_statement736 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC017FFFF3C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement742 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSSERVICEFLOW_in_statement751 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement756 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC01801FFCC0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_dsServiceFlowStat_in_statement760 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC01801FFCC0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_DSSERVICEFLOW_in_statement751 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement756 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC01801FFCC0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_dsServiceFlowStat_in_statement760 = new BitSet(new long[]{0x0019F803E0080F00L,0x9FC01801FFCC0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement766 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHS_in_statement775 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement781 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FFFF000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_phsStat_in_statement785 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FFFF000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_PHS_in_statement775 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement781 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FFFF000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_phsStat_in_statement785 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FFFF000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement793 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3KICKSTART_in_statement802 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement807 = new BitSet(new long[]{0x0001F803E0080F00L,0xFFC01000000C0000L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_snmpV3KickstartStat_in_statement811 = new BitSet(new long[]{0x0001F803E0080F00L,0xFFC01000000C0000L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_SNMPV3KICKSTART_in_statement802 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement807 = new BitSet(new long[]{0x0001F803E0080F00L,0xFFC01000000C0000L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_snmpV3KickstartStat_in_statement811 = new BitSet(new long[]{0x0001F803E0080F00L,0xFFC01000000C0000L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement817 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRECEIVER_in_statement826 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement831 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A00FFFL});
-    public static final BitSet FOLLOW_snmpV3TrapReceiverStat_in_statement835 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A00FFFL,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRECEIVER_in_statement826 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement831 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F401FFFL});
+    public static final BitSet FOLLOW_snmpV3TrapReceiverStat_in_statement835 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F401FFFL,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement841 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSCHANNELLIST_in_statement850 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement855 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A13E03L});
-    public static final BitSet FOLLOW_dsChannelListStat_in_statement859 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A13E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_DSCHANNELLIST_in_statement850 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement855 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F427C03L});
+    public static final BitSet FOLLOW_dsChannelListStat_in_statement859 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F427C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement865 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_VENDORSPECIFIC_in_statement874 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_statement879 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007E00E03L});
-    public static final BitSet FOLLOW_vendorSpecificStat_in_statement883 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007E00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_VENDORSPECIFIC_in_statement874 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_statement879 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000FC01C03L});
+    public static final BitSet FOLLOW_vendorSpecificStat_in_statement883 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000FC01C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_statement889 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_statement898 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CLASSID_in_classOfServiceStat913 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat919 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_CLASSID_in_classOfServiceStat913 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat919 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat927 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXRATEDOWN_in_classOfServiceStat936 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat941 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXRATEDOWN_in_classOfServiceStat936 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat941 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat949 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXRATEUP_in_classOfServiceStat958 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat963 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXRATEUP_in_classOfServiceStat958 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat963 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat971 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PRIORITYUP_in_classOfServiceStat980 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat985 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PRIORITYUP_in_classOfServiceStat980 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat985 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_GUARANTEEDUP_in_classOfServiceStat1002 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1006 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_GUARANTEEDUP_in_classOfServiceStat1002 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1006 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat1014 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXBURSTUP_in_classOfServiceStat1023 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1028 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXBURSTUP_in_classOfServiceStat1023 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1028 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat1036 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PRIVACYENABLE_in_classOfServiceStat1045 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1049 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PRIVACYENABLE_in_classOfServiceStat1045 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_classOfServiceStat1049 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_classOfServiceStat1057 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_classOfServiceStat1066 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CONCATENATIONSUPPORT_in_modemCapabilitiesStat1081 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1084 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_CONCATENATIONSUPPORT_in_modemCapabilitiesStat1081 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1084 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MODEMDOCSISVERSION_in_modemCapabilitiesStat1101 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1105 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MODEMDOCSISVERSION_in_modemCapabilitiesStat1101 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1105 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1113 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_FRAGMENTATIONSUPPORT_in_modemCapabilitiesStat1122 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1125 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_FRAGMENTATIONSUPPORT_in_modemCapabilitiesStat1122 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1125 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1133 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSSUPPORT_in_modemCapabilitiesStat1142 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1147 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSSUPPORT_in_modemCapabilitiesStat1142 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1147 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1155 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IGMPSUPPORT_in_modemCapabilitiesStat1164 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1169 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IGMPSUPPORT_in_modemCapabilitiesStat1164 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1169 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1177 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_BASELINEPRIVACYSUPPORT_in_modemCapabilitiesStat1186 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1189 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_BASELINEPRIVACYSUPPORT_in_modemCapabilitiesStat1186 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1189 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DOWNSTREAMSAIDSUPPORT_in_modemCapabilitiesStat1206 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1209 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DOWNSTREAMSAIDSUPPORT_in_modemCapabilitiesStat1206 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1209 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1217 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_UPSTREAMSIDSUPPORT_in_modemCapabilitiesStat1226 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1230 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_UPSTREAMSIDSUPPORT_in_modemCapabilitiesStat1226 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1230 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DCCSUPPORT_in_modemCapabilitiesStat1247 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1252 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DCCSUPPORT_in_modemCapabilitiesStat1247 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_modemCapabilitiesStat1252 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_modemCapabilitiesStat1260 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_modemCapabilitiesStat1269 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_AUTHTIMEOUT_in_baselinePrivacyStat1284 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1289 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_AUTHTIMEOUT_in_baselinePrivacyStat1284 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1289 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1297 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_REAUTHTIMEOUT_in_baselinePrivacyStat1306 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_REAUTHTIMEOUT_in_baselinePrivacyStat1306 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_AUTHGRACETIME_in_baselinePrivacyStat1327 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1331 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_AUTHGRACETIME_in_baselinePrivacyStat1327 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1331 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_OPERTIMEOUT_in_baselinePrivacyStat1348 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1353 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_OPERTIMEOUT_in_baselinePrivacyStat1348 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1353 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1361 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_REKEYTIMEOUT_in_baselinePrivacyStat1370 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1374 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_REKEYTIMEOUT_in_baselinePrivacyStat1370 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1374 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1382 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TEKGRACETIME_in_baselinePrivacyStat1391 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1395 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TEKGRACETIME_in_baselinePrivacyStat1391 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1395 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_AUTHREJECTTIMEOUT_in_baselinePrivacyStat1412 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1416 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_AUTHREJECTTIMEOUT_in_baselinePrivacyStat1412 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1416 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SAMAPWAITTIMEOUT_in_baselinePrivacyStat1433 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1437 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SAMAPWAITTIMEOUT_in_baselinePrivacyStat1433 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1437 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SAMAPMAXRETRIES_in_baselinePrivacyStat1454 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1458 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SAMAPMAXRETRIES_in_baselinePrivacyStat1454 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_baselinePrivacyStat1458 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_baselinePrivacyStat1466 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_baselinePrivacyStat1475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CLASSIFIERREF_in_usdsPacketClassStat1490 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1494 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_CLASSIFIERREF_in_usdsPacketClassStat1490 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1494 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_CLASSIFIERID_in_usdsPacketClassStat1511 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1515 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_CLASSIFIERID_in_usdsPacketClassStat1511 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1515 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1523 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SERVICEFLOWREF_in_usdsPacketClassStat1532 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1536 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SERVICEFLOWREF_in_usdsPacketClassStat1532 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1536 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1544 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SERVICEFLOWID_in_usdsPacketClassStat1553 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1557 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SERVICEFLOWID_in_usdsPacketClassStat1553 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1557 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1565 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_RULEPRIORITY_in_usdsPacketClassStat1574 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1578 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_RULEPRIORITY_in_usdsPacketClassStat1574 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1578 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_ACTIVATIONSTATE_in_usdsPacketClassStat1595 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1599 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_ACTIVATIONSTATE_in_usdsPacketClassStat1595 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1599 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1607 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSCACTION_in_usdsPacketClassStat1616 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1621 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSCACTION_in_usdsPacketClassStat1616 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsPacketClassStat1621 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsPacketClassStat1629 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPPACKETCLASSIFIER_in_usdsPacketClassStat1638 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1642 = new BitSet(new long[]{0xFE01F803E0080F00L,0x9FC01000000C0007L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_ipPacketClassifierStat_in_usdsPacketClassStat1646 = new BitSet(new long[]{0xFE01F803E0080F00L,0x9FC01000000C0007L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_IPPACKETCLASSIFIER_in_usdsPacketClassStat1638 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1642 = new BitSet(new long[]{0xFE01F803E0080F00L,0x9FC01000000C0007L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_ipPacketClassifierStat_in_usdsPacketClassStat1646 = new BitSet(new long[]{0xFE01F803E0080F00L,0x9FC01000000C0007L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_usdsPacketClassStat1652 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_LLCPACKETCLASSIFIER_in_usdsPacketClassStat1661 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1665 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0070L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_llcPacketClassifierStat_in_usdsPacketClassStat1669 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0070L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_LLCPACKETCLASSIFIER_in_usdsPacketClassStat1661 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1665 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0070L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_llcPacketClassifierStat_in_usdsPacketClassStat1669 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0070L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_usdsPacketClassStat1675 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IEEE802CLASSIFIER_in_usdsPacketClassStat1684 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1688 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0300L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_ieee802ClassifierStat_in_usdsPacketClassStat1692 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0300L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_IEEE802CLASSIFIER_in_usdsPacketClassStat1684 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1688 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0300L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_ieee802ClassifierStat_in_usdsPacketClassStat1692 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0300L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_usdsPacketClassStat1698 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6PACKETCLASSIFIER_in_usdsPacketClassStat1707 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1710 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000FF807L,0x0000000007A00E03L});
-    public static final BitSet FOLLOW_ipv6PacketClassifierStat_in_usdsPacketClassStat1714 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000FF807L,0x0000000007A00E03L,0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_IPV6PACKETCLASSIFIER_in_usdsPacketClassStat1707 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_usdsPacketClassStat1710 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000FF807L,0x000000000F401C03L});
+    public static final BitSet FOLLOW_ipv6PacketClassifierStat_in_usdsPacketClassStat1714 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000FF807L,0x000000000F401C03L,0x0000000000000008L});
     public static final BitSet FOLLOW_S_CLOSEBRACE_in_usdsPacketClassStat1719 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_usdsPacketClassStat1728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPTOS_in_ipPacketClassifierStat1749 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_ipPacketClassifierStat1754 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPTOS_in_ipPacketClassifierStat1749 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_ipPacketClassifierStat1754 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1761 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPPROTO_in_ipPacketClassifierStat1770 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1775 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPPROTO_in_ipPacketClassifierStat1770 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1775 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1783 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPSRCADDR_in_ipPacketClassifierStat1792 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1797 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPSRCADDR_in_ipPacketClassifierStat1792 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1797 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1805 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPSRCMASK_in_ipPacketClassifierStat1814 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1819 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPSRCMASK_in_ipPacketClassifierStat1814 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1819 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1827 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPDSTADDR_in_ipPacketClassifierStat1836 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1841 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPDSTADDR_in_ipPacketClassifierStat1836 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1841 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1849 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPDSTMASK_in_ipPacketClassifierStat1858 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1863 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPDSTMASK_in_ipPacketClassifierStat1858 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_ipPacketClassifierStat1863 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1871 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SRCPORTSTART_in_ipPacketClassifierStat1880 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1884 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SRCPORTSTART_in_ipPacketClassifierStat1880 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1884 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SRCPORTEND_in_ipPacketClassifierStat1901 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1906 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SRCPORTEND_in_ipPacketClassifierStat1901 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1906 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSTPORTSTART_in_ipPacketClassifierStat1923 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1927 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSTPORTSTART_in_ipPacketClassifierStat1923 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1927 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSTPORTEND_in_ipPacketClassifierStat1944 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1949 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSTPORTEND_in_ipPacketClassifierStat1944 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipPacketClassifierStat1949 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipPacketClassifierStat1957 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_ipPacketClassifierStat1966 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSTMACADDRESS_in_llcPacketClassifierStat1981 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0008000000000000L});
-    public static final BitSet FOLLOW_T_MACMASK_in_llcPacketClassifierStat1985 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSTMACADDRESS_in_llcPacketClassifierStat1981 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
+    public static final BitSet FOLLOW_T_MACMASK_in_llcPacketClassifierStat1985 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_llcPacketClassifierStat1992 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SRCMACADDRESS_in_llcPacketClassifierStat2001 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0004000000000000L});
-    public static final BitSet FOLLOW_T_MACADDR_in_llcPacketClassifierStat2005 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SRCMACADDRESS_in_llcPacketClassifierStat2001 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0008000000000000L});
+    public static final BitSet FOLLOW_T_MACADDR_in_llcPacketClassifierStat2005 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_llcPacketClassifierStat2012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_ETHERTYPE_in_llcPacketClassifierStat2021 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_llcPacketClassifierStat2026 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_ETHERTYPE_in_llcPacketClassifierStat2021 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_llcPacketClassifierStat2026 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_llcPacketClassifierStat2033 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_llcPacketClassifierStat2042 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_USERPRIORITY_in_ieee802ClassifierStat2057 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ieee802ClassifierStat2061 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_USERPRIORITY_in_ieee802ClassifierStat2057 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ieee802ClassifierStat2061 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ieee802ClassifierStat2069 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_VLANID_in_ieee802ClassifierStat2078 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ieee802ClassifierStat2083 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_VLANID_in_ieee802ClassifierStat2078 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ieee802ClassifierStat2083 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ieee802ClassifierStat2091 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_ieee802ClassifierStat2100 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6TRAFFICCLASSRANGEMASK_in_ipv6PacketClassifierStat2114 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2117 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6TRAFFICCLASSRANGEMASK_in_ipv6PacketClassifierStat2114 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2117 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2125 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6FLOWLABEL_in_ipv6PacketClassifierStat2134 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2138 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6FLOWLABEL_in_ipv6PacketClassifierStat2134 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2138 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2146 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6NEXTHEADERTYPE_in_ipv6PacketClassifierStat2155 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2159 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6NEXTHEADERTYPE_in_ipv6PacketClassifierStat2155 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2159 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6SRCADDR_in_ipv6PacketClassifierStat2176 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0040000000000000L});
-    public static final BitSet FOLLOW_T_IPV6_in_ipv6PacketClassifierStat2181 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6SRCADDR_in_ipv6PacketClassifierStat2176 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_T_IPV6_in_ipv6PacketClassifierStat2181 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2189 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6SRCPREFLENGTH_in_ipv6PacketClassifierStat2198 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2202 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6SRCPREFLENGTH_in_ipv6PacketClassifierStat2198 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2202 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2210 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6DSTADDR_in_ipv6PacketClassifierStat2219 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0040000000000000L});
-    public static final BitSet FOLLOW_T_IPV6_in_ipv6PacketClassifierStat2224 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6DSTADDR_in_ipv6PacketClassifierStat2219 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_T_IPV6_in_ipv6PacketClassifierStat2224 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPV6DSTPREFLENGTH_in_ipv6PacketClassifierStat2241 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2245 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPV6DSTPREFLENGTH_in_ipv6PacketClassifierStat2241 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2245 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SRCPORTEND_in_ipv6PacketClassifierStat2262 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2267 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SRCPORTEND_in_ipv6PacketClassifierStat2262 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2267 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSTPORTSTART_in_ipv6PacketClassifierStat2284 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2288 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSTPORTSTART_in_ipv6PacketClassifierStat2284 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2288 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2296 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSTPORTEND_in_ipv6PacketClassifierStat2305 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSTPORTEND_in_ipv6PacketClassifierStat2305 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_ipv6PacketClassifierStat2310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_ipv6PacketClassifierStat2318 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_ipv6PacketClassifierStat2327 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_usdsServiceFlowSubSet_in_usServiceFlowStat2344 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_usServiceFlowSubSet_in_usServiceFlowStat2348 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_usdsServiceFlowSubSet_in_dsServiceFlowStat2358 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_dsServiceFlowSubSet_in_dsServiceFlowStat2362 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SERVICEFLOWREF_in_usdsServiceFlowSubSet2377 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2381 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SERVICEFLOWREF_in_usdsServiceFlowSubSet2377 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2381 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2389 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SERVICEFLOWID_in_usdsServiceFlowSubSet2398 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2402 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SERVICEFLOWID_in_usdsServiceFlowSubSet2398 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2402 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2410 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SERVICECLASSNAME_in_usdsServiceFlowSubSet2419 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_usdsServiceFlowSubSet2423 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SERVICECLASSNAME_in_usdsServiceFlowSubSet2419 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_T_STRING_in_usdsServiceFlowSubSet2423 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_QOSPARAMSETTYPE_in_usdsServiceFlowSubSet2439 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2443 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_QOSPARAMSETTYPE_in_usdsServiceFlowSubSet2439 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2443 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2451 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TRAFFICPRIORITY_in_usdsServiceFlowSubSet2460 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2464 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TRAFFICPRIORITY_in_usdsServiceFlowSubSet2460 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2464 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2472 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXRATESUSTAINED_in_usdsServiceFlowSubSet2481 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2485 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXRATESUSTAINED_in_usdsServiceFlowSubSet2481 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2485 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2493 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXTRAFFICBURST_in_usdsServiceFlowSubSet2502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2506 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXTRAFFICBURST_in_usdsServiceFlowSubSet2502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2506 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2514 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MINRESERVEDRATE_in_usdsServiceFlowSubSet2523 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2527 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MINRESERVEDRATE_in_usdsServiceFlowSubSet2523 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2527 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2535 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MINRESPACKETSIZE_in_usdsServiceFlowSubSet2544 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2548 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MINRESPACKETSIZE_in_usdsServiceFlowSubSet2544 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2548 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2556 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_ACTQOSPARAMSTIMEOUT_in_usdsServiceFlowSubSet2565 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2569 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_ACTQOSPARAMSTIMEOUT_in_usdsServiceFlowSubSet2565 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2569 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2577 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_ADMQOSPARAMSTIMEOUT_in_usdsServiceFlowSubSet2586 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2590 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_ADMQOSPARAMSTIMEOUT_in_usdsServiceFlowSubSet2586 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usdsServiceFlowSubSet2590 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usdsServiceFlowSubSet2598 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_usdsServiceFlowSubSet2607 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_USSERVICEFLOWREF_in_usServiceFlowSubSet2621 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2625 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_USSERVICEFLOWREF_in_usServiceFlowSubSet2621 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2625 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2633 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_USSERVICEFLOWID_in_usServiceFlowSubSet2642 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2646 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_USSERVICEFLOWID_in_usServiceFlowSubSet2642 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2646 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2654 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXCONCATENATEDBURST_in_usServiceFlowSubSet2663 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2666 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXCONCATENATEDBURST_in_usServiceFlowSubSet2663 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2666 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SCHEDULINGTYPE_in_usServiceFlowSubSet2683 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2687 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SCHEDULINGTYPE_in_usServiceFlowSubSet2683 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2687 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_REQUESTORTXPOLICY_in_usServiceFlowSubSet2704 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_usServiceFlowSubSet2708 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_REQUESTORTXPOLICY_in_usServiceFlowSubSet2704 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_usServiceFlowSubSet2708 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_NOMINALPOLLINTERVAL_in_usServiceFlowSubSet2724 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2728 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_NOMINALPOLLINTERVAL_in_usServiceFlowSubSet2724 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2728 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2736 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TOLERATEDPOLLJITTER_in_usServiceFlowSubSet2745 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2749 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TOLERATEDPOLLJITTER_in_usServiceFlowSubSet2745 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2749 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2757 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_UNSOLICITEDGRANTSIZE_in_usServiceFlowSubSet2766 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2769 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_UNSOLICITEDGRANTSIZE_in_usServiceFlowSubSet2766 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2769 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2777 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_NOMINALGRANTINTERVAL_in_usServiceFlowSubSet2786 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2789 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_NOMINALGRANTINTERVAL_in_usServiceFlowSubSet2786 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2789 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_TOLERATEDGRANTJITTER_in_usServiceFlowSubSet2806 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2809 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_TOLERATEDGRANTJITTER_in_usServiceFlowSubSet2806 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2809 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2817 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_GRANTSPERINTERVAL_in_usServiceFlowSubSet2826 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2830 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_GRANTSPERINTERVAL_in_usServiceFlowSubSet2826 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_usServiceFlowSubSet2830 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2838 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_IPTOSOVERWRITE_in_usServiceFlowSubSet2847 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_usServiceFlowSubSet2851 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_IPTOSOVERWRITE_in_usServiceFlowSubSet2847 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_usServiceFlowSubSet2851 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_usServiceFlowSubSet2858 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSSERVICEFLOWREF_in_dsServiceFlowSubSet2873 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2877 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSSERVICEFLOWREF_in_dsServiceFlowSubSet2873 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2877 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsServiceFlowSubSet2885 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSSERVICEFLOWID_in_dsServiceFlowSubSet2894 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2898 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSSERVICEFLOWID_in_dsServiceFlowSubSet2894 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2898 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsServiceFlowSubSet2906 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_MAXDSLATENCY_in_dsServiceFlowSubSet2915 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2919 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_MAXDSLATENCY_in_dsServiceFlowSubSet2915 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsServiceFlowSubSet2919 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsServiceFlowSubSet2927 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSCLASSIFIERREF_in_phsStat2945 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat2949 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSCLASSIFIERREF_in_phsStat2945 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat2949 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat2957 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSCLASSIFIERID_in_phsStat2966 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat2970 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSCLASSIFIERID_in_phsStat2966 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat2970 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat2978 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSERVICEFLOWREF_in_phsStat2987 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat2991 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSERVICEFLOWREF_in_phsStat2987 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat2991 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat2999 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSSERVICEFLOWID_in_phsStat3008 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat3012 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSSERVICEFLOWID_in_phsStat3008 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat3012 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSFIELD_in_phsStat3029 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_phsStat3034 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSFIELD_in_phsStat3029 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_phsStat3034 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3041 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSINDEX_in_phsStat3050 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat3055 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSINDEX_in_phsStat3050 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat3055 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3063 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSMASK_in_phsStat3072 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_phsStat3077 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSMASK_in_phsStat3072 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_phsStat3077 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSSIZE_in_phsStat3093 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat3098 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSSIZE_in_phsStat3093 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat3098 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3106 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_PHSVERIFY_in_phsStat3115 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_phsStat3120 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_PHSVERIFY_in_phsStat3115 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_phsStat3120 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_phsStat3128 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_phsStat3137 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3SECURITYNAME_in_snmpV3KickstartStat3152 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_snmpV3KickstartStat3156 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPV3SECURITYNAME_in_snmpV3KickstartStat3152 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_T_STRING_in_snmpV3KickstartStat3156 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3KickstartStat3163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3MGRPUBLICNUMBER_in_snmpV3KickstartStat3172 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_snmpV3KickstartStat3175 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPV3MGRPUBLICNUMBER_in_snmpV3KickstartStat3172 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_snmpV3KickstartStat3175 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3KickstartStat3182 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_genericTLVStat_in_snmpV3KickstartStat3191 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXIP_in_snmpV3TrapReceiverStat3206 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3210 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3217 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXPORT_in_snmpV3TrapReceiverStat3226 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3230 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXTYPE_in_snmpV3TrapReceiverStat3247 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3251 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3259 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXTIMEOUT_in_snmpV3TrapReceiverStat3268 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3272 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXRETRIES_in_snmpV3TrapReceiverStat3289 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3293 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3301 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXFILTEROID_in_snmpV3TrapReceiverStat3310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_T_OID_in_snmpV3TrapReceiverStat3313 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3321 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXSECURITYNAME_in_snmpV3TrapReceiverStat3330 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3333 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3340 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_genericTLVStat_in_snmpV3TrapReceiverStat3349 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DEFAULTSCANTIMEOUT_in_dsChannelListStat3364 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsChannelListStat3368 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_dsChannelListStat3376 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SINGLEDSCHANNEL_in_dsChannelListStat3385 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_dsChannelListStat3389 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A0CE03L});
-    public static final BitSet FOLLOW_singleDsChannelStat_in_dsChannelListStat3393 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007A0CE03L,0x0000000000000004L});
-    public static final BitSet FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3399 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSFREQRANGE_in_dsChannelListStat3408 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_S_OPENBRACE_in_dsChannelListStat3413 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007BE0E03L});
-    public static final BitSet FOLLOW_dsFreqRangeStat_in_dsChannelListStat3417 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x0000000007BE0E03L,0x0000000000000004L});
-    public static final BitSet FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_genericTLVStat_in_dsChannelListStat3433 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SINGLEDSTIMEOUT_in_singleDsChannelStat3451 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_singleDsChannelStat3455 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_singleDsChannelStat3463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_SINGLEDSFREQUENCY_in_singleDsChannelStat3473 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_singleDsChannelStat3477 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXIP_in_snmpV3TrapReceiverStat3206 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_snmpV3TrapReceiverStat3210 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3218 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXPORT_in_snmpV3TrapReceiverStat3227 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3231 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3239 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXTYPE_in_snmpV3TrapReceiverStat3248 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3252 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXTIMEOUT_in_snmpV3TrapReceiverStat3269 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3273 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3281 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXRETRIES_in_snmpV3TrapReceiverStat3290 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpV3TrapReceiverStat3294 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3302 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXFILTEROID_in_snmpV3TrapReceiverStat3311 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
+    public static final BitSet FOLLOW_T_OID_in_snmpV3TrapReceiverStat3314 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXSECURITYNAME_in_snmpV3TrapReceiverStat3331 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_T_STRING_in_snmpV3TrapReceiverStat3334 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SNMPV3TRAPRXIPV6_in_snmpV3TrapReceiverStat3350 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_T_IPV6_in_snmpV3TrapReceiverStat3354 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_snmpV3TrapReceiverStat3362 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_genericTLVStat_in_snmpV3TrapReceiverStat3371 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_DEFAULTSCANTIMEOUT_in_dsChannelListStat3386 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsChannelListStat3390 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_dsChannelListStat3398 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SINGLEDSCHANNEL_in_dsChannelListStat3407 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_dsChannelListStat3411 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F419C03L});
+    public static final BitSet FOLLOW_singleDsChannelStat_in_dsChannelListStat3415 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F419C03L,0x0000000000000008L});
+    public static final BitSet FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_DSFREQRANGE_in_dsChannelListStat3430 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_S_OPENBRACE_in_dsChannelListStat3435 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F7C1C03L});
+    public static final BitSet FOLLOW_dsFreqRangeStat_in_dsChannelListStat3439 = new BitSet(new long[]{0x0001F803E0080F00L,0x9FC01000000C0000L,0x000000000F7C1C03L,0x0000000000000008L});
+    public static final BitSet FOLLOW_S_CLOSEBRACE_in_dsChannelListStat3446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_genericTLVStat_in_dsChannelListStat3455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_SINGLEDSTIMEOUT_in_singleDsChannelStat3473 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_singleDsChannelStat3477 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_singleDsChannelStat3485 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_genericTLVStat_in_singleDsChannelStat3495 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSFREQRANGETIMEOUT_in_dsFreqRangeStat3513 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3517 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3525 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSFREQRANGESTART_in_dsFreqRangeStat3535 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3539 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_SINGLEDSFREQUENCY_in_singleDsChannelStat3495 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_singleDsChannelStat3499 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_singleDsChannelStat3507 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_genericTLVStat_in_singleDsChannelStat3517 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_DSFREQRANGETIMEOUT_in_dsFreqRangeStat3535 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3539 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3547 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSFREQRANGEEND_in_dsFreqRangeStat3557 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3561 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSFREQRANGESTART_in_dsFreqRangeStat3557 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3561 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3569 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_DSFREQRANGESTEPSIZE_in_dsFreqRangeStat3579 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3583 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_ID_DSFREQRANGEEND_in_dsFreqRangeStat3579 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3583 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
     public static final BitSet FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3591 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_genericTLVStat_in_dsFreqRangeStat3601 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_VENDORIDENTIFIER_in_vendorSpecificStat3619 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_vendorSpecificStat3623 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_S_SEMICOLON_in_vendorSpecificStat3630 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_genericTLVStat_in_vendorSpecificStat3639 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_INTEGER_in_snmpType3664 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpType3668 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_COUNTER32_in_snmpType3676 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpType3680 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_GAUGE32_in_snmpType3688 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpType3692 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_UNSIGNED32_in_snmpType3700 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpType3704 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_COUNTER64_in_snmpType3712 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000080000000000L});
-    public static final BitSet FOLLOW_T_INT_in_snmpType3716 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_IPADDRESS_in_snmpType3724 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_T_IP_in_snmpType3728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_OID_in_snmpType3736 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_T_OID_in_snmpType3740 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_STRING_in_snmpType3748 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
-    public static final BitSet FOLLOW_T_STRING_in_snmpType3752 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_HEXSTRING_in_snmpType3760 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_T_HEXSTR_in_snmpType3764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SNMP_TIMETICKS_in_snmpType3772 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
-    public static final BitSet FOLLOW_T_TIMETICKS_in_snmpType3776 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_DSFREQRANGESTEPSIZE_in_dsFreqRangeStat3601 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_dsFreqRangeStat3605 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_dsFreqRangeStat3613 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_genericTLVStat_in_dsFreqRangeStat3623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_VENDORIDENTIFIER_in_vendorSpecificStat3641 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_vendorSpecificStat3645 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_S_SEMICOLON_in_vendorSpecificStat3652 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_genericTLVStat_in_vendorSpecificStat3661 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_INTEGER_in_snmpType3686 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpType3690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_COUNTER32_in_snmpType3698 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpType3702 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_GAUGE32_in_snmpType3710 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpType3714 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_UNSIGNED32_in_snmpType3722 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpType3726 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_COUNTER64_in_snmpType3734 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000100000000000L});
+    public static final BitSet FOLLOW_T_INT_in_snmpType3738 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_IPADDRESS_in_snmpType3746 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_T_IP_in_snmpType3750 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_OID_in_snmpType3758 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
+    public static final BitSet FOLLOW_T_OID_in_snmpType3762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_STRING_in_snmpType3770 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_T_STRING_in_snmpType3774 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_HEXSTRING_in_snmpType3782 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_T_HEXSTR_in_snmpType3786 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SNMP_TIMETICKS_in_snmpType3794 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0400000000000000L});
+    public static final BitSet FOLLOW_T_TIMETICKS_in_snmpType3798 = new BitSet(new long[]{0x0000000000000002L});
 
 }
