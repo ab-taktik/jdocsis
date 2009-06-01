@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_UsServiceFlow extends TLVaggregate
+public class TLV_UsServiceFlow extends TLVcomposite
 {
    public TLV_UsServiceFlow()
    {

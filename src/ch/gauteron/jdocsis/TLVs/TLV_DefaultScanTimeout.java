@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_DefaultScanTimeout.java                                   *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,12 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVcomposite // TLV 17
+public class TLV_DefaultScanTimeout extends TLVushort // TLV 41.3
 {
-   public TLV_BaselinePrivacy()
+   public TLV_DefaultScanTimeout()
    {
       super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      this.tlvCode = 3;
+      this.tlvName = "DefaultScanTimeout";
    }
 }

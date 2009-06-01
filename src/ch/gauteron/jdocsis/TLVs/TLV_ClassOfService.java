@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_ClassOfService extends TLVaggregate // TLV 4
+public class TLV_ClassOfService extends TLVcomposite // TLV 4
 {
    public TLV_ClassOfService()
    {

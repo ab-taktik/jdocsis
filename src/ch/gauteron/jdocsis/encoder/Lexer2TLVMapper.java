@@ -196,29 +196,22 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXIPV6,          "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxIPv6");          // TLV 38.8
       idTLV.put(DocsisLexer.ID_DOCSISTWOENABLE,           "ch.gauteron.docsis.TLVs.TLV_DocsisTwoEnable");           // TLV 39
       idTLV.put(DocsisLexer.ID_TESTMODEENABLE,            "ch.gauteron.docsis.TLVs.TLV_TestModeEnable");            // TLV 40
-
       idTLV.put(DocsisLexer.ID_DSCHANNELLIST,             "ch.gauteron.docsis.TLVs.TLV_DsChannelList");             // TLV 41
-
-/*
-ID_DSCHANNELLIST     :  'DsChannelList';        // DOCSIS x.x: TLV 41
-ID_DEFAULTSCANTIMEOUT      :  'DefaultScanTimeout';         // DOCSIS x.x: TLV 41.3
-ID_SINGLEDSCHANNEL      :  'SingleDsChannel';         // DOCSIS x.x: TLV 41.1
-ID_SINGLEDSTIMEOUT      :  'SingleDsTimeout';         // DOCSIS x.x: TLV 41.1.1
-ID_SINGLEDSFREQUENCY    :  'SingleDsFrequency';       // DOCSIS x.x: TLV 41.1.2
-ID_DSFREQRANGE       :  'DsFreqRange';          // DOCSIS x.x: TLV 41.2
-ID_DSFREQRANGETIMEOUT      :  'DsFreqRangeTimeout';         // DOCSIS x.x: TLV 41.2.1
-ID_DSFREQRANGESTART     :  'DsFreqRangeStart';        // DOCSIS x.x: TLV 41.2.2
-ID_DSFREQRANGEEND    :  'DsFreqRangeEnd';       // DOCSIS x.x: TLV 41.2.3
-ID_DSFREQRANGESTEPSIZE     :  'DsFreqRangeStepSize';        // DOCSIS x.x: TLV 41.2.4
-*/
-      idTLV.put(DocsisLexer.ID_VENDORSPECIFIC,                       "ch.gauteron.docsis.TLVs.TLV_VendorSpecific");                    // TLV 43
-      idTLV.put(DocsisLexer.ID_VENDORIDENTIFIER,                     "ch.gauteron.docsis.TLVs.TLV_VendorIdentifier");                  // TLV 43.8
-      idTLV.put(DocsisLexer.ID_SNMPCPEACCESSCONTROL,                 "ch.gauteron.docsis.TLVs.TLV_SnmpCpeAccessControl");              // TLV 55
-
-      idTLV.put(DocsisLexer.ID_IPV6SWUPGRADESERVER,                  "ch.gauteron.docsis.TLVs.TLV_IPv6SwUpgradeServer");                  // TLV 58
-      idTLV.put(DocsisLexer.ID_MTACONFIGDELIMITER,                   "ch.gauteron.docsis.TLVs.TLV_MtaConfigDelimiter");                   // TLV 254
-
-     idTLV.put(DocsisLexer.ID_GENERICTLV,                            "ch.gauteron.docsis.TLVs.TLV_GenericTLV");                            // Generic
+      idTLV.put(DocsisLexer.ID_SINGLEDSCHANNEL,           "ch.gauteron.docsis.TLVs.TLV_SingleDsChannel");           // TLV 41.1
+      idTLV.put(DocsisLexer.ID_SINGLEDSTIMEOUT,           "ch.gauteron.docsis.TLVs.TLV_SingleDsTimeout");           // TLV 41.1.1
+      idTLV.put(DocsisLexer.ID_SINGLEDSFREQUENCY,         "ch.gauteron.docsis.TLVs.TLV_SingleDsFrequency");         // TLV 41.1.2
+      idTLV.put(DocsisLexer.ID_DSFREQRANGE,               "ch.gauteron.docsis.TLVs.TLV_DsFreqRange");               // TLV 41.2
+      idTLV.put(DocsisLexer.ID_DSFREQRANGETIMEOUT,        "ch.gauteron.docsis.TLVs.TLV_DsFreqRangeTimeout");        // TLV 41.2.1
+      idTLV.put(DocsisLexer.ID_DSFREQRANGESTART,          "ch.gauteron.docsis.TLVs.TLV_DsFreqRangeStart");          // TLV 41.2.2
+      idTLV.put(DocsisLexer.ID_DSFREQRANGEEND,            "ch.gauteron.docsis.TLVs.TLV_DsFreqRangeEnd");            // TLV 41.2.3
+      idTLV.put(DocsisLexer.ID_DSFREQRANGESTEPSIZE,       "ch.gauteron.docsis.TLVs.TLV_DsFreqRangeStepSize");       // TLV 41.2.4
+      idTLV.put(DocsisLexer.ID_DEFAULTSCANTIMEOUT,        "ch.gauteron.docsis.TLVs.TLV_DefaultScanTimeout");        // TLV 41.3
+      idTLV.put(DocsisLexer.ID_VENDORSPECIFIC,            "ch.gauteron.docsis.TLVs.TLV_VendorSpecific");            // TLV 43
+      idTLV.put(DocsisLexer.ID_VENDORIDENTIFIER,          "ch.gauteron.docsis.TLVs.TLV_VendorIdentifier");          // TLV 43.8
+      idTLV.put(DocsisLexer.ID_SNMPCPEACCESSCONTROL,      "ch.gauteron.docsis.TLVs.TLV_SnmpCpeAccessControl");      // TLV 55
+      idTLV.put(DocsisLexer.ID_IPV6SWUPGRADESERVER,       "ch.gauteron.docsis.TLVs.TLV_IPv6SwUpgradeServer");       // TLV 58
+      idTLV.put(DocsisLexer.ID_MTACONFIGDELIMITER,        "ch.gauteron.docsis.TLVs.TLV_MtaConfigDelimiter");        // TLV 254
+      idTLV.put(DocsisLexer.ID_GENERICTLV,                "ch.gauteron.docsis.TLVs.TLV_GenericTLV");                // Generic
 
 //   MUST NOT BE REFERENCED: TLV 0: Pad (automatically added at file creation)
 //   MUST NOT BE REFERENCED: TLV 6: CmMic (automatically added at file creation)

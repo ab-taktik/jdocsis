@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_UsPacketClass extends TLVaggregate // TLV 22
+public class TLV_UsPacketClass extends TLVcomposite // TLV 22
 {
    public TLV_UsPacketClass()
    {

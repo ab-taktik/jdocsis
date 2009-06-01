@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_IEEE802Classifier extends TLVaggregate // TLV [22|23].11
+public class TLV_IEEE802Classifier extends TLVcomposite // TLV [22|23].11
 {
    public TLV_IEEE802Classifier()
    {

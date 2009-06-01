@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLVaggregate.java                                             *
+ *  jdocsis - TLVcomposite.java                                             *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -36,7 +36,7 @@ import org.antlr.runtime.tree.CommonTree;
 
 import ch.gauteron.jdocsis.encoder.Lexer2TLVMapper;
 
-public abstract class TLVaggregate extends TLV
+public abstract class TLVcomposite extends TLV
 {
    int expectedLexerType = 0;
 

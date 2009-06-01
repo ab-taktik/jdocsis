@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_DsChannelList extends TLVaggregate // TLV 41
+public class TLV_DsChannelList extends TLVcomposite // TLV 41
 {
    public TLV_DsChannelList()
    {

@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_SnmpV3TrapReceiver extends TLVaggregate // TLV 38
+public class TLV_SnmpV3TrapReceiver extends TLVcomposite // TLV 38
 {
    public TLV_SnmpV3TrapReceiver()
    {

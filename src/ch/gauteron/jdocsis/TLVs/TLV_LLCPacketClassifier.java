@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_LLCPacketClassifier extends TLVaggregate // TLV [22|23].10
+public class TLV_LLCPacketClassifier extends TLVcomposite // TLV [22|23].10
 {
    public TLV_LLCPacketClassifier()
    {
