@@ -124,16 +124,14 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_IEEE802CLASSIFIER,         "ch.gauteron.docsis.TLVs.TLV_IEEE802Classifier");         // TLV [22|23].11
       idTLV.put(DocsisLexer.ID_USERPRIORITY,              "ch.gauteron.docsis.TLVs.TLV_UserPriority");              // TLV [22|23].11.1
       idTLV.put(DocsisLexer.ID_VLANID,                    "ch.gauteron.docsis.TLVs.TLV_VlanID");                    // TLV [22|23].11.2
-      idTLV.put(DocsisLexer.ID_IPV6PACKETCLASSIFIER,      "ch.gauteron.docsis.TLVs.TLV_IPv6PacketClassifier");      // TLV [22|23].12
-/*
-      idTLV.put(DocsisLexer.ID_IPV6TRAFFICCLASSRANGEMASK, "ch.gauteron.docsis.TLVs.TLV_IPv6TrafficClassRangeMask"); // TLV [22|23].12.1 // TODO!!!
-*/
-      idTLV.put(DocsisLexer.ID_IPV6FLOWLABEL,             "ch.gauteron.docsis.TLVs.TLV_IPv6FlowLabel");             // TLV [22|23].12.2
-      idTLV.put(DocsisLexer.ID_IPV6NEXTHEADERTYPE,        "ch.gauteron.docsis.TLVs.TLV_IPv6NextHeaderType");        // TLV [22|23].12.3
-      idTLV.put(DocsisLexer.ID_IPV6SRCADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6SrcAddr");               // TLV [22|23].12.4
-      idTLV.put(DocsisLexer.ID_IPV6SRCPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6SrcPrefLength");         // TLV [22|23].12.5
-      idTLV.put(DocsisLexer.ID_IPV6DSTADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6DstAddr");               // TLV [22|23].12.6
-      idTLV.put(DocsisLexer.ID_IPV6DSTPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6DstPrefLength");         // TLV [22|23].12.7
+      idTLV.put(DocsisLexer.ID_IPV6PACKETCLASSIFIER,      "ch.gauteron.docsis.TLVs.TLV_IPv6PacketClassifier");      // TLV [22|23|60].12
+      idTLV.put(DocsisLexer.ID_IPV6TRAFFICCLASSRANGEMASK, "ch.gauteron.docsis.TLVs.TLV_IPv6TrafficClassRangeMask"); // TLV [22|23|60].12.1
+      idTLV.put(DocsisLexer.ID_IPV6FLOWLABEL,             "ch.gauteron.docsis.TLVs.TLV_IPv6FlowLabel");             // TLV [22|23|60].12.2
+      idTLV.put(DocsisLexer.ID_IPV6NEXTHEADERTYPE,        "ch.gauteron.docsis.TLVs.TLV_IPv6NextHeaderType");        // TLV [22|23|60].12.3
+      idTLV.put(DocsisLexer.ID_IPV6SRCADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6SrcAddr");               // TLV [22|23|60].12.4
+      idTLV.put(DocsisLexer.ID_IPV6SRCPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6SrcPrefLength");         // TLV [22|23|60].12.5
+      idTLV.put(DocsisLexer.ID_IPV6DSTADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6DstAddr");               // TLV [22|23|60].12.6
+      idTLV.put(DocsisLexer.ID_IPV6DSTPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6DstPrefLength");         // TLV [22|23|60].12.7
       idTLV.put(DocsisLexer.ID_USSERVICEFLOW,             "ch.gauteron.docsis.TLVs.TLV_UsServiceFlow");             // TLV 24
       idTLV.put(DocsisLexer.ID_DSSERVICEFLOW,             "ch.gauteron.docsis.TLVs.TLV_DsServiceFlow");             // TLV 25
       idTLV.put(DocsisLexer.ID_SERVICEFLOWREF,            "ch.gauteron.docsis.TLVs.TLV_ServiceFlowRef");            // TLV [22|23].3 + TLV [24|25].1
@@ -162,7 +160,6 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_GRANTSPERINTERVAL,         "ch.gauteron.docsis.TLVs.TLV_GrantsPerInterval");         // TLV 24.22
       idTLV.put(DocsisLexer.ID_IPTOSOVERWRITE,            "ch.gauteron.docsis.TLVs.TLV_IpTosOverwrite");            // TLV 24.23
       idTLV.put(DocsisLexer.ID_MAXDSLATENCY,              "ch.gauteron.docsis.TLVs.TLV_MaxDsLatency");              // TLV 25.14
-/*
       idTLV.put(DocsisLexer.ID_PHS         ,              "ch.gauteron.docsis.TLVs.TLV_PHS");                       // TLV 26
       idTLV.put(DocsisLexer.ID_PHSCLASSIFIERREF,          "ch.gauteron.docsis.TLVs.TLV_PHSClassifierRef");          // TLV 26.1
       idTLV.put(DocsisLexer.ID_PHSCLASSIFIERID,           "ch.gauteron.docsis.TLVs.TLV_PHSClassifierId");           // TLV 26.2
@@ -173,35 +170,34 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_PHSMASK,                   "ch.gauteron.docsis.TLVs.TLV_PHSMask");                   // TLV 26.9
       idTLV.put(DocsisLexer.ID_PHSSIZE,                   "ch.gauteron.docsis.TLVs.TLV_PHSSize");                   // TLV 26.10
       idTLV.put(DocsisLexer.ID_PHSVERIFY,                 "ch.gauteron.docsis.TLVs.TLV_PHSVerify");                 // TLV 26.11
-
-*/
       idTLV.put(DocsisLexer.ID_MAXCLASSIFIERS,            "ch.gauteron.docsis.TLVs.TLV_MaxClassifiers");            // TLV 28
       idTLV.put(DocsisLexer.ID_GLOBALPRIVACYENABLE,       "ch.gauteron.docsis.TLVs.TLV_GlobalPrivacyEnable");       // TLV 29
       idTLV.put(DocsisLexer.ID_MFGCVCDATA ,               "ch.gauteron.docsis.TLVs.TLV_MfgCVCData");                // TLV 32
       idTLV.put(DocsisLexer.ID_MANUFACTURERCVC,           "ch.gauteron.docsis.TLVs.TLV_MfgCVCData");                // TLV 32 (alias)
       idTLV.put(DocsisLexer.ID_COSIGNERCVCDATA ,          "ch.gauteron.docsis.TLVs.TLV_CoSignerCVCData");           // TLV 33
       idTLV.put(DocsisLexer.ID_COSIGNERCVC ,              "ch.gauteron.docsis.TLVs.TLV_CoSignerCVCData");           // TLV 33 (alias)
-
+      idTLV.put(DocsisLexer.ID_SNMPV3KICKSTART ,          "ch.gauteron.docsis.TLVs.TLV_SnmpV3Kickstart");           // TLV 34
+      idTLV.put(DocsisLexer.ID_SNMPV3SECURITYNAME ,       "ch.gauteron.docsis.TLVs.TLV_SnmpV3SecurityName");        // TLV 34.1
+      idTLV.put(DocsisLexer.ID_SNMPV3MGRPUBLICNUMBER ,    "ch.gauteron.docsis.TLVs.TLV_SnmpV3MgrPublicNumber");     // TLV 34.2
+      idTLV.put(DocsisLexer.ID_SUBMGMTCONTROL,            "ch.gauteron.docsis.TLVs.TLV_SubMgmtControl");            // TLV 35
 /*
-ID_SNMPV3KICKSTART      :  'SnmpV3Kickstart';         // DOCSIS x.x: TLV 34
-ID_SNMPV3SECURITYNAME      :  'SnmpV3SecurityName';         // DOCSIS x.x: TLV 34.1
-ID_SNMPV3MGRPUBLICNUMBER   :  'SnmpV3MgrPublicNumber';      // DOCSIS x.x: TLV 34.2 */
-
-      idTLV.put(DocsisLexer.ID_SUBMGMTCONTROL,                        "ch.gauteron.docsis.TLVs.TLV_SubMgmtControl");                        // TLV 35
-
-/*
-ID_SUBMGMTFILTERS    :  'SubMgmtFilters';          // DOCSIS x.x: TLV 37
-ID_SNMPV3TRAPRECEIVER      :  'SnmpV3TrapReceiver';         // DOCSIS x.x: TLV 38
-ID_SNMPV3TRAPRXIP    :  'SnmpV3TrapRxIP';       // DOCSIS x.x: TLV 38.1
-ID_SNMPV3TRAPRXPORT     :  'SnmpV3TrapRxPort';        // DOCSIS x.x: TLV 38.2
-ID_SNMPV3TRAPRXTYPE     :  'SnmpV3TrapRxType';        // DOCSIS x.x: TLV 38.3
-ID_SNMPV3TRAPRXTIMEOUT     :  'SnmpV3TrapRxTimeout';        // DOCSIS x.x: TLV 38.4
-ID_SNMPV3TRAPRXRETRIES     :  'SnmpV3TrapRxRetries';        // DOCSIS x.x: TLV 38.5
-ID_SNMPV3TRAPRXFILTEROID   :  'SnmpV3TrapRxFilterOID';      // DOCSIS x.x: TLV 38.6
-ID_SNMPV3TRAPRXSECURITYNAME   :  'SnmpV3TrapRxSecurityName';      // DOCSIS x.x: TLV 38.7
+      idTLV.put(DocsisLexer.ID_SUBMGMTFILTERS,            "ch.gauteron.docsis.TLVs.TLV_SubMgmtFilters");            // TLV 37 // TODO!!! Differences between Docsis versions
 */
-      idTLV.put(DocsisLexer.ID_DOCSISTWOENABLE,                   "ch.gauteron.docsis.TLVs.TLV_DocsisTwoEnable");                   // TLV 39
-      idTLV.put(DocsisLexer.ID_TESTMODEENABLE,                    "ch.gauteron.docsis.TLVs.TLV_TestModeEnable");                    // TLV 40
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRECEIVER,        "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapReceiver");        // TLV 38
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXIP,            "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxIP");            // TLV 38.1
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXPORT,          "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxPort");          // TLV 38.2
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXTYPE,          "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxType");          // TLV 38.3
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXTIMEOUT,       "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxTimeout");       // TLV 38.4
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXRETRIES,       "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxRetries");       // TLV 38.5
+/*
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXFILTEROID,     "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxFilterOID");     // TLV 38.6 // TODO!!!
+*/
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXSECURITYNAME,  "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxSecurityName");  // TLV 38.7
+      idTLV.put(DocsisLexer.ID_SNMPV3TRAPRXIPV6,          "ch.gauteron.docsis.TLVs.TLV_SnmpV3TrapRxIPv6");          // TLV 38.8
+      idTLV.put(DocsisLexer.ID_DOCSISTWOENABLE,           "ch.gauteron.docsis.TLVs.TLV_DocsisTwoEnable");           // TLV 39
+      idTLV.put(DocsisLexer.ID_TESTMODEENABLE,            "ch.gauteron.docsis.TLVs.TLV_TestModeEnable");            // TLV 40
+
+      idTLV.put(DocsisLexer.ID_DSCHANNELLIST,             "ch.gauteron.docsis.TLVs.TLV_DsChannelList");             // TLV 41
 
 /*
 ID_DSCHANNELLIST     :  'DsChannelList';        // DOCSIS x.x: TLV 41
@@ -223,8 +219,11 @@ ID_DSFREQRANGESTEPSIZE     :  'DsFreqRangeStepSize';        // DOCSIS x.x: TLV 4
       idTLV.put(DocsisLexer.ID_MTACONFIGDELIMITER,                   "ch.gauteron.docsis.TLVs.TLV_MtaConfigDelimiter");                   // TLV 254
 
      idTLV.put(DocsisLexer.ID_GENERICTLV,                            "ch.gauteron.docsis.TLVs.TLV_GenericTLV");                            // Generic
-//   MUST NOT BE REFERENCED: Pad (automatically added at file creation)
-//   MUST NOT BE REFERENCED: EndOfDataMkr (automatically added at file creation)
+
+//   MUST NOT BE REFERENCED: TLV 0: Pad (automatically added at file creation)
+//   MUST NOT BE REFERENCED: TLV 6: CmMic (automatically added at file creation)
+//   MUST NOT BE REFERENCED: TLV 7: CmtsMic (automatically added at file creation)
+//   MUST NOT BE REFERENCED: TLV 255: EndOfDataMkr (automatically added at file creation)
       inited = true;
    }
 

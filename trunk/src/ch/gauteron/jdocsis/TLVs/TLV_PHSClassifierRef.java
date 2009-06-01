@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_EndOfDataMkr.java                                         *
+ *  jdocsis - TLV_PHSClassifierRef.java                                     *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,28 +31,12 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-import java.util.regex.Pattern;
-import org.antlr.runtime.Token;
-import org.antlr.runtime.tree.CommonTree;
-
-public class TLV_EndOfDataMkr extends TLV
+public class TLV_PHSClassifierRef extends TLVuchar // TLV 26.1
 {
-
-   public TLV_EndOfDataMkr()
+   public TLV_PHSClassifierRef()
    {
-      this.tlvLength = 0; // End Of Data Marker has not Length value!
-      this.tlvCode   = 255;
-      this.tlvInit   = true;
-   }
-
-   public byte[] getEncoding()
-   {
-      if(!this.tlvInit)
-         return null;
-
-      byte[] tmp = new byte[1];
-      tmp[0] = getTlvCode();
-
-      return tmp;
+      super(1, 255);
+      this.tlvCode = 1;
+      this.tlvName = "PHSClassifierRef";
    }
 }

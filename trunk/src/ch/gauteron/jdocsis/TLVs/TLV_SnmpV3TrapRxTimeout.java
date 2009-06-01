@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_EndOfDataMkr.java                                         *
+ *  jdocsis - TLV_SnmpV3TrapRxTimeout.java                                  *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,28 +31,12 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-import java.util.regex.Pattern;
-import org.antlr.runtime.Token;
-import org.antlr.runtime.tree.CommonTree;
-
-public class TLV_EndOfDataMkr extends TLV
+public class TLV_SnmpV3TrapRxTimeout extends TLVushort // TLV 38.4
 {
-
-   public TLV_EndOfDataMkr()
+   public TLV_SnmpV3TrapRxTimeout()
    {
-      this.tlvLength = 0; // End Of Data Marker has not Length value!
-      this.tlvCode   = 255;
-      this.tlvInit   = true;
-   }
-
-   public byte[] getEncoding()
-   {
-      if(!this.tlvInit)
-         return null;
-
-      byte[] tmp = new byte[1];
-      tmp[0] = getTlvCode();
-
-      return tmp;
+      super();
+      this.tlvCode = 4;
+      this.tlvName = "SnmpV3TrapRxType";
    }
 }

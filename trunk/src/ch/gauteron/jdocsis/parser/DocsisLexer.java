@@ -1,4 +1,4 @@
-// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 ch/gauteron/jdocsis/parser/DocsisLexer.g 2009-05-31 19:27:37
+// $ANTLR 3.1.3 Mar 18, 2009 10:09:25 ch/gauteron/jdocsis/parser/DocsisLexer.g 2009-06-01 14:54:47
 package ch.gauteron.jdocsis.parser;
 
 import org.antlr.runtime.*;
@@ -41,7 +41,7 @@ public class DocsisLexer extends Lexer {
     public static final int ID_DSSERVICEFLOW=83;
     public static final int ID_USPACKETCLASS=47;
     public static final int ID_QOSPARAMSETTYPE=89;
-    public static final int T_TIMETICKS=185;
+    public static final int T_TIMETICKS=186;
     public static final int ID_SUBMGMTFILTERS=128;
     public static final int ID_LLCPACKETCLASSIFIER=67;
     public static final int ID_DSSERVICEFLOWREF=86;
@@ -49,10 +49,10 @@ public class DocsisLexer extends Lexer {
     public static final int ID_GRANTSPERINTERVAL=105;
     public static final int ID_PHSSIZE=116;
     public static final int ID_PHSSERVICEFLOWID=112;
-    public static final int SNMP_HEXSTRING=170;
-    public static final int S_LOWERHEXDIGIT=190;
+    public static final int SNMP_HEXSTRING=171;
+    public static final int S_LOWERHEXDIGIT=191;
     public static final int ID_SERVICEFLOWREF=51;
-    public static final int TLV_CODE=155;
+    public static final int TLV_CODE=156;
     public static final int ID_SRCMACADDRESS=69;
     public static final int ID_DSTMACADDRESS=68;
     public static final int ID_PHSVERIFY=117;
@@ -63,15 +63,16 @@ public class DocsisLexer extends Lexer {
     public static final int ID_DOWNSTREAMFREQUENCY=8;
     public static final int ID_SRCPORTSTART=63;
     public static final int ID_MAXCPE=43;
-    public static final int T_IP=180;
+    public static final int T_IP=181;
     public static final int ID_REKEYTIMEOUT=38;
     public static final int ID_SAMAPMAXRETRIES=42;
     public static final int WS=4;
     public static final int ID_ETHERTYPE=70;
     public static final int ID_BASELINEPRIVACYSUPPORT=25;
-    public static final int SNMP_COUNTER32=159;
+    public static final int SNMP_COUNTER32=160;
     public static final int ID_SWUPGRADEFILENAME=29;
     public static final int ID_TOLERATEDGRANTJITTER=104;
+    public static final int ID_SNMPV3TRAPRXIPV6=137;
     public static final int ID_CLASSID=12;
     public static final int ID_IPDSTMASK=62;
     public static final int ID_MAXRATEDOWN=13;
@@ -80,15 +81,15 @@ public class DocsisLexer extends Lexer {
     public static final int ID_SNMPV3TRAPRXSECURITYNAME=136;
     public static final int ID_ACTQOSPARAMSTIMEOUT=95;
     public static final int ID_VLANID=73;
-    public static final int S_HEX4FAC=181;
+    public static final int S_HEX4FAC=182;
     public static final int ID_GUARANTEEDUP=16;
-    public static final int ID_DSCHANNELLIST=139;
+    public static final int ID_DSCHANNELLIST=140;
     public static final int ID_PRIVACYENABLE=18;
     public static final int ID_MAXCONCATENATEDBURST=97;
     public static final int ID_CLASSOFSERVICE=11;
-    public static final int SNMP_GAUGE32=160;
+    public static final int SNMP_GAUGE32=161;
     public static final int ID_SNMPMIBOBJECT=31;
-    public static final int S_UPPER=188;
+    public static final int S_UPPER=189;
     public static final int ID_IPDSTADDR=61;
     public static final int ID_SNMPV3MGRPUBLICNUMBER=126;
     public static final int ID_MAXCLASSIFIERS=118;
@@ -97,26 +98,26 @@ public class DocsisLexer extends Lexer {
     public static final int ID_BASELINEPRIVACY=33;
     public static final int ID_SNMPV3TRAPRXIP=130;
     public static final int ID_NETWORKACCESS=10;
-    public static final int ID_MTACONFIGDELIMITER=153;
+    public static final int ID_MTACONFIGDELIMITER=154;
     public static final int ID_MAXRATEUP=14;
     public static final int ID_ACTIVATIONSTATE=54;
-    public static final int T_OID=184;
-    public static final int S_UPPERHEXDIGIT=191;
-    public static final int S_DIGIT=174;
+    public static final int T_OID=185;
+    public static final int S_UPPERHEXDIGIT=192;
+    public static final int S_DIGIT=175;
     public static final int ID_TEKGRACETIME=39;
-    public static final int SNMP_COUNTER64=163;
+    public static final int SNMP_COUNTER64=164;
     public static final int ID_MODEMCAPABILITIES=19;
     public static final int ID_SNMPV3TRAPRECEIVER=129;
-    public static final int SNMP_OCTETSTRING=164;
-    public static final int S_SEMICOLON=192;
-    public static final int S_HEXDIGIT=175;
+    public static final int SNMP_OCTETSTRING=165;
+    public static final int S_SEMICOLON=193;
+    public static final int S_HEXDIGIT=176;
     public static final int ID_SNMPV3KICKSTART=124;
-    public static final int TLV_VALUE=157;
-    public static final int ID_IPV6SWUPGRADESERVER=152;
-    public static final int ID_GENERICTLV=154;
+    public static final int TLV_VALUE=158;
+    public static final int ID_IPV6SWUPGRADESERVER=153;
+    public static final int ID_GENERICTLV=155;
     public static final int ID_PHSMASK=115;
     public static final int ID_AUTHGRACETIME=36;
-    public static final int T_IPV6=182;
+    public static final int T_IPV6=183;
     public static final int ID_SRCPORTEND=64;
     public static final int ID_PRIORITYUP=15;
     public static final int ID_MODEMDOCSISVERSION=21;
@@ -126,54 +127,54 @@ public class DocsisLexer extends Lexer {
     public static final int ID_TFTPMODEMADDRESS=45;
     public static final int STATIC_MAIN=7;
     public static final int ID_MAXBURSTUP=17;
-    public static final int ID_DSFREQRANGEEND=147;
+    public static final int ID_DSFREQRANGEEND=148;
     public static final int ID_IPPACKETCLASSIFIER=56;
     public static final int ID_USSERVICEFLOW=82;
-    public static final int T_STRING=186;
+    public static final int T_STRING=187;
     public static final int ID_SERVICEFLOWID=52;
-    public static final int S_OPENBRACE=193;
-    public static final int SNMP_IPADDRESS=165;
+    public static final int S_OPENBRACE=194;
+    public static final int SNMP_IPADDRESS=166;
     public static final int ID_DSTPORTEND=66;
-    public static final int SNMP_UNSIGNED32=162;
+    public static final int SNMP_UNSIGNED32=163;
     public static final int ID_UNSOLICITEDGRANTSIZE=102;
     public static final int ID_MAXDSLATENCY=107;
     public static final int ID_SNMPV3TRAPRXPORT=131;
-    public static final int SNMP_STRING=169;
+    public static final int SNMP_STRING=170;
     public static final int ID_NOMINALGRANTINTERVAL=103;
-    public static final int SNMP_TIMETICKS=161;
-    public static final int ID_TESTMODEENABLE=138;
-    public static final int S_LOWER=187;
+    public static final int SNMP_TIMETICKS=162;
+    public static final int S_LOWER=188;
+    public static final int ID_TESTMODEENABLE=139;
     public static final int ID_COSIGNERCVCDATA=122;
     public static final int COMMENT=5;
-    public static final int ID_DSFREQRANGESTART=146;
-    public static final int S_CLOSEBRACE=194;
-    public static final int T_INTLIST4=172;
+    public static final int ID_DSFREQRANGESTART=147;
+    public static final int S_CLOSEBRACE=195;
+    public static final int T_INTLIST4=173;
     public static final int ID_PHS=108;
-    public static final int ID_DEFAULTSCANTIMEOUT=140;
+    public static final int ID_DEFAULTSCANTIMEOUT=141;
     public static final int ID_MAXRATESUSTAINED=91;
     public static final int LINE_COMMENT=6;
     public static final int ID_REAUTHTIMEOUT=35;
-    public static final int S_HEX2=177;
+    public static final int S_HEX2=178;
     public static final int ID_UPSTREAMSIDSUPPORT=27;
-    public static final int SNMP_Opaque=166;
+    public static final int SNMP_Opaque=167;
     public static final int ID_IPTOSOVERWRITE=106;
     public static final int ID_MFGCVCDATA=120;
     public static final int ID_IGMPSUPPORT=24;
     public static final int ID_DOWNSTREAMSAIDSUPPORT=26;
     public static final int ID_USSERVICEFLOWID=85;
     public static final int ID_GLOBALPRIVACYENABLE=119;
-    public static final int ID_DSFREQRANGE=144;
-    public static final int ID_SINGLEDSTIMEOUT=142;
+    public static final int ID_DSFREQRANGE=145;
+    public static final int ID_SINGLEDSTIMEOUT=143;
     public static final int ID_IPSRCADDR=59;
-    public static final int S_ALPHANUM=183;
-    public static final int ID_SNMPCPEACCESSCONTROL=151;
-    public static final int T_MACADDR=178;
+    public static final int S_ALPHANUM=184;
+    public static final int ID_SNMPCPEACCESSCONTROL=152;
+    public static final int T_MACADDR=179;
     public static final int ID_SCHEDULINGTYPE=98;
-    public static final int ID_SINGLEDSCHANNEL=141;
+    public static final int ID_SINGLEDSCHANNEL=142;
     public static final int ID_IPV6SRCPREFLENGTH=79;
-    public static final int TLV_LENGTH=156;
+    public static final int TLV_LENGTH=157;
     public static final int ID_IPV6NEXTHEADERTYPE=77;
-    public static final int SNMP_BITSTRING=168;
+    public static final int SNMP_BITSTRING=169;
     public static final int ID_IPV6TRAFFICCLASSRANGEMASK=75;
     public static final int ID_SWUPGRADESERVER=46;
     public static final int ID_USSERVICEFLOWREF=84;
@@ -185,42 +186,42 @@ public class DocsisLexer extends Lexer {
     public static final int ID_CONCATENATIONSUPPORT=20;
     public static final int ID_DSCACTION=55;
     public static final int ID_SNMPWRITECONTROL=30;
-    public static final int SNMP_INTEGER=158;
-    public static final int T_MACMASK=179;
+    public static final int SNMP_INTEGER=159;
+    public static final int T_MACMASK=180;
     public static final int ID_CLASSIFIERID=50;
     public static final int ID_SNMPV3SECURITYNAME=125;
-    public static final int ID_VENDORSPECIFIC=149;
-    public static final int T_INT=171;
-    public static final int T_HEXSTR=176;
+    public static final int ID_VENDORSPECIFIC=150;
+    public static final int T_INT=172;
+    public static final int T_HEXSTR=177;
     public static final int ID_TFTPTIMESTAMP=44;
     public static final int ID_IPV6PACKETCLASSIFIER=74;
     public static final int ID_AUTHREJECTTIMEOUT=40;
     public static final int ID_MINRESERVEDRATE=93;
-    public static final int ID_SINGLEDSFREQUENCY=143;
+    public static final int ID_SINGLEDSFREQUENCY=144;
     public static final int ID_MINRESPACKETSIZE=94;
     public static final int ID_PHSFIELD=113;
-    public static final int S_LETTER=189;
+    public static final int S_LETTER=190;
     public static final int ID_IPV6SRCADDR=78;
     public static final int ID_OPERTIMEOUT=37;
     public static final int ID_ADMQOSPARAMSTIMEOUT=96;
     public static final int ID_PHSCLASSIFIERID=110;
-    public static final int ID_DOCSISTWOENABLE=137;
+    public static final int ID_DOCSISTWOENABLE=138;
     public static final int ID_IPV6DSTADDR=80;
     public static final int ID_IPV6FLOWLABEL=76;
-    public static final int SNMP_OID=167;
+    public static final int SNMP_OID=168;
     public static final int ID_SNMPV3TRAPRXRETRIES=134;
     public static final int ID_SNMPV3TRAPRXFILTEROID=135;
     public static final int ID_SUBMGMTCONTROL=127;
     public static final int ID_DSTPORTSTART=65;
-    public static final int ID_DSFREQRANGETIMEOUT=145;
-    public static final int ID_DSFREQRANGESTEPSIZE=148;
+    public static final int ID_DSFREQRANGETIMEOUT=146;
+    public static final int ID_DSFREQRANGESTEPSIZE=149;
     public static final int ID_MANUFACTURERCVC=121;
     public static final int ID_SNMPV3TRAPRXTIMEOUT=133;
     public static final int ID_IPTOS=57;
     public static final int ID_SNMPV3TRAPRXTYPE=132;
     public static final int ID_IPV6DSTPREFLENGTH=81;
     public static final int ID_TOLERATEDPOLLJITTER=101;
-    public static final int S_SIGN=173;
+    public static final int S_SIGN=174;
     public static final int ID_UPSTREAMCHANNELID=9;
     public static final int ID_PHSCLASSIFIERREF=109;
     public static final int ID_DSSERVICEFLOWID=87;
@@ -228,7 +229,7 @@ public class DocsisLexer extends Lexer {
     public static final int ID_RULEPRIORITY=53;
     public static final int ID_PHSSUPPORT=23;
     public static final int ID_CPEMACADDRESS=32;
-    public static final int ID_VENDORIDENTIFIER=150;
+    public static final int ID_VENDORIDENTIFIER=151;
 
     // delegates
     // delegators
@@ -3277,13 +3278,34 @@ public class DocsisLexer extends Lexer {
     }
     // $ANTLR end "ID_SNMPV3TRAPRXSECURITYNAME"
 
+    // $ANTLR start "ID_SNMPV3TRAPRXIPV6"
+    public final void mID_SNMPV3TRAPRXIPV6() throws RecognitionException {
+        try {
+            int _type = ID_SNMPV3TRAPRXIPV6;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:199:22: ( 'SnmpV3TrapRxIPv6' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:199:24: 'SnmpV3TrapRxIPv6'
+            {
+            match("SnmpV3TrapRxIPv6"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "ID_SNMPV3TRAPRXIPV6"
+
     // $ANTLR start "ID_DOCSISTWOENABLE"
     public final void mID_DOCSISTWOENABLE() throws RecognitionException {
         try {
             int _type = ID_DOCSISTWOENABLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:199:21: ( 'DocsisTwoEnable' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:199:23: 'DocsisTwoEnable'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:200:21: ( 'DocsisTwoEnable' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:200:23: 'DocsisTwoEnable'
             {
             match("DocsisTwoEnable"); 
 
@@ -3303,8 +3325,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_TESTMODEENABLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:200:20: ( 'TestModeEnable' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:200:22: 'TestModeEnable'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:201:20: ( 'TestModeEnable' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:201:22: 'TestModeEnable'
             {
             match("TestModeEnable"); 
 
@@ -3324,8 +3346,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSCHANNELLIST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:201:19: ( 'DsChannelList' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:201:21: 'DsChannelList'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:202:19: ( 'DsChannelList' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:202:21: 'DsChannelList'
             {
             match("DsChannelList"); 
 
@@ -3345,8 +3367,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DEFAULTSCANTIMEOUT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:202:24: ( 'DefaultScanTimeout' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:202:26: 'DefaultScanTimeout'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:203:24: ( 'DefaultScanTimeout' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:203:26: 'DefaultScanTimeout'
             {
             match("DefaultScanTimeout"); 
 
@@ -3366,8 +3388,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_SINGLEDSCHANNEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:203:21: ( 'SingleDsChannel' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:203:23: 'SingleDsChannel'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:204:21: ( 'SingleDsChannel' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:204:23: 'SingleDsChannel'
             {
             match("SingleDsChannel"); 
 
@@ -3387,8 +3409,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_SINGLEDSTIMEOUT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:204:21: ( 'SingleDsTimeout' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:204:23: 'SingleDsTimeout'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:205:21: ( 'SingleDsTimeout' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:205:23: 'SingleDsTimeout'
             {
             match("SingleDsTimeout"); 
 
@@ -3408,8 +3430,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_SINGLEDSFREQUENCY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:205:23: ( 'SingleDsFrequency' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:205:25: 'SingleDsFrequency'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:206:23: ( 'SingleDsFrequency' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:206:25: 'SingleDsFrequency'
             {
             match("SingleDsFrequency"); 
 
@@ -3429,8 +3451,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSFREQRANGE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:206:18: ( 'DsFreqRange' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:206:20: 'DsFreqRange'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:207:18: ( 'DsFreqRange' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:207:20: 'DsFreqRange'
             {
             match("DsFreqRange"); 
 
@@ -3450,8 +3472,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSFREQRANGETIMEOUT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:207:24: ( 'DsFreqRangeTimeout' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:207:26: 'DsFreqRangeTimeout'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:208:24: ( 'DsFreqRangeTimeout' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:208:26: 'DsFreqRangeTimeout'
             {
             match("DsFreqRangeTimeout"); 
 
@@ -3471,8 +3493,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSFREQRANGESTART;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:208:22: ( 'DsFreqRangeStart' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:208:24: 'DsFreqRangeStart'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:209:22: ( 'DsFreqRangeStart' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:209:24: 'DsFreqRangeStart'
             {
             match("DsFreqRangeStart"); 
 
@@ -3492,8 +3514,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSFREQRANGEEND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:209:20: ( 'DsFreqRangeEnd' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:209:22: 'DsFreqRangeEnd'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:210:20: ( 'DsFreqRangeEnd' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:210:22: 'DsFreqRangeEnd'
             {
             match("DsFreqRangeEnd"); 
 
@@ -3513,8 +3535,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_DSFREQRANGESTEPSIZE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:210:25: ( 'DsFreqRangeStepSize' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:210:27: 'DsFreqRangeStepSize'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:211:25: ( 'DsFreqRangeStepSize' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:211:27: 'DsFreqRangeStepSize'
             {
             match("DsFreqRangeStepSize"); 
 
@@ -3534,8 +3556,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_VENDORSPECIFIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:211:20: ( 'VendorSpecific' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:211:22: 'VendorSpecific'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:212:20: ( 'VendorSpecific' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:212:22: 'VendorSpecific'
             {
             match("VendorSpecific"); 
 
@@ -3555,8 +3577,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_VENDORIDENTIFIER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:212:22: ( 'VendorIdentifier' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:212:24: 'VendorIdentifier'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:213:22: ( 'VendorIdentifier' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:213:24: 'VendorIdentifier'
             {
             match("VendorIdentifier"); 
 
@@ -3576,8 +3598,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_SNMPCPEACCESSCONTROL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:213:26: ( 'SnmpCpeAccessControl' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:213:28: 'SnmpCpeAccessControl'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:214:26: ( 'SnmpCpeAccessControl' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:214:28: 'SnmpCpeAccessControl'
             {
             match("SnmpCpeAccessControl"); 
 
@@ -3597,8 +3619,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_IPV6SWUPGRADESERVER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:214:25: ( 'IPv6SwUpgradeServer' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:214:27: 'IPv6SwUpgradeServer'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:215:25: ( 'IPv6SwUpgradeServer' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:215:27: 'IPv6SwUpgradeServer'
             {
             match("IPv6SwUpgradeServer"); 
 
@@ -3618,8 +3640,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_MTACONFIGDELIMITER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:215:24: ( 'MtaConfigDelimiter' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:215:26: 'MtaConfigDelimiter'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:216:24: ( 'MtaConfigDelimiter' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:216:26: 'MtaConfigDelimiter'
             {
             match("MtaConfigDelimiter"); 
 
@@ -3639,8 +3661,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = ID_GENERICTLV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:218:17: ( 'GenericTLV' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:218:19: 'GenericTLV'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:219:17: ( 'GenericTLV' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:219:19: 'GenericTLV'
             {
             match("GenericTLV"); 
 
@@ -3660,8 +3682,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = TLV_CODE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:219:12: ( 'TlvCode' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:219:14: 'TlvCode'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:220:12: ( 'TlvCode' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:220:14: 'TlvCode'
             {
             match("TlvCode"); 
 
@@ -3681,8 +3703,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = TLV_LENGTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:220:14: ( 'TlvLength' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:220:16: 'TlvLength'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:221:14: ( 'TlvLength' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:221:16: 'TlvLength'
             {
             match("TlvLength"); 
 
@@ -3702,8 +3724,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = TLV_VALUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:221:13: ( 'TlvValue' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:221:15: 'TlvValue'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:222:13: ( 'TlvValue' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:222:15: 'TlvValue'
             {
             match("TlvValue"); 
 
@@ -3723,8 +3745,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:226:16: ( 'Integer' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:226:18: 'Integer'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:227:16: ( 'Integer' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:227:18: 'Integer'
             {
             match("Integer"); 
 
@@ -3744,8 +3766,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_COUNTER32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:227:18: ( 'Counter32' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:227:20: 'Counter32'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:228:18: ( 'Counter32' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:228:20: 'Counter32'
             {
             match("Counter32"); 
 
@@ -3765,7 +3787,7 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_GAUGE32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:228:16: ( 'Gauge' | 'Gauge32' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:229:16: ( 'Gauge' | 'Gauge32' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -3826,7 +3848,7 @@ public class DocsisLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:228:18: 'Gauge'
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:229:18: 'Gauge'
                     {
                     match("Gauge"); 
 
@@ -3834,7 +3856,7 @@ public class DocsisLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:229:7: 'Gauge32'
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:230:7: 'Gauge32'
                     {
                     match("Gauge32"); 
 
@@ -3856,8 +3878,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_TIMETICKS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:230:18: ( 'TimeTicks' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:230:20: 'TimeTicks'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:231:18: ( 'TimeTicks' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:231:20: 'TimeTicks'
             {
             match("TimeTicks"); 
 
@@ -3877,8 +3899,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_UNSIGNED32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:231:19: ( 'Unsigned32' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:231:21: 'Unsigned32'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:232:19: ( 'Unsigned32' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:232:21: 'Unsigned32'
             {
             match("Unsigned32"); 
 
@@ -3898,8 +3920,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_COUNTER64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:232:18: ( 'Counter64' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:232:20: 'Counter64'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:233:18: ( 'Counter64' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:233:20: 'Counter64'
             {
             match("Counter64"); 
 
@@ -3919,8 +3941,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_OCTETSTRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:233:19: ( 'OctetString' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:233:21: 'OctetString'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:234:19: ( 'OctetString' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:234:21: 'OctetString'
             {
             match("OctetString"); 
 
@@ -3940,8 +3962,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_IPADDRESS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:234:18: ( 'IpAddress' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:234:20: 'IpAddress'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:235:18: ( 'IpAddress' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:235:20: 'IpAddress'
             {
             match("IpAddress"); 
 
@@ -3961,8 +3983,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_Opaque;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:235:15: ( 'Opaque' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:235:17: 'Opaque'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:236:15: ( 'Opaque' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:236:17: 'Opaque'
             {
             match("Opaque"); 
 
@@ -3982,8 +4004,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_OID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:236:12: ( 'ObjectID' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:236:14: 'ObjectID'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:237:12: ( 'ObjectID' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:237:14: 'ObjectID'
             {
             match("ObjectID"); 
 
@@ -4003,8 +4025,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_BITSTRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:237:18: ( 'BitString' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:237:20: 'BitString'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:238:18: ( 'BitString' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:238:20: 'BitString'
             {
             match("BitString"); 
 
@@ -4024,8 +4046,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:238:15: ( 'String' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:238:17: 'String'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:239:15: ( 'String' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:239:17: 'String'
             {
             match("String"); 
 
@@ -4045,8 +4067,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = SNMP_HEXSTRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:239:18: ( 'HexString' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:239:20: 'HexString'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:240:18: ( 'HexString' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:240:20: 'HexString'
             {
             match("HexString"); 
 
@@ -4066,8 +4088,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_INTLIST4;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:245:14: ( T_INT ',' T_INT ',' T_INT ',' T_INT )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:245:16: T_INT ',' T_INT ',' T_INT ',' T_INT
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:14: ( T_INT ',' T_INT ',' T_INT ',' T_INT )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:16: T_INT ',' T_INT ',' T_INT ',' T_INT
             {
             mT_INT(); 
             match(','); 
@@ -4092,10 +4114,10 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:10: ( ( S_SIGN )? ( S_DIGIT )+ )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:12: ( S_SIGN )? ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:10: ( ( S_SIGN )? ( S_DIGIT )+ )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:12: ( S_SIGN )? ( S_DIGIT )+
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:12: ( S_SIGN )?
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:12: ( S_SIGN )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -4104,7 +4126,7 @@ public class DocsisLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:12: S_SIGN
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:12: S_SIGN
                     {
                     mS_SIGN(); 
 
@@ -4113,7 +4135,7 @@ public class DocsisLexer extends Lexer {
 
             }
 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:20: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:20: ( S_DIGIT )+
             int cnt9=0;
             loop9:
             do {
@@ -4127,7 +4149,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:246:20: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:20: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -4159,8 +4181,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_HEXSTR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:12: ( '0' ( 'x' | 'X' ) ( S_HEXDIGIT )+ )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:14: '0' ( 'x' | 'X' ) ( S_HEXDIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:12: ( '0' ( 'x' | 'X' ) ( S_HEXDIGIT )+ )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:14: '0' ( 'x' | 'X' ) ( S_HEXDIGIT )+
             {
             match('0'); 
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
@@ -4172,7 +4194,7 @@ public class DocsisLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:28: ( S_HEXDIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:28: ( S_HEXDIGIT )+
             int cnt10=0;
             loop10:
             do {
@@ -4186,7 +4208,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt10) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:247:28: S_HEXDIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:28: S_HEXDIGIT
             	    {
             	    mS_HEXDIGIT(); 
 
@@ -4218,8 +4240,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_MACADDR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:13: ( S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:248:15: S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:249:13: ( S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:249:15: S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2 ':' S_HEX2
             {
             mS_HEX2(); 
             match(':'); 
@@ -4248,8 +4270,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_MACMASK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:250:13: ( T_MACADDR '/' T_MACADDR )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:250:15: T_MACADDR '/' T_MACADDR
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:13: ( T_MACADDR '/' T_MACADDR )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:15: T_MACADDR '/' T_MACADDR
             {
             mT_MACADDR(); 
             match('/'); 
@@ -4270,10 +4292,10 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_IP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:9: ( ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:11: ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:9: ( ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:11: ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+ '.' ( S_DIGIT )+
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:11: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:11: ( S_DIGIT )+
             int cnt11=0;
             loop11:
             do {
@@ -4287,7 +4309,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt11) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:11: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:11: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -4304,7 +4326,7 @@ public class DocsisLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:24: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:24: ( S_DIGIT )+
             int cnt12=0;
             loop12:
             do {
@@ -4318,7 +4340,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt12) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:24: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:24: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -4335,7 +4357,7 @@ public class DocsisLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:37: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:37: ( S_DIGIT )+
             int cnt13=0;
             loop13:
             do {
@@ -4349,7 +4371,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:37: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:37: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -4366,7 +4388,7 @@ public class DocsisLexer extends Lexer {
             } while (true);
 
             match('.'); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:50: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:50: ( S_DIGIT )+
             int cnt14=0;
             loop14:
             do {
@@ -4380,7 +4402,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:251:50: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:252:50: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -4412,12 +4434,12 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_IPV6;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:253:11: ( S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC | ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:11: ( S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC | ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? )
             int alt21=2;
             alt21 = dfa21.predict(input);
             switch (alt21) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:253:13: S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:13: S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC
                     {
                     mS_HEX4FAC(); 
                     match(':'); 
@@ -4438,9 +4460,9 @@ public class DocsisLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:7: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:7: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
                     {
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:7: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:7: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
                     int alt17=2;
                     int LA17_0 = input.LA(1);
 
@@ -4449,9 +4471,9 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt17) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:8: ( S_HEX4FAC ':' )* ( S_HEX4FAC )+
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:8: ( S_HEX4FAC ':' )* ( S_HEX4FAC )+
                             {
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:8: ( S_HEX4FAC ':' )*
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:8: ( S_HEX4FAC ':' )*
                             loop15:
                             do {
                                 int alt15=2;
@@ -4521,7 +4543,7 @@ public class DocsisLexer extends Lexer {
 
                                 switch (alt15) {
                             	case 1 :
-                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:9: S_HEX4FAC ':'
+                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:9: S_HEX4FAC ':'
                             	    {
                             	    mS_HEX4FAC(); 
                             	    match(':'); 
@@ -4534,7 +4556,7 @@ public class DocsisLexer extends Lexer {
                                 }
                             } while (true);
 
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:25: ( S_HEX4FAC )+
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:25: ( S_HEX4FAC )+
                             int cnt16=0;
                             loop16:
                             do {
@@ -4548,7 +4570,7 @@ public class DocsisLexer extends Lexer {
 
                                 switch (alt16) {
                             	case 1 :
-                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:25: S_HEX4FAC
+                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:25: S_HEX4FAC
                             	    {
                             	    mS_HEX4FAC(); 
 
@@ -4572,7 +4594,7 @@ public class DocsisLexer extends Lexer {
 
                     match("::"); 
 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:43: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:43: ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )?
                     int alt20=2;
                     int LA20_0 = input.LA(1);
 
@@ -4581,9 +4603,9 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt20) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:44: ( S_HEX4FAC ':' )* ( S_HEX4FAC )+
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:44: ( S_HEX4FAC ':' )* ( S_HEX4FAC )+
                             {
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:44: ( S_HEX4FAC ':' )*
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:44: ( S_HEX4FAC ':' )*
                             loop18:
                             do {
                                 int alt18=2;
@@ -4629,7 +4651,7 @@ public class DocsisLexer extends Lexer {
 
                                 switch (alt18) {
                             	case 1 :
-                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:45: S_HEX4FAC ':'
+                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:45: S_HEX4FAC ':'
                             	    {
                             	    mS_HEX4FAC(); 
                             	    match(':'); 
@@ -4642,7 +4664,7 @@ public class DocsisLexer extends Lexer {
                                 }
                             } while (true);
 
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:61: ( S_HEX4FAC )+
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:61: ( S_HEX4FAC )+
                             int cnt19=0;
                             loop19:
                             do {
@@ -4656,7 +4678,7 @@ public class DocsisLexer extends Lexer {
 
                                 switch (alt19) {
                             	case 1 :
-                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:254:61: S_HEX4FAC
+                            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:255:61: S_HEX4FAC
                             	    {
                             	    mS_HEX4FAC(); 
 
@@ -4696,14 +4718,14 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_OID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:10: ( ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+ | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\'' | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:10: ( ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+ | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\'' | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"' )
             int alt34=3;
             alt34 = dfa34.predict(input);
             switch (alt34) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:12: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:12: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+
                     {
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:12: ( '.' )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:12: ( '.' )?
                     int alt22=2;
                     int LA22_0 = input.LA(1);
 
@@ -4712,7 +4734,7 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt22) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:12: '.'
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:12: '.'
                             {
                             match('.'); 
 
@@ -4721,7 +4743,7 @@ public class DocsisLexer extends Lexer {
 
                     }
 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:17: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:17: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
                     int cnt24=0;
                     loop24:
                     do {
@@ -4729,9 +4751,9 @@ public class DocsisLexer extends Lexer {
                         alt24 = dfa24.predict(input);
                         switch (alt24) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:18: ( S_ALPHANUM | '_' | '-' )+ '.'
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:18: ( S_ALPHANUM | '_' | '-' )+ '.'
                     	    {
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:18: ( S_ALPHANUM | '_' | '-' )+
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:18: ( S_ALPHANUM | '_' | '-' )+
                     	    int cnt23=0;
                     	    loop23:
                     	    do {
@@ -4783,7 +4805,7 @@ public class DocsisLexer extends Lexer {
                         cnt24++;
                     } while (true);
 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:50: ( S_ALPHANUM )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:50: ( S_ALPHANUM )+
                     int cnt25=0;
                     loop25:
                     do {
@@ -4797,7 +4819,7 @@ public class DocsisLexer extends Lexer {
 
                         switch (alt25) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:256:51: S_ALPHANUM
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:51: S_ALPHANUM
                     	    {
                     	    mS_ALPHANUM(); 
 
@@ -4817,9 +4839,9 @@ public class DocsisLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:7: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\''
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\''
                     {
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:7: ( '.' )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: ( '.' )?
                     int alt26=2;
                     int LA26_0 = input.LA(1);
 
@@ -4828,7 +4850,7 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt26) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:7: '.'
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: '.'
                             {
                             match('.'); 
 
@@ -4837,7 +4859,7 @@ public class DocsisLexer extends Lexer {
 
                     }
 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:12: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:12: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
                     int cnt28=0;
                     loop28:
                     do {
@@ -4851,9 +4873,9 @@ public class DocsisLexer extends Lexer {
 
                         switch (alt28) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:13: ( S_ALPHANUM | '_' | '-' )+ '.'
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:13: ( S_ALPHANUM | '_' | '-' )+ '.'
                     	    {
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:13: ( S_ALPHANUM | '_' | '-' )+
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:13: ( S_ALPHANUM | '_' | '-' )+
                     	    int cnt27=0;
                     	    loop27:
                     	    do {
@@ -4906,7 +4928,7 @@ public class DocsisLexer extends Lexer {
                     } while (true);
 
                     match('\''); 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:257:50: ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:50: ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+
                     int cnt29=0;
                     loop29:
                     do {
@@ -4949,9 +4971,9 @@ public class DocsisLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"'
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:7: ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"'
                     {
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: ( '.' )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:7: ( '.' )?
                     int alt30=2;
                     int LA30_0 = input.LA(1);
 
@@ -4960,7 +4982,7 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt30) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:7: '.'
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:7: '.'
                             {
                             match('.'); 
 
@@ -4969,7 +4991,7 @@ public class DocsisLexer extends Lexer {
 
                     }
 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:12: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:12: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+
                     int cnt32=0;
                     loop32:
                     do {
@@ -4983,9 +5005,9 @@ public class DocsisLexer extends Lexer {
 
                         switch (alt32) {
                     	case 1 :
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:13: ( S_ALPHANUM | '_' | '-' )+ '.'
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:13: ( S_ALPHANUM | '_' | '-' )+ '.'
                     	    {
-                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:13: ( S_ALPHANUM | '_' | '-' )+
+                    	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:13: ( S_ALPHANUM | '_' | '-' )+
                     	    int cnt31=0;
                     	    loop31:
                     	    do {
@@ -5038,7 +5060,7 @@ public class DocsisLexer extends Lexer {
                     } while (true);
 
                     match('\"'); 
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:258:49: ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:259:49: ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+
                     int cnt33=0;
                     loop33:
                     do {
@@ -5095,13 +5117,13 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_TIMETICKS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:15: ( ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) '.' ( S_DIGIT )+ )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:17: ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) '.' ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:15: ( ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) '.' ( S_DIGIT )+ )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:17: ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) ( ( S_DIGIT )+ ':' ) '.' ( S_DIGIT )+
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:17: ( ( S_DIGIT )+ ':' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:18: ( S_DIGIT )+ ':'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:17: ( ( S_DIGIT )+ ':' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:18: ( S_DIGIT )+ ':'
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:18: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:18: ( S_DIGIT )+
             int cnt35=0;
             loop35:
             do {
@@ -5115,7 +5137,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt35) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:18: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:18: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -5135,10 +5157,10 @@ public class DocsisLexer extends Lexer {
 
             }
 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:31: ( ( S_DIGIT )+ ':' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:32: ( S_DIGIT )+ ':'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:31: ( ( S_DIGIT )+ ':' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:32: ( S_DIGIT )+ ':'
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:32: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:32: ( S_DIGIT )+
             int cnt36=0;
             loop36:
             do {
@@ -5152,7 +5174,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt36) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:32: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:32: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -5172,10 +5194,10 @@ public class DocsisLexer extends Lexer {
 
             }
 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:45: ( ( S_DIGIT )+ ':' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:46: ( S_DIGIT )+ ':'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:45: ( ( S_DIGIT )+ ':' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:46: ( S_DIGIT )+ ':'
             {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:46: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:46: ( S_DIGIT )+
             int cnt37=0;
             loop37:
             do {
@@ -5189,7 +5211,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt37) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:46: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:46: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -5210,7 +5232,7 @@ public class DocsisLexer extends Lexer {
             }
 
             match('.'); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:64: ( S_DIGIT )+
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:64: ( S_DIGIT )+
             int cnt38=0;
             loop38:
             do {
@@ -5224,7 +5246,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt38) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:260:64: S_DIGIT
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:261:64: S_DIGIT
             	    {
             	    mS_DIGIT(); 
 
@@ -5256,11 +5278,11 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = T_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:262:12: ( '\"' (~ '\"' )* '\"' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:262:14: '\"' (~ '\"' )* '\"'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:263:12: ( '\"' (~ '\"' )* '\"' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:263:14: '\"' (~ '\"' )* '\"'
             {
             match('\"'); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:262:18: (~ '\"' )*
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:263:18: (~ '\"' )*
             loop39:
             do {
                 int alt39=2;
@@ -5273,7 +5295,7 @@ public class DocsisLexer extends Lexer {
 
                 switch (alt39) {
             	case 1 :
-            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:262:18: ~ '\"'
+            	    // ch/gauteron/jdocsis/parser/DocsisLexer.g:263:18: ~ '\"'
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -5308,7 +5330,7 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_SIGN"
     public final void mS_SIGN() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:267:19: ( '+' | '-' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:268:19: ( '+' | '-' )
             // ch/gauteron/jdocsis/parser/DocsisLexer.g:
             {
             if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
@@ -5332,8 +5354,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_DIGIT"
     public final void mS_DIGIT() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:268:19: ( '0' .. '9' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:268:21: '0' .. '9'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:269:19: ( '0' .. '9' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:269:21: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -5348,8 +5370,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_LOWER"
     public final void mS_LOWER() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:269:19: ( 'a' .. 'z' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:269:21: 'a' .. 'z'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:270:19: ( 'a' .. 'z' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:270:21: 'a' .. 'z'
             {
             matchRange('a','z'); 
 
@@ -5364,8 +5386,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_UPPER"
     public final void mS_UPPER() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:270:19: ( 'A' .. 'Z' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:270:21: 'A' .. 'Z'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:271:19: ( 'A' .. 'Z' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:271:21: 'A' .. 'Z'
             {
             matchRange('A','Z'); 
 
@@ -5380,7 +5402,7 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_LETTER"
     public final void mS_LETTER() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:271:20: ( S_LOWER | S_UPPER )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:272:20: ( S_LOWER | S_UPPER )
             // ch/gauteron/jdocsis/parser/DocsisLexer.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
@@ -5404,7 +5426,7 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_ALPHANUM"
     public final void mS_ALPHANUM() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:272:22: ( S_DIGIT | S_LETTER )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:273:22: ( S_DIGIT | S_LETTER )
             // ch/gauteron/jdocsis/parser/DocsisLexer.g:
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
@@ -5428,8 +5450,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_LOWERHEXDIGIT"
     public final void mS_LOWERHEXDIGIT() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:273:26: ( 'a' .. 'f' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:273:28: 'a' .. 'f'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:274:26: ( 'a' .. 'f' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:274:28: 'a' .. 'f'
             {
             matchRange('a','f'); 
 
@@ -5444,8 +5466,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_UPPERHEXDIGIT"
     public final void mS_UPPERHEXDIGIT() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:274:26: ( 'A' .. 'F' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:274:28: 'A' .. 'F'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:275:26: ( 'A' .. 'F' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:275:28: 'A' .. 'F'
             {
             matchRange('A','F'); 
 
@@ -5460,7 +5482,7 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_HEXDIGIT"
     public final void mS_HEXDIGIT() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:275:22: ( S_DIGIT | S_LOWERHEXDIGIT | S_UPPERHEXDIGIT )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:276:22: ( S_DIGIT | S_LOWERHEXDIGIT | S_UPPERHEXDIGIT )
             // ch/gauteron/jdocsis/parser/DocsisLexer.g:
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
@@ -5484,8 +5506,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_HEX2"
     public final void mS_HEX2() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:276:19: ( S_HEXDIGIT S_HEXDIGIT )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:276:21: S_HEXDIGIT S_HEXDIGIT
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:19: ( S_HEXDIGIT S_HEXDIGIT )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:21: S_HEXDIGIT S_HEXDIGIT
             {
             mS_HEXDIGIT(); 
             mS_HEXDIGIT(); 
@@ -5501,11 +5523,11 @@ public class DocsisLexer extends Lexer {
     // $ANTLR start "S_HEX4FAC"
     public final void mS_HEX4FAC() throws RecognitionException {
         try {
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:21: ( S_HEXDIGIT ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )? )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:23: S_HEXDIGIT ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )?
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:21: ( S_HEXDIGIT ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )? )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:23: S_HEXDIGIT ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )?
             {
             mS_HEXDIGIT(); 
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:34: ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )?
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:34: ( ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -5514,9 +5536,9 @@ public class DocsisLexer extends Lexer {
             }
             switch (alt42) {
                 case 1 :
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:35: ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:35: ( ( S_HEXDIGIT )? S_HEXDIGIT )? S_HEXDIGIT
                     {
-                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:35: ( ( S_HEXDIGIT )? S_HEXDIGIT )?
+                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:35: ( ( S_HEXDIGIT )? S_HEXDIGIT )?
                     int alt41=2;
                     int LA41_0 = input.LA(1);
 
@@ -5529,9 +5551,9 @@ public class DocsisLexer extends Lexer {
                     }
                     switch (alt41) {
                         case 1 :
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:36: ( S_HEXDIGIT )? S_HEXDIGIT
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:36: ( S_HEXDIGIT )? S_HEXDIGIT
                             {
-                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:36: ( S_HEXDIGIT )?
+                            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:36: ( S_HEXDIGIT )?
                             int alt40=2;
                             int LA40_0 = input.LA(1);
 
@@ -5548,7 +5570,7 @@ public class DocsisLexer extends Lexer {
                             }
                             switch (alt40) {
                                 case 1 :
-                                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:277:36: S_HEXDIGIT
+                                    // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:36: S_HEXDIGIT
                                     {
                                     mS_HEXDIGIT(); 
 
@@ -5585,8 +5607,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = S_SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:15: ( ';' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:278:17: ';'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:279:15: ( ';' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:279:17: ';'
             {
             match(';'); 
 
@@ -5605,8 +5627,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = S_OPENBRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:279:15: ( '{' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:279:17: '{'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:280:15: ( '{' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:280:17: '{'
             {
             match('{'); 
 
@@ -5625,8 +5647,8 @@ public class DocsisLexer extends Lexer {
         try {
             int _type = S_CLOSEBRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:280:16: ( '}' )
-            // ch/gauteron/jdocsis/parser/DocsisLexer.g:280:18: '}'
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:281:16: ( '}' )
+            // ch/gauteron/jdocsis/parser/DocsisLexer.g:281:18: '}'
             {
             match('}'); 
 
@@ -5641,8 +5663,8 @@ public class DocsisLexer extends Lexer {
     // $ANTLR end "S_CLOSEBRACE"
 
     public void mTokens() throws RecognitionException {
-        // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:8: ( WS | COMMENT | LINE_COMMENT | STATIC_MAIN | ID_DOWNSTREAMFREQUENCY | ID_UPSTREAMCHANNELID | ID_NETWORKACCESS | ID_CLASSOFSERVICE | ID_CLASSID | ID_MAXRATEDOWN | ID_MAXRATEUP | ID_PRIORITYUP | ID_GUARANTEEDUP | ID_MAXBURSTUP | ID_PRIVACYENABLE | ID_MODEMCAPABILITIES | ID_CONCATENATIONSUPPORT | ID_MODEMDOCSISVERSION | ID_FRAGMENTATIONSUPPORT | ID_PHSSUPPORT | ID_IGMPSUPPORT | ID_BASELINEPRIVACYSUPPORT | ID_DOWNSTREAMSAIDSUPPORT | ID_UPSTREAMSIDSUPPORT | ID_DCCSUPPORT | ID_SWUPGRADEFILENAME | ID_SNMPWRITECONTROL | ID_SNMPMIBOBJECT | ID_CPEMACADDRESS | ID_BASELINEPRIVACY | ID_AUTHTIMEOUT | ID_REAUTHTIMEOUT | ID_AUTHGRACETIME | ID_OPERTIMEOUT | ID_REKEYTIMEOUT | ID_TEKGRACETIME | ID_AUTHREJECTTIMEOUT | ID_SAMAPWAITTIMEOUT | ID_SAMAPMAXRETRIES | ID_MAXCPE | ID_TFTPTIMESTAMP | ID_TFTPMODEMADDRESS | ID_SWUPGRADESERVER | ID_USPACKETCLASS | ID_DSPACKETCLASS | ID_CLASSIFIERREF | ID_CLASSIFIERID | ID_SERVICEFLOWREF | ID_SERVICEFLOWID | ID_RULEPRIORITY | ID_ACTIVATIONSTATE | ID_DSCACTION | ID_IPPACKETCLASSIFIER | ID_IPTOS | ID_IPPROTO | ID_IPSRCADDR | ID_IPSRCMASK | ID_IPDSTADDR | ID_IPDSTMASK | ID_SRCPORTSTART | ID_SRCPORTEND | ID_DSTPORTSTART | ID_DSTPORTEND | ID_LLCPACKETCLASSIFIER | ID_DSTMACADDRESS | ID_SRCMACADDRESS | ID_ETHERTYPE | ID_IEEE802CLASSIFIER | ID_USERPRIORITY | ID_VLANID | ID_IPV6PACKETCLASSIFIER | ID_IPV6TRAFFICCLASSRANGEMASK | ID_IPV6FLOWLABEL | ID_IPV6NEXTHEADERTYPE | ID_IPV6SRCADDR | ID_IPV6SRCPREFLENGTH | ID_IPV6DSTADDR | ID_IPV6DSTPREFLENGTH | ID_USSERVICEFLOW | ID_DSSERVICEFLOW | ID_USSERVICEFLOWREF | ID_USSERVICEFLOWID | ID_DSSERVICEFLOWREF | ID_DSSERVICEFLOWID | ID_SERVICECLASSNAME | ID_QOSPARAMSETTYPE | ID_TRAFFICPRIORITY | ID_MAXRATESUSTAINED | ID_MAXTRAFFICBURST | ID_MINRESERVEDRATE | ID_MINRESPACKETSIZE | ID_ACTQOSPARAMSTIMEOUT | ID_ADMQOSPARAMSTIMEOUT | ID_MAXCONCATENATEDBURST | ID_SCHEDULINGTYPE | ID_REQUESTORTXPOLICY | ID_NOMINALPOLLINTERVAL | ID_TOLERATEDPOLLJITTER | ID_UNSOLICITEDGRANTSIZE | ID_NOMINALGRANTINTERVAL | ID_TOLERATEDGRANTJITTER | ID_GRANTSPERINTERVAL | ID_IPTOSOVERWRITE | ID_MAXDSLATENCY | ID_PHS | ID_PHSCLASSIFIERREF | ID_PHSCLASSIFIERID | ID_PHSERVICEFLOWREF | ID_PHSSERVICEFLOWID | ID_PHSFIELD | ID_PHSINDEX | ID_PHSMASK | ID_PHSSIZE | ID_PHSVERIFY | ID_MAXCLASSIFIERS | ID_GLOBALPRIVACYENABLE | ID_MFGCVCDATA | ID_MANUFACTURERCVC | ID_COSIGNERCVCDATA | ID_COSIGNERCVC | ID_SNMPV3KICKSTART | ID_SNMPV3SECURITYNAME | ID_SNMPV3MGRPUBLICNUMBER | ID_SUBMGMTCONTROL | ID_SUBMGMTFILTERS | ID_SNMPV3TRAPRECEIVER | ID_SNMPV3TRAPRXIP | ID_SNMPV3TRAPRXPORT | ID_SNMPV3TRAPRXTYPE | ID_SNMPV3TRAPRXTIMEOUT | ID_SNMPV3TRAPRXRETRIES | ID_SNMPV3TRAPRXFILTEROID | ID_SNMPV3TRAPRXSECURITYNAME | ID_DOCSISTWOENABLE | ID_TESTMODEENABLE | ID_DSCHANNELLIST | ID_DEFAULTSCANTIMEOUT | ID_SINGLEDSCHANNEL | ID_SINGLEDSTIMEOUT | ID_SINGLEDSFREQUENCY | ID_DSFREQRANGE | ID_DSFREQRANGETIMEOUT | ID_DSFREQRANGESTART | ID_DSFREQRANGEEND | ID_DSFREQRANGESTEPSIZE | ID_VENDORSPECIFIC | ID_VENDORIDENTIFIER | ID_SNMPCPEACCESSCONTROL | ID_IPV6SWUPGRADESERVER | ID_MTACONFIGDELIMITER | ID_GENERICTLV | TLV_CODE | TLV_LENGTH | TLV_VALUE | SNMP_INTEGER | SNMP_COUNTER32 | SNMP_GAUGE32 | SNMP_TIMETICKS | SNMP_UNSIGNED32 | SNMP_COUNTER64 | SNMP_OCTETSTRING | SNMP_IPADDRESS | SNMP_Opaque | SNMP_OID | SNMP_BITSTRING | SNMP_STRING | SNMP_HEXSTRING | T_INTLIST4 | T_INT | T_HEXSTR | T_MACADDR | T_MACMASK | T_IP | T_IPV6 | T_OID | T_TIMETICKS | T_STRING | S_SEMICOLON | S_OPENBRACE | S_CLOSEBRACE )
-        int alt43=180;
+        // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:8: ( WS | COMMENT | LINE_COMMENT | STATIC_MAIN | ID_DOWNSTREAMFREQUENCY | ID_UPSTREAMCHANNELID | ID_NETWORKACCESS | ID_CLASSOFSERVICE | ID_CLASSID | ID_MAXRATEDOWN | ID_MAXRATEUP | ID_PRIORITYUP | ID_GUARANTEEDUP | ID_MAXBURSTUP | ID_PRIVACYENABLE | ID_MODEMCAPABILITIES | ID_CONCATENATIONSUPPORT | ID_MODEMDOCSISVERSION | ID_FRAGMENTATIONSUPPORT | ID_PHSSUPPORT | ID_IGMPSUPPORT | ID_BASELINEPRIVACYSUPPORT | ID_DOWNSTREAMSAIDSUPPORT | ID_UPSTREAMSIDSUPPORT | ID_DCCSUPPORT | ID_SWUPGRADEFILENAME | ID_SNMPWRITECONTROL | ID_SNMPMIBOBJECT | ID_CPEMACADDRESS | ID_BASELINEPRIVACY | ID_AUTHTIMEOUT | ID_REAUTHTIMEOUT | ID_AUTHGRACETIME | ID_OPERTIMEOUT | ID_REKEYTIMEOUT | ID_TEKGRACETIME | ID_AUTHREJECTTIMEOUT | ID_SAMAPWAITTIMEOUT | ID_SAMAPMAXRETRIES | ID_MAXCPE | ID_TFTPTIMESTAMP | ID_TFTPMODEMADDRESS | ID_SWUPGRADESERVER | ID_USPACKETCLASS | ID_DSPACKETCLASS | ID_CLASSIFIERREF | ID_CLASSIFIERID | ID_SERVICEFLOWREF | ID_SERVICEFLOWID | ID_RULEPRIORITY | ID_ACTIVATIONSTATE | ID_DSCACTION | ID_IPPACKETCLASSIFIER | ID_IPTOS | ID_IPPROTO | ID_IPSRCADDR | ID_IPSRCMASK | ID_IPDSTADDR | ID_IPDSTMASK | ID_SRCPORTSTART | ID_SRCPORTEND | ID_DSTPORTSTART | ID_DSTPORTEND | ID_LLCPACKETCLASSIFIER | ID_DSTMACADDRESS | ID_SRCMACADDRESS | ID_ETHERTYPE | ID_IEEE802CLASSIFIER | ID_USERPRIORITY | ID_VLANID | ID_IPV6PACKETCLASSIFIER | ID_IPV6TRAFFICCLASSRANGEMASK | ID_IPV6FLOWLABEL | ID_IPV6NEXTHEADERTYPE | ID_IPV6SRCADDR | ID_IPV6SRCPREFLENGTH | ID_IPV6DSTADDR | ID_IPV6DSTPREFLENGTH | ID_USSERVICEFLOW | ID_DSSERVICEFLOW | ID_USSERVICEFLOWREF | ID_USSERVICEFLOWID | ID_DSSERVICEFLOWREF | ID_DSSERVICEFLOWID | ID_SERVICECLASSNAME | ID_QOSPARAMSETTYPE | ID_TRAFFICPRIORITY | ID_MAXRATESUSTAINED | ID_MAXTRAFFICBURST | ID_MINRESERVEDRATE | ID_MINRESPACKETSIZE | ID_ACTQOSPARAMSTIMEOUT | ID_ADMQOSPARAMSTIMEOUT | ID_MAXCONCATENATEDBURST | ID_SCHEDULINGTYPE | ID_REQUESTORTXPOLICY | ID_NOMINALPOLLINTERVAL | ID_TOLERATEDPOLLJITTER | ID_UNSOLICITEDGRANTSIZE | ID_NOMINALGRANTINTERVAL | ID_TOLERATEDGRANTJITTER | ID_GRANTSPERINTERVAL | ID_IPTOSOVERWRITE | ID_MAXDSLATENCY | ID_PHS | ID_PHSCLASSIFIERREF | ID_PHSCLASSIFIERID | ID_PHSERVICEFLOWREF | ID_PHSSERVICEFLOWID | ID_PHSFIELD | ID_PHSINDEX | ID_PHSMASK | ID_PHSSIZE | ID_PHSVERIFY | ID_MAXCLASSIFIERS | ID_GLOBALPRIVACYENABLE | ID_MFGCVCDATA | ID_MANUFACTURERCVC | ID_COSIGNERCVCDATA | ID_COSIGNERCVC | ID_SNMPV3KICKSTART | ID_SNMPV3SECURITYNAME | ID_SNMPV3MGRPUBLICNUMBER | ID_SUBMGMTCONTROL | ID_SUBMGMTFILTERS | ID_SNMPV3TRAPRECEIVER | ID_SNMPV3TRAPRXIP | ID_SNMPV3TRAPRXPORT | ID_SNMPV3TRAPRXTYPE | ID_SNMPV3TRAPRXTIMEOUT | ID_SNMPV3TRAPRXRETRIES | ID_SNMPV3TRAPRXFILTEROID | ID_SNMPV3TRAPRXSECURITYNAME | ID_SNMPV3TRAPRXIPV6 | ID_DOCSISTWOENABLE | ID_TESTMODEENABLE | ID_DSCHANNELLIST | ID_DEFAULTSCANTIMEOUT | ID_SINGLEDSCHANNEL | ID_SINGLEDSTIMEOUT | ID_SINGLEDSFREQUENCY | ID_DSFREQRANGE | ID_DSFREQRANGETIMEOUT | ID_DSFREQRANGESTART | ID_DSFREQRANGEEND | ID_DSFREQRANGESTEPSIZE | ID_VENDORSPECIFIC | ID_VENDORIDENTIFIER | ID_SNMPCPEACCESSCONTROL | ID_IPV6SWUPGRADESERVER | ID_MTACONFIGDELIMITER | ID_GENERICTLV | TLV_CODE | TLV_LENGTH | TLV_VALUE | SNMP_INTEGER | SNMP_COUNTER32 | SNMP_GAUGE32 | SNMP_TIMETICKS | SNMP_UNSIGNED32 | SNMP_COUNTER64 | SNMP_OCTETSTRING | SNMP_IPADDRESS | SNMP_Opaque | SNMP_OID | SNMP_BITSTRING | SNMP_STRING | SNMP_HEXSTRING | T_INTLIST4 | T_INT | T_HEXSTR | T_MACADDR | T_MACMASK | T_IP | T_IPV6 | T_OID | T_TIMETICKS | T_STRING | S_SEMICOLON | S_OPENBRACE | S_CLOSEBRACE )
+        int alt43=181;
         alt43 = dfa43.predict(input);
         switch (alt43) {
             case 1 :
@@ -6577,329 +6599,336 @@ public class DocsisLexer extends Lexer {
                 }
                 break;
             case 134 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2397: ID_DOCSISTWOENABLE
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2397: ID_SNMPV3TRAPRXIPV6
+                {
+                mID_SNMPV3TRAPRXIPV6(); 
+
+                }
+                break;
+            case 135 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2417: ID_DOCSISTWOENABLE
                 {
                 mID_DOCSISTWOENABLE(); 
 
                 }
                 break;
-            case 135 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2416: ID_TESTMODEENABLE
+            case 136 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2436: ID_TESTMODEENABLE
                 {
                 mID_TESTMODEENABLE(); 
 
                 }
                 break;
-            case 136 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2434: ID_DSCHANNELLIST
+            case 137 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2454: ID_DSCHANNELLIST
                 {
                 mID_DSCHANNELLIST(); 
 
                 }
                 break;
-            case 137 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2451: ID_DEFAULTSCANTIMEOUT
+            case 138 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2471: ID_DEFAULTSCANTIMEOUT
                 {
                 mID_DEFAULTSCANTIMEOUT(); 
 
                 }
                 break;
-            case 138 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2473: ID_SINGLEDSCHANNEL
+            case 139 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2493: ID_SINGLEDSCHANNEL
                 {
                 mID_SINGLEDSCHANNEL(); 
 
                 }
                 break;
-            case 139 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2492: ID_SINGLEDSTIMEOUT
+            case 140 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2512: ID_SINGLEDSTIMEOUT
                 {
                 mID_SINGLEDSTIMEOUT(); 
 
                 }
                 break;
-            case 140 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2511: ID_SINGLEDSFREQUENCY
+            case 141 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2531: ID_SINGLEDSFREQUENCY
                 {
                 mID_SINGLEDSFREQUENCY(); 
 
                 }
                 break;
-            case 141 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2532: ID_DSFREQRANGE
+            case 142 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2552: ID_DSFREQRANGE
                 {
                 mID_DSFREQRANGE(); 
 
                 }
                 break;
-            case 142 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2547: ID_DSFREQRANGETIMEOUT
+            case 143 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2567: ID_DSFREQRANGETIMEOUT
                 {
                 mID_DSFREQRANGETIMEOUT(); 
 
                 }
                 break;
-            case 143 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2569: ID_DSFREQRANGESTART
+            case 144 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2589: ID_DSFREQRANGESTART
                 {
                 mID_DSFREQRANGESTART(); 
 
                 }
                 break;
-            case 144 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2589: ID_DSFREQRANGEEND
+            case 145 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2609: ID_DSFREQRANGEEND
                 {
                 mID_DSFREQRANGEEND(); 
 
                 }
                 break;
-            case 145 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2607: ID_DSFREQRANGESTEPSIZE
+            case 146 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2627: ID_DSFREQRANGESTEPSIZE
                 {
                 mID_DSFREQRANGESTEPSIZE(); 
 
                 }
                 break;
-            case 146 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2630: ID_VENDORSPECIFIC
+            case 147 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2650: ID_VENDORSPECIFIC
                 {
                 mID_VENDORSPECIFIC(); 
 
                 }
                 break;
-            case 147 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2648: ID_VENDORIDENTIFIER
+            case 148 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2668: ID_VENDORIDENTIFIER
                 {
                 mID_VENDORIDENTIFIER(); 
 
                 }
                 break;
-            case 148 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2668: ID_SNMPCPEACCESSCONTROL
+            case 149 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2688: ID_SNMPCPEACCESSCONTROL
                 {
                 mID_SNMPCPEACCESSCONTROL(); 
 
                 }
                 break;
-            case 149 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2692: ID_IPV6SWUPGRADESERVER
+            case 150 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2712: ID_IPV6SWUPGRADESERVER
                 {
                 mID_IPV6SWUPGRADESERVER(); 
 
                 }
                 break;
-            case 150 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2715: ID_MTACONFIGDELIMITER
+            case 151 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2735: ID_MTACONFIGDELIMITER
                 {
                 mID_MTACONFIGDELIMITER(); 
 
                 }
                 break;
-            case 151 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2737: ID_GENERICTLV
+            case 152 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2757: ID_GENERICTLV
                 {
                 mID_GENERICTLV(); 
 
                 }
                 break;
-            case 152 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2751: TLV_CODE
+            case 153 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2771: TLV_CODE
                 {
                 mTLV_CODE(); 
 
                 }
                 break;
-            case 153 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2760: TLV_LENGTH
+            case 154 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2780: TLV_LENGTH
                 {
                 mTLV_LENGTH(); 
 
                 }
                 break;
-            case 154 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2771: TLV_VALUE
+            case 155 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2791: TLV_VALUE
                 {
                 mTLV_VALUE(); 
 
                 }
                 break;
-            case 155 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2781: SNMP_INTEGER
+            case 156 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2801: SNMP_INTEGER
                 {
                 mSNMP_INTEGER(); 
 
                 }
                 break;
-            case 156 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2794: SNMP_COUNTER32
+            case 157 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2814: SNMP_COUNTER32
                 {
                 mSNMP_COUNTER32(); 
 
                 }
                 break;
-            case 157 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2809: SNMP_GAUGE32
+            case 158 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2829: SNMP_GAUGE32
                 {
                 mSNMP_GAUGE32(); 
 
                 }
                 break;
-            case 158 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2822: SNMP_TIMETICKS
+            case 159 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2842: SNMP_TIMETICKS
                 {
                 mSNMP_TIMETICKS(); 
 
                 }
                 break;
-            case 159 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2837: SNMP_UNSIGNED32
+            case 160 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2857: SNMP_UNSIGNED32
                 {
                 mSNMP_UNSIGNED32(); 
 
                 }
                 break;
-            case 160 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2853: SNMP_COUNTER64
+            case 161 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2873: SNMP_COUNTER64
                 {
                 mSNMP_COUNTER64(); 
 
                 }
                 break;
-            case 161 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2868: SNMP_OCTETSTRING
+            case 162 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2888: SNMP_OCTETSTRING
                 {
                 mSNMP_OCTETSTRING(); 
 
                 }
                 break;
-            case 162 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2885: SNMP_IPADDRESS
+            case 163 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2905: SNMP_IPADDRESS
                 {
                 mSNMP_IPADDRESS(); 
 
                 }
                 break;
-            case 163 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2900: SNMP_Opaque
+            case 164 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2920: SNMP_Opaque
                 {
                 mSNMP_Opaque(); 
 
                 }
                 break;
-            case 164 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2912: SNMP_OID
+            case 165 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2932: SNMP_OID
                 {
                 mSNMP_OID(); 
 
                 }
                 break;
-            case 165 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2921: SNMP_BITSTRING
+            case 166 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2941: SNMP_BITSTRING
                 {
                 mSNMP_BITSTRING(); 
 
                 }
                 break;
-            case 166 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2936: SNMP_STRING
+            case 167 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2956: SNMP_STRING
                 {
                 mSNMP_STRING(); 
 
                 }
                 break;
-            case 167 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2948: SNMP_HEXSTRING
+            case 168 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2968: SNMP_HEXSTRING
                 {
                 mSNMP_HEXSTRING(); 
 
                 }
                 break;
-            case 168 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2963: T_INTLIST4
+            case 169 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2983: T_INTLIST4
                 {
                 mT_INTLIST4(); 
 
                 }
                 break;
-            case 169 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2974: T_INT
+            case 170 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2994: T_INT
                 {
                 mT_INT(); 
 
                 }
                 break;
-            case 170 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2980: T_HEXSTR
+            case 171 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3000: T_HEXSTR
                 {
                 mT_HEXSTR(); 
 
                 }
                 break;
-            case 171 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2989: T_MACADDR
+            case 172 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3009: T_MACADDR
                 {
                 mT_MACADDR(); 
 
                 }
                 break;
-            case 172 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:2999: T_MACMASK
+            case 173 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3019: T_MACMASK
                 {
                 mT_MACMASK(); 
 
                 }
                 break;
-            case 173 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3009: T_IP
+            case 174 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3029: T_IP
                 {
                 mT_IP(); 
 
                 }
                 break;
-            case 174 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3014: T_IPV6
+            case 175 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3034: T_IPV6
                 {
                 mT_IPV6(); 
 
                 }
                 break;
-            case 175 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3021: T_OID
+            case 176 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3041: T_OID
                 {
                 mT_OID(); 
 
                 }
                 break;
-            case 176 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3027: T_TIMETICKS
+            case 177 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3047: T_TIMETICKS
                 {
                 mT_TIMETICKS(); 
 
                 }
                 break;
-            case 177 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3039: T_STRING
+            case 178 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3059: T_STRING
                 {
                 mT_STRING(); 
 
                 }
                 break;
-            case 178 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3048: S_SEMICOLON
+            case 179 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3068: S_SEMICOLON
                 {
                 mS_SEMICOLON(); 
 
                 }
                 break;
-            case 179 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3060: S_OPENBRACE
+            case 180 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3080: S_OPENBRACE
                 {
                 mS_OPENBRACE(); 
 
                 }
                 break;
-            case 180 :
-                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3072: S_CLOSEBRACE
+            case 181 :
+                // ch/gauteron/jdocsis/parser/DocsisLexer.g:1:3092: S_CLOSEBRACE
                 {
                 mS_CLOSEBRACE(); 
 
@@ -6927,7 +6956,7 @@ public class DocsisLexer extends Lexer {
     static final String DFA6_acceptS =
         "\4\uffff\1\1\1\2";
     static final String DFA6_specialS =
-        "\2\uffff\1\0\1\1\2\uffff}>";
+        "\2\uffff\1\1\1\0\2\uffff}>";
     static final String[] DFA6_transitionS = {
             "\1\1",
             "\1\2",
@@ -6974,24 +7003,24 @@ public class DocsisLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA6_2 = input.LA(1);
+                        int LA6_3 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA6_2>='\u0000' && LA6_2<='\t')||(LA6_2>='\u000B' && LA6_2<='\f')||(LA6_2>='\u000E' && LA6_2<='\uFFFF')) ) {s = 3;}
+                        if ( ((LA6_3>='\u0000' && LA6_3<='\t')||(LA6_3>='\u000B' && LA6_3<='\f')||(LA6_3>='\u000E' && LA6_3<='\uFFFF')) ) {s = 3;}
 
-                        else if ( (LA6_2=='\n'||LA6_2=='\r') ) {s = 4;}
+                        else if ( (LA6_3=='\n'||LA6_3=='\r') ) {s = 4;}
 
                         else s = 5;
 
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA6_3 = input.LA(1);
+                        int LA6_2 = input.LA(1);
 
                         s = -1;
-                        if ( (LA6_3=='\n'||LA6_3=='\r') ) {s = 4;}
+                        if ( ((LA6_2>='\u0000' && LA6_2<='\t')||(LA6_2>='\u000B' && LA6_2<='\f')||(LA6_2>='\u000E' && LA6_2<='\uFFFF')) ) {s = 3;}
 
-                        else if ( ((LA6_3>='\u0000' && LA6_3<='\t')||(LA6_3>='\u000B' && LA6_3<='\f')||(LA6_3>='\u000E' && LA6_3<='\uFFFF')) ) {s = 3;}
+                        else if ( (LA6_2=='\n'||LA6_2=='\r') ) {s = 4;}
 
                         else s = 5;
 
@@ -7091,19 +7120,19 @@ public class DocsisLexer extends Lexer {
             this.transition = DFA21_transition;
         }
         public String getDescription() {
-            return "253:1: T_IPV6 : ( S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC | ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? );";
+            return "254:1: T_IPV6 : ( S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC ':' S_HEX4FAC | ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? '::' ( ( S_HEX4FAC ':' )* ( S_HEX4FAC )+ )? );";
         }
     }
     static final String DFA34_eotS =
-        "\5\uffff\1\7\2\uffff";
+        "\4\uffff\1\7\3\uffff";
     static final String DFA34_eofS =
         "\10\uffff";
     static final String DFA34_minS =
-        "\3\55\1\42\1\uffff\1\55\2\uffff";
+        "\3\55\1\42\1\55\3\uffff";
     static final String DFA34_maxS =
-        "\4\172\1\uffff\1\172\2\uffff";
+        "\5\172\3\uffff";
     static final String DFA34_acceptS =
-        "\4\uffff\1\2\1\uffff\1\3\1\1";
+        "\5\uffff\1\3\1\2\1\1";
     static final String DFA34_specialS =
         "\10\uffff}>";
     static final String[] DFA34_transitionS = {
@@ -7111,11 +7140,11 @@ public class DocsisLexer extends Lexer {
             "\1\2\2\uffff\12\2\7\uffff\32\2\4\uffff\1\2\1\uffff\32\2",
             "\1\2\1\3\1\uffff\12\2\7\uffff\32\2\4\uffff\1\2\1\uffff\32"+
             "\2",
-            "\1\6\4\uffff\1\4\5\uffff\1\2\2\uffff\12\5\7\uffff\32\5\4\uffff"+
-            "\1\2\1\uffff\32\5",
+            "\1\5\4\uffff\1\6\5\uffff\1\2\2\uffff\12\4\7\uffff\32\4\4\uffff"+
+            "\1\2\1\uffff\32\4",
+            "\1\2\1\3\1\uffff\12\4\7\uffff\32\4\4\uffff\1\2\1\uffff\32"+
+            "\4",
             "",
-            "\1\2\1\3\1\uffff\12\5\7\uffff\32\5\4\uffff\1\2\1\uffff\32"+
-            "\5",
             "",
             ""
     };
@@ -7150,7 +7179,7 @@ public class DocsisLexer extends Lexer {
             this.transition = DFA34_transition;
         }
         public String getDescription() {
-            return "256:1: T_OID : ( ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+ | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\'' | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"' );";
+            return "257:1: T_OID : ( ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ ( S_ALPHANUM )+ | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\\'' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\\'' | ( '.' )? ( ( S_ALPHANUM | '_' | '-' )+ '.' )+ '\"' ( S_ALPHANUM | '[' | ']' | ',' | ':' | '_' | '-' | '.' )+ '\"' );";
         }
     }
     static final String DFA24_eotS =
@@ -7202,65 +7231,65 @@ public class DocsisLexer extends Lexer {
             this.transition = DFA24_transition;
         }
         public String getDescription() {
-            return "()+ loopback of 256:17: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+";
+            return "()+ loopback of 257:17: ( ( S_ALPHANUM | '_' | '-' )+ '.' )+";
         }
     }
     static final String DFA43_eotS =
         "\31\uffff\2\147\112\uffff\1\147\2\uffff\1\147\3\uffff\1\147\40"+
-        "\uffff\1\u00f2\62\uffff\1\u012a\1\uffff\1\147\1\uffff\1\35\1\u0130"+
+        "\uffff\1\u00f2\62\uffff\1\u012a\1\uffff\1\147\1\35\1\uffff\1\u0130"+
         "\146\uffff\1\147\70\uffff\1\u01df\4\uffff\1\u01e5\71\uffff\1\147"+
-        "\2\uffff\1\35\2\uffff\1\u022a\130\uffff\1\u0285\13\uffff\1\u0291"+
-        "\16\uffff\1\u02a0\54\uffff\1\u02d0\11\uffff\1\u02db\3\uffff\1\u02df"+
-        "\5\uffff\1\u01df\3\uffff\1\u02e8\16\uffff\1\u02f9\47\uffff\1\u0322"+
-        "\16\uffff\1\u032f\63\uffff\1\u0362\1\u0363\74\uffff\1\u039f\10\uffff"+
-        "\1\u03a7\14\uffff\1\u03b2\22\uffff\1\u03c5\25\uffff\1\u03db\1\u03dc"+
-        "\10\uffff\1\u03e3\10\uffff\1\u03ec\1\u03ed\1\u03ee\1\u03ef\1\u03f0"+
-        "\13\uffff\1\u03fc\50\uffff\1\u0426\1\uffff\1\u0427\1\uffff\1\u0429"+
-        "\3\uffff\1\u042d\5\uffff\1\u0431\11\uffff\1\u043b\3\uffff\1\u0440"+
-        "\4\uffff\1\u0444\13\uffff\1\u0450\12\uffff\1\u045a\1\uffff\1\u045c"+
-        "\6\uffff\1\u0462\43\uffff\1\u0480\43\uffff\1\u049f\30\uffff\1\u04b7"+
-        "\17\uffff\1\u04c7\13\uffff\1\u04d0\7\uffff\1\u04d8\2\uffff\1\u04db"+
-        "\30\uffff\1\u04f5\11\uffff\1\u04ff\1\u0500\20\uffff\1\u0510\13\uffff"+
-        "\1\u051c\13\uffff\1\u0527\7\uffff\1\u052f\7\uffff\1\u0536\40\uffff"+
-        "\1\u0559\16\uffff\1\u0567\1\uffff\1\u0569\2\uffff\1\u056a\31\uffff"+
-        "\1\u0583\1\uffff\1\u0584\1\u0587\1\u0588\6\uffff\1\u0590\1\uffff"+
-        "\1\u0593\1\uffff\1\u0595\3\uffff\1\u0599\3\uffff\1\u059c\1\u059d"+
-        "\13\uffff\1\u05a9\10\uffff\1\u05b2\16\uffff\1\u05c2\2\uffff\1\u05c4"+
-        "\6\uffff\1\u05cb\4\uffff\1\u05d0\4\uffff\1\u05d2\13\uffff\1\u05de"+
-        "\24\uffff\1\u05ef\13\uffff\1\u05f8\14\uffff\1\u0603\21\uffff\1\u0613"+
-        "\11\uffff\1\u061d\3\uffff\1\u061f\1\u0620\1\u0621\17\uffff\1\u062e"+
-        "\1\uffff\1\u0630\5\uffff\1\u0635\1\u0636\2\uffff\1\u0639\4\uffff"+
-        "\1\u063e\2\uffff\1\u0641\10\uffff\1\u0649\5\uffff\1\u064e\3\uffff"+
-        "\1\u0652\14\uffff\1\u065f\1\uffff\1\u0661\1\uffff\1\u0663\14\uffff"+
-        "\1\u066f\5\uffff\1\u0671\1\u0672\2\uffff\1\u0675\4\uffff\1\u067a"+
-        "\6\uffff\1\u067f\1\u0680\6\uffff\1\u0684\5\uffff\1\u0689\2\uffff"+
-        "\1\u068b\4\uffff\1\u0690\7\uffff\1\u0696\1\u0697\20\uffff\1\u06a5"+
-        "\4\uffff\1\u06a9\1\u06aa\5\uffff\1\u06b0\1\uffff\1\u06b1\10\uffff"+
-        "\1\u06b7\4\uffff\1\u06bb\3\uffff\1\u06bd\5\uffff\1\u06c2\5\uffff"+
-        "\1\u06c7\6\uffff\1\u06cd\2\uffff\1\u06ce\3\uffff\1\u06d2\3\uffff"+
-        "\1\u06d6\1\uffff\1\u06d8\1\uffff\1\u06da\15\uffff\1\u06e3\1\u06e4"+
-        "\2\uffff\1\u06e7\7\uffff\1\u06ec\1\u06ed\4\uffff\1\u06f0\1\uffff"+
-        "\1\u06f2\1\uffff\1\u06f3\10\uffff\1\u06fa\3\uffff\1\u06fd\5\uffff"+
-        "\1\u0700\1\uffff\1\u0702\20\uffff\1\u070e\2\uffff\1\u0710\3\uffff"+
-        "\1\u0712\2\uffff\1\u0715\5\uffff\1\u0719\4\uffff\1\u071c\1\u071d"+
-        "\3\uffff\1\u0721\1\u0722\1\u0723\1\uffff\1\u0725\1\u0726\3\uffff"+
-        "\1\u0728\1\uffff\1\u0729\1\u072a\1\uffff\1\u072b\1\u072c\10\uffff"+
-        "\1\u0732\3\uffff\1\u0733\2\uffff\1\u0734\7\uffff\1\u0737\1\u0738"+
-        "\5\uffff\1\u073b\7\uffff\1\u0740\1\u0741\2\uffff";
+        "\1\35\4\uffff\1\u022a\130\uffff\1\u0285\13\uffff\1\u0291\16\uffff"+
+        "\1\u02a0\54\uffff\1\u02d0\11\uffff\1\u02db\3\uffff\1\u02df\5\uffff"+
+        "\1\u01df\3\uffff\1\u02e8\16\uffff\1\u02f9\47\uffff\1\u0322\14\uffff"+
+        "\1\u032d\65\uffff\1\u0362\1\u0363\74\uffff\1\u039f\10\uffff\1\u03a7"+
+        "\14\uffff\1\u03b2\22\uffff\1\u03c5\25\uffff\1\u03db\1\u03dc\10\uffff"+
+        "\1\u03e3\10\uffff\1\u03ec\1\u03ed\1\u03ee\1\u03ef\1\u03f0\13\uffff"+
+        "\1\u03fc\50\uffff\1\u0426\1\uffff\1\u0427\1\uffff\1\u0429\3\uffff"+
+        "\1\u042d\5\uffff\1\u0431\11\uffff\1\u043b\3\uffff\1\u0440\4\uffff"+
+        "\1\u0444\13\uffff\1\u0450\12\uffff\1\u045a\1\uffff\1\u045c\6\uffff"+
+        "\1\u0462\43\uffff\1\u0480\43\uffff\1\u049f\30\uffff\1\u04b7\17\uffff"+
+        "\1\u04c7\13\uffff\1\u04d0\7\uffff\1\u04d8\2\uffff\1\u04db\30\uffff"+
+        "\1\u04f5\11\uffff\1\u04ff\1\u0500\20\uffff\1\u0510\13\uffff\1\u051c"+
+        "\13\uffff\1\u0527\7\uffff\1\u052f\7\uffff\1\u0536\40\uffff\1\u0559"+
+        "\16\uffff\1\u0567\1\uffff\1\u0569\2\uffff\1\u056a\31\uffff\1\u0583"+
+        "\1\uffff\1\u0584\1\u0587\1\u0588\6\uffff\1\u0590\1\uffff\1\u0593"+
+        "\1\uffff\1\u0595\3\uffff\1\u0599\3\uffff\1\u059c\1\u059d\13\uffff"+
+        "\1\u05a9\10\uffff\1\u05b2\16\uffff\1\u05c2\2\uffff\1\u05c4\6\uffff"+
+        "\1\u05cb\4\uffff\1\u05d0\4\uffff\1\u05d2\13\uffff\1\u05de\24\uffff"+
+        "\1\u05ef\13\uffff\1\u05f8\14\uffff\1\u0603\21\uffff\1\u0614\11\uffff"+
+        "\1\u061e\3\uffff\1\u0620\1\u0621\1\u0622\17\uffff\1\u062f\1\uffff"+
+        "\1\u0631\5\uffff\1\u0636\1\u0637\2\uffff\1\u063a\4\uffff\1\u063f"+
+        "\2\uffff\1\u0642\10\uffff\1\u064a\5\uffff\1\u064f\3\uffff\1\u0653"+
+        "\14\uffff\1\u0660\1\uffff\1\u0662\1\uffff\1\u0664\15\uffff\1\u0671"+
+        "\5\uffff\1\u0673\1\u0674\2\uffff\1\u0677\4\uffff\1\u067c\6\uffff"+
+        "\1\u0681\1\u0682\6\uffff\1\u0686\5\uffff\1\u068b\2\uffff\1\u068d"+
+        "\4\uffff\1\u0692\7\uffff\1\u0698\1\u0699\20\uffff\1\u06a7\4\uffff"+
+        "\1\u06ab\1\u06ac\1\u06ad\5\uffff\1\u06b3\1\uffff\1\u06b4\10\uffff"+
+        "\1\u06ba\4\uffff\1\u06be\3\uffff\1\u06c0\5\uffff\1\u06c5\5\uffff"+
+        "\1\u06ca\6\uffff\1\u06d0\2\uffff\1\u06d1\3\uffff\1\u06d5\3\uffff"+
+        "\1\u06d9\1\uffff\1\u06db\1\uffff\1\u06dd\16\uffff\1\u06e6\1\u06e7"+
+        "\2\uffff\1\u06ea\7\uffff\1\u06ef\1\u06f0\4\uffff\1\u06f3\1\uffff"+
+        "\1\u06f5\1\uffff\1\u06f6\10\uffff\1\u06fd\3\uffff\1\u0700\5\uffff"+
+        "\1\u0703\1\uffff\1\u0705\20\uffff\1\u0711\2\uffff\1\u0713\3\uffff"+
+        "\1\u0715\2\uffff\1\u0718\5\uffff\1\u071c\4\uffff\1\u071f\1\u0720"+
+        "\3\uffff\1\u0724\1\u0725\1\u0726\1\uffff\1\u0728\1\u0729\3\uffff"+
+        "\1\u072b\1\uffff\1\u072c\1\u072d\1\uffff\1\u072e\1\u072f\10\uffff"+
+        "\1\u0735\3\uffff\1\u0736\2\uffff\1\u0737\7\uffff\1\u073a\1\u073b"+
+        "\5\uffff\1\u073e\7\uffff\1\u0743\1\u0744\2\uffff";
     static final String DFA43_eofS =
-        "\u0742\uffff";
+        "\u0745\uffff";
     static final String DFA43_minS =
         "\1\11\1\uffff\1\52\26\55\2\54\1\55\2\uffff\1\60\6\uffff\100\55"+
-        "\1\54\1\55\1\uffff\1\54\1\60\1\42\1\uffff\1\54\12\55\1\60\111\55"+
-        "\1\60\1\54\1\60\1\56\17\55\1\60\35\55\1\uffff\67\55\1\uffff\1\60"+
-        "\1\54\2\60\1\42\1\uffff\20\55\1\60\141\55\1\60\1\54\2\60\1\56\20"+
-        "\55\1\60\46\55\1\uffff\5\55\1\uffff\74\55\3\60\1\56\1\60\1\42\2"+
+        "\1\54\1\55\1\uffff\1\54\1\42\1\60\1\uffff\1\54\12\55\1\60\111\55"+
+        "\1\60\1\54\1\56\1\60\17\55\1\60\35\55\1\uffff\67\55\1\uffff\1\60"+
+        "\1\54\1\42\2\60\1\uffff\20\55\1\60\141\55\1\60\1\54\1\56\2\60\20"+
+        "\55\1\60\46\55\1\uffff\5\55\1\uffff\74\55\2\60\1\42\2\60\1\56\2"+
         "\55\1\uffff\16\55\1\60\113\55\1\uffff\13\55\1\uffff\16\55\1\uffff"+
-        "\4\55\1\60\1\uffff\2\60\23\55\1\60\23\55\1\uffff\12\55\1\uffff\3"+
-        "\55\1\uffff\10\55\1\uffff\20\55\1\uffff\50\55\1\uffff\11\55\3\60"+
-        "\1\uffff\22\55\1\60\37\55\2\uffff\73\55\1\uffff\7\55\1\uffff\7\55"+
-        "\1\56\1\60\1\55\1\uffff\20\55\1\60\1\55\1\uffff\25\55\2\uffff\6"+
-        "\55\1\uffff\10\55\5\uffff\13\55\1\uffff\51\55\2\uffff\1\55\1\uffff"+
+        "\4\55\1\60\1\uffff\1\55\2\60\22\55\1\60\23\55\1\uffff\12\55\1\uffff"+
+        "\3\55\1\uffff\10\55\1\uffff\20\55\1\uffff\50\55\1\uffff\11\55\1"+
+        "\60\1\uffff\2\60\22\55\1\60\37\55\2\uffff\73\55\1\uffff\7\55\1\uffff"+
+        "\7\55\1\56\1\60\1\55\1\uffff\20\55\1\60\1\55\1\uffff\25\55\2\uffff"+
+        "\6\55\1\uffff\10\55\5\uffff\13\55\1\uffff\51\55\2\uffff\1\55\1\uffff"+
         "\3\55\1\uffff\1\56\2\55\1\uffff\11\55\1\uffff\4\55\1\uffff\1\60"+
         "\2\55\1\uffff\13\55\1\uffff\11\55\1\uffff\1\55\1\uffff\5\55\1\uffff"+
         "\35\55\1\uffff\36\55\1\uffff\16\55\1\60\10\55\1\uffff\17\55\1\uffff"+
@@ -7270,13 +7299,13 @@ public class DocsisLexer extends Lexer {
         "\2\uffff\2\55\2\uffff\7\55\1\uffff\2\55\1\uffff\1\55\1\uffff\3\55"+
         "\1\uffff\2\55\2\uffff\13\55\1\uffff\10\55\1\uffff\17\55\1\uffff"+
         "\1\55\1\uffff\6\55\1\uffff\4\55\1\uffff\1\55\1\uffff\13\55\1\uffff"+
-        "\12\55\1\60\5\55\1\uffff\10\55\1\uffff\12\55\1\uffff\17\55\1\uffff"+
+        "\12\55\1\60\5\55\1\uffff\10\55\1\uffff\12\55\1\uffff\20\55\1\uffff"+
         "\11\55\1\uffff\1\55\3\uffff\14\55\1\uffff\1\55\1\uffff\4\55\2\uffff"+
         "\2\55\1\uffff\4\55\1\uffff\1\60\1\55\1\uffff\7\55\1\uffff\4\55\1"+
-        "\uffff\3\55\1\uffff\14\55\1\uffff\1\55\1\uffff\1\55\1\uffff\13\55"+
+        "\uffff\3\55\1\uffff\14\55\1\uffff\1\55\1\uffff\1\55\1\uffff\14\55"+
         "\1\uffff\1\55\2\uffff\2\55\1\uffff\4\55\1\uffff\4\55\2\uffff\3\55"+
         "\1\uffff\3\55\1\57\1\uffff\1\55\1\uffff\4\55\1\uffff\5\55\2\uffff"+
-        "\15\55\1\uffff\3\55\2\uffff\5\55\2\uffff\5\55\1\uffff\3\55\1\uffff"+
+        "\15\55\1\uffff\3\55\3\uffff\5\55\2\uffff\5\55\1\uffff\3\55\1\uffff"+
         "\1\55\1\uffff\4\55\2\uffff\3\55\1\uffff\5\55\2\uffff\3\55\1\uffff"+
         "\3\55\1\uffff\1\55\1\uffff\1\55\1\uffff\10\55\2\uffff\2\55\1\uffff"+
         "\4\55\2\uffff\2\55\1\uffff\1\55\2\uffff\6\55\1\uffff\2\55\1\uffff"+
@@ -7285,14 +7314,14 @@ public class DocsisLexer extends Lexer {
         "\1\55\5\uffff\5\55\3\uffff\2\55\2\uffff\2\55\1\uffff\4\55\2\uffff";
     static final String DFA43_maxS =
         "\1\175\1\uffff\1\57\31\172\2\uffff\1\71\6\uffff\102\172\1\uffff"+
-        "\1\172\1\146\1\172\1\uffff\1\71\12\172\1\146\111\172\1\146\1\172"+
-        "\1\146\1\71\17\172\1\146\35\172\1\uffff\67\172\1\uffff\1\146\1\172"+
-        "\2\146\1\172\1\uffff\20\172\1\146\141\172\1\146\1\172\2\146\1\71"+
-        "\20\172\1\146\46\172\1\uffff\5\172\1\uffff\74\172\1\146\1\72\3\146"+
-        "\3\172\1\uffff\16\172\1\146\113\172\1\uffff\13\172\1\uffff\16\172"+
-        "\1\uffff\4\172\1\146\1\uffff\2\146\23\172\1\146\23\172\1\uffff\12"+
-        "\172\1\uffff\3\172\1\uffff\10\172\1\uffff\20\172\1\uffff\50\172"+
-        "\1\uffff\11\172\1\146\1\72\1\146\1\uffff\22\172\1\146\37\172\2\uffff"+
+        "\2\172\1\146\1\uffff\1\71\12\172\1\146\111\172\1\146\1\172\1\71"+
+        "\1\146\17\172\1\146\35\172\1\uffff\67\172\1\uffff\1\146\2\172\2"+
+        "\146\1\uffff\20\172\1\146\141\172\1\146\1\172\1\71\2\146\20\172"+
+        "\1\146\46\172\1\uffff\5\172\1\uffff\74\172\1\146\1\72\1\172\3\146"+
+        "\2\172\1\uffff\16\172\1\146\113\172\1\uffff\13\172\1\uffff\16\172"+
+        "\1\uffff\4\172\1\146\1\uffff\1\172\2\146\22\172\1\146\23\172\1\uffff"+
+        "\12\172\1\uffff\3\172\1\uffff\10\172\1\uffff\20\172\1\uffff\50\172"+
+        "\1\uffff\11\172\1\146\1\uffff\1\72\1\146\22\172\1\146\37\172\2\uffff"+
         "\73\172\1\uffff\7\172\1\uffff\7\172\2\146\1\172\1\uffff\20\172\1"+
         "\146\1\172\1\uffff\25\172\2\uffff\6\172\1\uffff\10\172\5\uffff\13"+
         "\172\1\uffff\51\172\2\uffff\1\172\1\uffff\3\172\1\uffff\1\72\2\172"+
@@ -7306,13 +7335,13 @@ public class DocsisLexer extends Lexer {
         "\1\172\1\uffff\3\172\1\uffff\2\172\2\uffff\13\172\1\uffff\10\172"+
         "\1\uffff\17\172\1\uffff\1\172\1\uffff\6\172\1\uffff\4\172\1\uffff"+
         "\1\172\1\uffff\13\172\1\uffff\12\172\1\146\5\172\1\uffff\10\172"+
-        "\1\uffff\12\172\1\uffff\17\172\1\uffff\11\172\1\uffff\1\172\3\uffff"+
+        "\1\uffff\12\172\1\uffff\20\172\1\uffff\11\172\1\uffff\1\172\3\uffff"+
         "\14\172\1\uffff\1\172\1\uffff\4\172\2\uffff\2\172\1\uffff\4\172"+
         "\1\uffff\1\146\1\172\1\uffff\7\172\1\uffff\4\172\1\uffff\3\172\1"+
-        "\uffff\14\172\1\uffff\1\172\1\uffff\1\172\1\uffff\13\172\1\uffff"+
+        "\uffff\14\172\1\uffff\1\172\1\uffff\1\172\1\uffff\14\172\1\uffff"+
         "\1\172\2\uffff\2\172\1\uffff\4\172\1\uffff\4\172\2\uffff\3\172\1"+
         "\uffff\3\172\1\146\1\uffff\1\172\1\uffff\4\172\1\uffff\5\172\2\uffff"+
-        "\15\172\1\uffff\3\172\2\uffff\5\172\2\uffff\5\172\1\uffff\3\172"+
+        "\15\172\1\uffff\3\172\3\uffff\5\172\2\uffff\5\172\1\uffff\3\172"+
         "\1\uffff\1\172\1\uffff\4\172\2\uffff\3\172\1\uffff\5\172\2\uffff"+
         "\3\172\1\uffff\3\172\1\uffff\1\172\1\uffff\1\172\1\uffff\10\172"+
         "\2\uffff\2\172\1\uffff\4\172\2\uffff\2\172\1\uffff\1\172\2\uffff"+
@@ -7321,44 +7350,44 @@ public class DocsisLexer extends Lexer {
         "\2\172\2\uffff\3\172\3\uffff\1\172\2\uffff\1\172\5\uffff\5\172\3"+
         "\uffff\2\172\2\uffff\2\172\1\uffff\4\172\2\uffff";
     static final String DFA43_acceptS =
-        "\1\uffff\1\1\32\uffff\1\u00ae\1\u00af\1\uffff\1\u00b1\1\u00b2\1"+
-        "\u00b3\1\u00b4\1\2\1\3\102\uffff\1\u00a9\3\uffff\1\u00a8\u0086\uffff"+
-        "\1\151\67\uffff\1\u00aa\5\uffff\1\4\u00ae\uffff\1\u009d\5\uffff"+
-        "\1\66\104\uffff\1\50\132\uffff\1\u00a6\13\uffff\1\u00a3\16\uffff"+
-        "\1\106\5\uffff\1\u00b0\51\uffff\1\11\12\uffff\1\161\3\uffff\1\160"+
-        "\10\uffff\1\67\20\uffff\1\u009b\50\uffff\1\u0098\14\uffff\1\u00ad"+
-        "\62\uffff\1\156\1\157\73\uffff\1\u00a4\7\uffff\1\u009a\12\uffff"+
-        "\1\13\22\uffff\1\64\25\uffff\1\u009c\1\u00a0\6\uffff\1\162\10\uffff"+
-        "\1\70\1\71\1\72\1\73\1\u00a2\13\uffff\1\u00a5\51\uffff\1\u0099\1"+
-        "\u009e\1\uffff\1\103\3\uffff\1\u00a7\3\uffff\1\16\11\uffff\1\165"+
-        "\4\uffff\1\31\3\uffff\1\77\13\uffff\1\u009f\11\uffff\1\14\1\uffff"+
-        "\1\24\5\uffff\1\u0097\35\uffff\1\75\36\uffff\1\12\27\uffff\1\u008d"+
+        "\1\uffff\1\1\32\uffff\1\u00af\1\u00b0\1\uffff\1\u00b2\1\u00b3\1"+
+        "\u00b4\1\u00b5\1\2\1\3\102\uffff\1\u00aa\3\uffff\1\u00a9\u0086\uffff"+
+        "\1\151\67\uffff\1\u00ab\5\uffff\1\4\u00ae\uffff\1\u009e\5\uffff"+
+        "\1\66\104\uffff\1\50\132\uffff\1\u00a7\13\uffff\1\u00a4\16\uffff"+
+        "\1\106\5\uffff\1\u00b1\51\uffff\1\11\12\uffff\1\161\3\uffff\1\160"+
+        "\10\uffff\1\67\20\uffff\1\u009c\50\uffff\1\u0099\12\uffff\1\u00ae"+
+        "\64\uffff\1\156\1\157\73\uffff\1\u00a5\7\uffff\1\u009b\12\uffff"+
+        "\1\13\22\uffff\1\64\25\uffff\1\u009d\1\u00a1\6\uffff\1\162\10\uffff"+
+        "\1\70\1\71\1\72\1\73\1\u00a3\13\uffff\1\u00a6\51\uffff\1\u009a\1"+
+        "\u009f\1\uffff\1\103\3\uffff\1\u00a8\3\uffff\1\16\11\uffff\1\165"+
+        "\4\uffff\1\31\3\uffff\1\77\13\uffff\1\u00a0\11\uffff\1\14\1\uffff"+
+        "\1\24\5\uffff\1\u0098\35\uffff\1\75\36\uffff\1\12\27\uffff\1\u008e"+
         "\17\uffff\1\170\10\uffff\1\25\7\uffff\1\113\2\uffff\1\115\31\uffff"+
-        "\1\37\11\uffff\1\42\1\u00a1\17\uffff\1\150\13\uffff\1\76\12\uffff"+
+        "\1\37\11\uffff\1\42\1\u00a2\17\uffff\1\150\13\uffff\1\76\12\uffff"+
         "\1\105\7\uffff\1\57\6\uffff\1\15\42\uffff\1\74\15\uffff\1\43\1\uffff"+
-        "\1\62\1\44\30\uffff\1\55\1\101\2\uffff\1\120\1\u0088\7\uffff\1\54"+
+        "\1\62\1\44\30\uffff\1\55\1\101\2\uffff\1\120\1\u0089\7\uffff\1\54"+
         "\2\uffff\1\117\1\uffff\1\7\3\uffff\1\56\2\uffff\1\35\1\17\13\uffff"+
         "\1\111\10\uffff\1\34\17\uffff\1\61\1\uffff\1\102\6\uffff\1\41\4"+
-        "\uffff\1\40\1\uffff\1\51\13\uffff\1\163\20\uffff\1\u0090\10\uffff"+
-        "\1\10\12\uffff\1\147\17\uffff\1\177\11\uffff\1\60\1\uffff\1\137"+
-        "\1\174\1\175\14\uffff\1\u0087\1\uffff\1\u0092\4\uffff\1\131\1\166"+
-        "\2\uffff\1\132\4\uffff\1\u0086\2\uffff\1\124\7\uffff\1\122\4\uffff"+
-        "\1\167\3\uffff\1\153\14\uffff\1\36\1\uffff\1\53\1\uffff\1\171\13"+
-        "\uffff\1\47\1\uffff\1\u008a\1\u008b\2\uffff\1\63\4\uffff\1\127\4"+
-        "\uffff\1\126\1\130\3\uffff\1\133\4\uffff\1\123\1\uffff\1\u008f\4"+
-        "\uffff\1\121\5\uffff\1\155\1\152\15\uffff\1\33\3\uffff\1\u0080\1"+
-        "\u0081\5\uffff\1\46\1\125\5\uffff\1\52\3\uffff\1\u0093\1\uffff\1"+
-        "\20\4\uffff\1\u00ab\1\u00ac\3\uffff\1\6\5\uffff\1\154\1\146\3\uffff"+
-        "\1\104\3\uffff\1\114\1\uffff\1\116\1\uffff\1\32\10\uffff\1\u008c"+
-        "\1\45\2\uffff\1\140\4\uffff\1\22\1\u0096\2\uffff\1\u008e\1\uffff"+
-        "\1\u0089\1\30\6\uffff\1\65\2\uffff\1\112\2\uffff\1\172\1\uffff\1"+
-        "\176\13\uffff\1\5\1\uffff\1\u0091\1\uffff\1\141\2\uffff\1\164\3"+
-        "\uffff\1\u0095\2\uffff\1\u0082\1\u0083\3\uffff\1\134\1\135\1\142"+
-        "\1\uffff\1\100\1\136\1\uffff\1\143\1\144\1\21\1\23\1\107\5\uffff"+
-        "\1\u0094\1\145\1\27\2\uffff\1\173\1\u0084\2\uffff\1\26\4\uffff\1"+
-        "\u0085\1\110";
+        "\uffff\1\40\1\uffff\1\51\13\uffff\1\163\20\uffff\1\u0091\10\uffff"+
+        "\1\10\12\uffff\1\147\20\uffff\1\177\11\uffff\1\60\1\uffff\1\137"+
+        "\1\174\1\175\14\uffff\1\u0088\1\uffff\1\u0093\4\uffff\1\131\1\166"+
+        "\2\uffff\1\132\4\uffff\1\u0087\2\uffff\1\124\7\uffff\1\122\4\uffff"+
+        "\1\167\3\uffff\1\153\14\uffff\1\36\1\uffff\1\53\1\uffff\1\171\14"+
+        "\uffff\1\47\1\uffff\1\u008b\1\u008c\2\uffff\1\63\4\uffff\1\127\4"+
+        "\uffff\1\126\1\130\3\uffff\1\133\4\uffff\1\123\1\uffff\1\u0090\4"+
+        "\uffff\1\121\5\uffff\1\155\1\152\15\uffff\1\33\3\uffff\1\u0086\1"+
+        "\u0080\1\u0081\5\uffff\1\46\1\125\5\uffff\1\52\3\uffff\1\u0094\1"+
+        "\uffff\1\20\4\uffff\1\u00ac\1\u00ad\3\uffff\1\6\5\uffff\1\154\1"+
+        "\146\3\uffff\1\104\3\uffff\1\114\1\uffff\1\116\1\uffff\1\32\10\uffff"+
+        "\1\u008d\1\45\2\uffff\1\140\4\uffff\1\22\1\u0097\2\uffff\1\u008f"+
+        "\1\uffff\1\u008a\1\30\6\uffff\1\65\2\uffff\1\112\2\uffff\1\172\1"+
+        "\uffff\1\176\13\uffff\1\5\1\uffff\1\u0092\1\uffff\1\141\2\uffff"+
+        "\1\164\3\uffff\1\u0096\2\uffff\1\u0082\1\u0083\3\uffff\1\134\1\135"+
+        "\1\142\1\uffff\1\100\1\136\1\uffff\1\143\1\144\1\21\1\23\1\107\5"+
+        "\uffff\1\u0095\1\145\1\27\2\uffff\1\173\1\u0084\2\uffff\1\26\4\uffff"+
+        "\1\u0085\1\110";
     static final String DFA43_specialS =
-        "\u0742\uffff}>";
+        "\u0745\uffff}>";
     static final String[] DFA43_transitionS = {
             "\2\1\2\uffff\1\1\22\uffff\1\1\1\uffff\1\37\10\uffff\1\36\1"+
             "\uffff\1\30\1\35\1\2\1\31\11\32\1\34\1\40\5\uffff\1\17\1\15"+
@@ -7413,9 +7442,9 @@ public class DocsisLexer extends Lexer {
             "\1\144\25\35",
             "\2\35\1\uffff\12\145\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\1\153\1\35\1\152\1\uffff\12\150\1\151\6\uffff\6\57\21\35"+
+            "\1\153\1\35\1\151\1\uffff\12\150\1\152\6\uffff\6\57\21\35"+
             "\1\146\2\35\4\uffff\1\35\1\uffff\6\57\21\35\1\146\2\35",
-            "\1\153\1\35\1\152\1\uffff\12\150\1\151\6\uffff\6\57\24\35"+
+            "\1\153\1\35\1\151\1\uffff\12\150\1\152\6\uffff\6\57\24\35"+
             "\4\uffff\1\35\1\uffff\6\57\24\35",
             "\2\35\1\uffff\12\57\1\34\6\uffff\6\57\24\35\4\uffff\1\35\1"+
             "\uffff\6\57\24\35",
@@ -7562,11 +7591,11 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\u00c0\7\uffff\6\u00c0\24\35\4\uffff\1\35"+
             "\1\uffff\6\u00c0\24\35",
             "",
-            "\1\153\1\35\1\152\1\uffff\12\u00c2\1\u00c1\6\uffff\6\170\24"+
+            "\1\153\1\35\1\151\1\uffff\12\u00c2\1\u00c1\6\uffff\6\170\24"+
             "\35\4\uffff\1\35\1\uffff\6\170\24\35",
-            "\12\u00c3\1\34\6\uffff\6\34\32\uffff\6\34",
-            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u00c4\7\uffff\32"+
+            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u00c3\7\uffff\32"+
             "\35\4\uffff\1\35\1\uffff\32\35",
+            "\12\u00c4\1\34\6\uffff\6\34\32\uffff\6\34",
             "",
             "\1\153\3\uffff\12\154",
             "\2\35\1\uffff\12\35\7\uffff\15\35\1\u00c5\14\35\4\uffff\1"+
@@ -7738,10 +7767,10 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\u00c0\7\uffff\6\u00c0\24\35\4\uffff\1\35"+
             "\1\uffff\6\u00c0\24\35",
             "\12\u012b\1\34\6\uffff\6\u00d4\32\uffff\6\u00d4",
-            "\1\153\1\35\1\152\1\uffff\12\u012c\1\151\6\uffff\6\u00d3\24"+
+            "\1\153\1\35\1\151\1\uffff\12\u012c\1\152\6\uffff\6\u00d3\24"+
             "\35\4\uffff\1\35\1\uffff\6\u00d3\24\35",
-            "\12\u012d\1\u012e\6\uffff\6\34\32\uffff\6\34",
-            "\1\u012f\1\uffff\12\u00c4",
+            "\1\u012d\1\uffff\12\u00c3",
+            "\12\u012e\1\u012f\6\uffff\6\34\32\uffff\6\34",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0131"+
@@ -7944,13 +7973,13 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
             "\35\1\u01a2\6\35",
             "",
-            "\12\u01a3\1\u012e\6\uffff\6\u0141\32\uffff\6\u0141",
-            "\1\153\1\35\1\152\1\uffff\12\u01a4\1\151\6\uffff\6\u0140\24"+
+            "\12\u01a3\1\u012f\6\uffff\6\u0141\32\uffff\6\u0141",
+            "\1\153\1\35\1\151\1\uffff\12\u01a4\1\152\6\uffff\6\u0140\24"+
             "\35\4\uffff\1\35\1\uffff\6\u0140\24\35",
-            "\12\u01a5\1\u012e\6\uffff\6\34\32\uffff\6\34",
-            "\12\u01a6\1\34\6\uffff\6\34\32\uffff\6\34",
-            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u01a7\7\uffff\32"+
+            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u01a5\7\uffff\32"+
             "\35\4\uffff\1\35\1\uffff\32\35",
+            "\12\u01a6\1\u012f\6\uffff\6\34\32\uffff\6\34",
+            "\12\u01a7\1\34\6\uffff\6\34\32\uffff\6\34",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
             "\35\1\u01a8\6\35",
@@ -8179,12 +8208,12 @@ public class DocsisLexer extends Lexer {
             "\35\1\u0220\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
             "\35\1\u0221\10\35",
-            "\12\u01a5\1\u0222\6\uffff\6\34\32\uffff\6\34",
-            "\1\153\1\35\1\152\1\uffff\12\u01a4\1\u0223\6\uffff\6\u0140"+
+            "\12\u01a6\1\u0222\6\uffff\6\34\32\uffff\6\34",
+            "\1\153\1\35\1\151\1\uffff\12\u01a4\1\u0223\6\uffff\6\u0140"+
             "\24\35\4\uffff\1\35\1\uffff\6\u0140\24\35",
-            "\12\u0224\1\u012e\6\uffff\6\34\32\uffff\6\34",
-            "\12\u0226\1\u0225\6\uffff\6\34\32\uffff\6\34",
-            "\1\u0227\1\uffff\12\u01a7",
+            "\1\u0224\1\uffff\12\u01a5",
+            "\12\u0225\1\u012f\6\uffff\6\34\32\uffff\6\34",
+            "\12\u0226\1\u0227\6\uffff\6\34\32\uffff\6\34",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
             "\1\u0228\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
@@ -8428,11 +8457,11 @@ public class DocsisLexer extends Lexer {
             "\35\1\u02a4\21\35",
             "\12\u02a5\1\34\6\uffff\6\u0239\32\uffff\6\u0239",
             "\12\u02a6\1\34",
-            "\12\u02a7\1\u012e\6\uffff\6\34\32\uffff\6\34",
-            "\1\u02a6\1\uffff\13\34\6\uffff\6\34\32\uffff\6\34",
-            "\12\u02a8\1\u0225\6\uffff\6\34\32\uffff\6\34",
-            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u02a9\7\uffff\32"+
+            "\1\35\4\uffff\1\35\5\uffff\1\35\2\uffff\12\u02a7\7\uffff\32"+
             "\35\4\uffff\1\35\1\uffff\32\35",
+            "\12\u02a8\1\u012f\6\uffff\6\34\32\uffff\6\34",
+            "\12\u02a9\1\u0227\6\uffff\6\34\32\uffff\6\34",
+            "\1\u02a6\1\uffff\13\34\6\uffff\6\34\32\uffff\6\34",
             "\2\35\1\uffff\12\35\7\uffff\3\35\1\u02aa\16\35\1\u02ac\1\35"+
             "\1\u02ab\5\35\4\uffff\1\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
@@ -8678,12 +8707,12 @@ public class DocsisLexer extends Lexer {
             "\35\1\u032a\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
             "\35\1\u032b\14\35",
-            "\12\u032c\1\u0225\6\uffff\6\u02bc\32\uffff\6\u02bc",
+            "\12\u032c\1\u0227\6\uffff\6\u02bc\32\uffff\6\u02bc",
             "",
-            "\12\u02a7\1\u032d\6\uffff\6\34\32\uffff\6\34",
-            "\12\u032e\1\u0225\6\uffff\6\34\32\uffff\6\34",
-            "\2\35\1\uffff\12\u02a9\7\uffff\32\35\4\uffff\1\35\1\uffff"+
+            "\2\35\1\uffff\12\u02a7\7\uffff\32\35\4\uffff\1\35\1\uffff"+
             "\32\35",
+            "\12\u02a8\1\u032e\6\uffff\6\34\32\uffff\6\34",
+            "\12\u032f\1\u0227\6\uffff\6\34\32\uffff\6\34",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
             "\35\1\u0330\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
@@ -8937,10 +8966,10 @@ public class DocsisLexer extends Lexer {
             "\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\6\35"+
             "\1\u03ae\23\35",
-            "\12\u02a8\1\u03af\6\uffff\6\34\32\uffff\6\34",
-            "\12\u02a6\1\34",
-            "\12\u03b0\1\u0225\6\uffff\6\34\32\uffff\6\34",
+            "\12\u02a9\1\u03af\6\uffff\6\34\32\uffff\6\34",
             "",
+            "\12\u02a6\1\34",
+            "\12\u03b0\1\u0227\6\uffff\6\34\32\uffff\6\34",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\26"+
             "\35\1\u03b1\3\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
@@ -10170,31 +10199,31 @@ public class DocsisLexer extends Lexer {
             "\1\u0611\27\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
             "\35\1\u0612\21\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
-            "\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
+            "\35\1\u0613\4\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u0614\10\35",
+            "\35\1\u0615\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u0615\12\35",
+            "\35\1\u0616\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u0616\15\35",
+            "\35\1\u0617\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0617\6\35",
+            "\35\1\u0618\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0618\16\35",
+            "\35\1\u0619\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\2\35"+
-            "\1\u0619\27\35",
+            "\1\u061a\27\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u061a\13\35",
+            "\35\1\u061b\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u061b\5\35",
+            "\35\1\u061c\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u061c\7\35",
+            "\35\1\u061d\7\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u061e\15\35",
+            "\35\1\u061f\15\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
@@ -10203,45 +10232,45 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0622\16\35",
+            "\35\1\u0623\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0623\6\35",
+            "\35\1\u0624\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
-            "\35\1\u0624\14\35",
+            "\35\1\u0625\14\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0625\13\35",
+            "\35\1\u0626\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0626\25\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u0627\15\35",
+            "\1\u0627\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
             "\35\1\u0628\15\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
+            "\35\1\u0629\15\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u0629\21\35",
+            "\35\1\u062a\21\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u062a\7\35",
+            "\35\1\u062b\7\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u062b\1\35",
+            "\35\1\u062c\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u062c\21\35",
-            "\2\35\1\uffff\12\35\7\uffff\11\35\1\u062d\20\35\4\uffff\1"+
+            "\35\1\u062d\21\35",
+            "\2\35\1\uffff\12\35\7\uffff\11\35\1\u062e\20\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u062f\21\35",
+            "\35\1\u0630\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0631\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
             "\1\u0632\25\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
+            "\1\u0633\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\3\35"+
-            "\1\u0633\26\35",
-            "\2\35\1\uffff\12\35\7\uffff\1\35\1\u0634\30\35\4\uffff\1\35"+
+            "\1\u0634\26\35",
+            "\2\35\1\uffff\12\35\7\uffff\1\35\1\u0635\30\35\4\uffff\1\35"+
             "\1\uffff\32\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
@@ -10249,123 +10278,125 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0637\25\35",
+            "\1\u0638\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u0638\21\35",
+            "\35\1\u0639\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u063a\25\35",
+            "\1\u063b\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u063b\6\35",
+            "\35\1\u063c\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u063c\25\35",
+            "\1\u063d\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u063d\5\35",
+            "\35\1\u063e\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\12\u063f\1\34\6\uffff\6\u063f\32\uffff\6\u063f",
+            "\12\u0640\1\34\6\uffff\6\u0640\32\uffff\6\u0640",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u0640\24\35",
+            "\1\u0641\24\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0642\13\35",
+            "\35\1\u0643\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0643\6\35",
-            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u0644\7\35\4\uffff\1\35"+
+            "\35\1\u0644\6\35",
+            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u0645\7\35\4\uffff\1\35"+
             "\1\uffff\32\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0645\13\35",
-            "\2\35\1\uffff\12\35\7\uffff\10\35\1\u0646\21\35\4\uffff\1"+
+            "\35\1\u0646\13\35",
+            "\2\35\1\uffff\12\35\7\uffff\10\35\1\u0647\21\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0647\13\35",
+            "\35\1\u0648\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u0648\24\35",
+            "\1\u0649\24\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u064a\6\35",
+            "\35\1\u064b\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u064b\10\35",
+            "\35\1\u064c\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u064c\25\35",
+            "\1\u064d\25\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u064d\12\35",
+            "\35\1\u064e\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u064f\25\35",
+            "\1\u0650\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\3\35"+
-            "\1\u0650\26\35",
+            "\1\u0651\26\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u0651\24\35",
+            "\1\u0652\24\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0653"+
-            "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0654"+
             "\31\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0655"+
+            "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u0655\12\35",
+            "\35\1\u0656\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u0656\21\35",
+            "\35\1\u0657\21\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0657\25\35",
+            "\1\u0658\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u0658\21\35",
+            "\35\1\u0659\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u0659\7\35",
+            "\35\1\u065a\7\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u065a\1\35",
+            "\35\1\u065b\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u065b\6\35",
+            "\35\1\u065c\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u065c\10\35",
+            "\35\1\u065d\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u065d\6\35",
-            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u065e\7\35\4\uffff\1\35"+
+            "\35\1\u065e\6\35",
+            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u065f\7\35\4\uffff\1\35"+
             "\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u0660\15\35",
+            "\35\1\u0661\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0662\16\35",
+            "\35\1\u0663\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0664"+
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0665"+
             "\31\35",
-            "\2\35\1\uffff\12\35\7\uffff\15\35\1\u0665\14\35\4\uffff\1"+
+            "\2\35\1\uffff\12\35\7\uffff\15\35\1\u0666\14\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
-            "\35\1\u0666\4\35",
+            "\35\1\u0667\4\35",
+            "\2\35\1\uffff\6\35\1\u0668\3\35\7\uffff\32\35\4\uffff\1\35"+
+            "\1\uffff\32\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0667\6\35",
+            "\35\1\u0669\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0668\25\35",
+            "\1\u066a\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0669\25\35",
+            "\1\u066b\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u066a\10\35",
+            "\35\1\u066c\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u066b\6\35",
+            "\35\1\u066d\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u066c\5\35",
+            "\35\1\u066e\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
-            "\35\1\u066d\14\35",
+            "\35\1\u066f\14\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u066e\6\35",
+            "\35\1\u0670\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0670\25\35",
+            "\1\u0672\25\35",
             "",
             "",
             "",
@@ -10374,139 +10405,141 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\2\35"+
-            "\1\u0673\27\35",
+            "\1\u0675\27\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u0674\5\35",
+            "\35\1\u0676\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0676\25\35",
+            "\1\u0678\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0677\25\35",
+            "\1\u0679\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\2\35"+
-            "\1\u0678\27\35",
+            "\1\u067a\27\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u0679\7\35",
+            "\35\1\u067b\7\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u067b\6\35",
+            "\35\1\u067d\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u067c\21\35",
+            "\35\1\u067e\21\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u067d\24\35",
+            "\1\u067f\24\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u067e\10\35",
+            "\35\1\u0680\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u0681\5\35",
+            "\35\1\u0683\5\35",
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u0682\7\35",
+            "\35\1\u0684\7\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0683\13\35",
+            "\35\1\u0685\13\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0685\25\35",
+            "\1\u0687\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
-            "\35\1\u0686\14\35",
+            "\35\1\u0688\14\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u0687\12\35",
+            "\35\1\u0689\12\35",
             "",
-            "\12\u0688\1\34\6\uffff\6\u0688\32\uffff\6\u0688",
+            "\12\u068a\1\34\6\uffff\6\u068a\32\uffff\6\u068a",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u068a\5\35",
+            "\35\1\u068c\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u068c\21\35",
+            "\35\1\u068e\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u068d\5\35",
+            "\35\1\u068f\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\3\35"+
-            "\1\u068e\26\35",
+            "\1\u0690\26\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u068f\10\35",
+            "\35\1\u0691\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
-            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u0691\7\35\4\uffff\1\35"+
+            "\2\35\1\uffff\12\35\7\uffff\22\35\1\u0693\7\35\4\uffff\1\35"+
             "\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
-            "\35\1\u0692\4\35",
+            "\35\1\u0694\4\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u0693\10\35",
+            "\35\1\u0695\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u0694\12\35",
+            "\35\1\u0696\12\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u0695\24\35",
+            "\1\u0697\24\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0698\16\35",
+            "\35\1\u069a\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\35"+
-            "\1\u0699\30\35",
+            "\1\u069b\30\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u069a\12\35",
+            "\35\1\u069c\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u069b\25\35",
+            "\1\u069d\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u069c\10\35",
+            "\35\1\u069e\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\5\35"+
-            "\1\u069d\24\35",
-            "\2\35\1\uffff\12\35\7\uffff\21\35\1\u069e\10\35\4\uffff\1"+
+            "\1\u069f\24\35",
+            "\2\35\1\uffff\12\35\7\uffff\21\35\1\u06a0\10\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u069f\12\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\7\35"+
-            "\1\u06a0\22\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
-            "\35\1\u06a1\4\35",
+            "\35\1\u06a1\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\7\35"+
             "\1\u06a2\22\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
+            "\35\1\u06a3\4\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\7\35"+
+            "\1\u06a4\22\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u06a3\5\35",
+            "\35\1\u06a5\5\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06a4\25\35",
+            "\1\u06a6\25\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u06a6\15\35",
+            "\35\1\u06a8\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u06a7\5\35",
+            "\35\1\u06a9\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06a8\25\35",
+            "\1\u06aa\25\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
+            "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06ab\13\35",
+            "\35\1\u06ae\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u06ac\21\35",
+            "\35\1\u06af\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06ad\25\35",
+            "\1\u06b0\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06ae\10\35",
+            "\35\1\u06b1\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06af\6\35",
+            "\35\1\u06b2\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
@@ -10515,64 +10548,64 @@ public class DocsisLexer extends Lexer {
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u06b2\1\35",
+            "\35\1\u06b5\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06b3\6\35",
+            "\35\1\u06b6\6\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06b4\13\35",
+            "\35\1\u06b7\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06b5\13\35",
+            "\35\1\u06b8\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u06b6\1\35",
+            "\35\1\u06b9\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06b8\6\35",
+            "\35\1\u06bb\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06b9\6\35",
+            "\35\1\u06bc\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u06ba\21\35",
+            "\35\1\u06bd\21\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
-            "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06bc\10\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
-            "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
-            "\35\1\u06be\14\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
             "\35\1\u06bf\10\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
+            "\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
+            "\35\1\u06c1\14\35",
+            "",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
+            "\35\1\u06c2\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\2\35"+
-            "\1\u06c0\27\35",
+            "\1\u06c3\27\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u06c1\12\35",
-            "\1\u06c3\13\34\6\uffff\6\34\32\uffff\6\34",
+            "\35\1\u06c4\12\35",
+            "\1\u06c6\13\34\6\uffff\6\34\32\uffff\6\34",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06c4\6\35",
+            "\35\1\u06c7\6\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\31"+
-            "\35\1\u06c5",
+            "\35\1\u06c8",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06c6\6\35",
+            "\35\1\u06c9\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06c8\6\35",
+            "\35\1\u06cb\6\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u06c9\21\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06ca"+
+            "\35\1\u06cc\21\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06cd"+
             "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\25"+
-            "\35\1\u06cb\4\35",
+            "\35\1\u06ce\4\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06cc\13\35",
+            "\35\1\u06cf\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
@@ -10580,48 +10613,49 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u06cf\16\35",
+            "\35\1\u06d2\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06d0\13\35",
+            "\35\1\u06d3\13\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06d1\10\35",
+            "\35\1\u06d4\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u06d3\21\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06d4"+
+            "\35\1\u06d6\21\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06d7"+
             "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06d5\25\35",
+            "\1\u06d8\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06d7\25\35",
+            "\1\u06da\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u06d9\12\35",
+            "\35\1\u06dc\12\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06db\25\35",
+            "\1\u06de\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u06dc\15\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06dd\10\35",
-            "",
-            "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u06de\5\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06df\25\35",
+            "\35\1\u06df\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
             "\35\1\u06e0\10\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
-            "\35\1\u06e1\21\35",
+            "",
+            "",
+            "",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
+            "\35\1\u06e1\5\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
+            "\1\u06e2\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06e2\10\35",
+            "\35\1\u06e3\10\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\10"+
+            "\35\1\u06e4\21\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
+            "\35\1\u06e5\10\35",
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
@@ -10629,149 +10663,149 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u06e5\5\35",
+            "\35\1\u06e8\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\24"+
-            "\35\1\u06e6\5\35",
+            "\35\1\u06e9\5\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06e8\25\35",
+            "\1\u06eb\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u06e9\6\35",
+            "\35\1\u06ec\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06ea\25\35",
+            "\1\u06ed\25\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u06eb\7\35",
+            "\35\1\u06ee\7\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u06ee\1\35",
+            "\35\1\u06f1\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u06ef\13\35",
+            "\35\1\u06f2\13\35",
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06f1\25\35",
+            "\1\u06f4\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\31"+
-            "\35\1\u06f4",
+            "\35\1\u06f7",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u06f5\16\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06f6"+
+            "\35\1\u06f8\16\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u06f9"+
             "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06f7\10\35",
+            "\35\1\u06fa\10\35",
             "",
-            "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u06f8\25\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06f9\10\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
-            "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
             "\1\u06fb\25\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
+            "\35\1\u06fc\10\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
+            "\35",
+            "",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
+            "\1\u06fe\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\15"+
-            "\35\1\u06fc\14\35",
+            "\35\1\u06ff\14\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u06fe\10\35",
+            "\35\1\u0701\10\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\17"+
-            "\35\1\u06ff\12\35",
+            "\35\1\u0702\12\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\35"+
-            "\1\u0701\30\35",
+            "\1\u0704\30\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0703\6\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u0704\7\35",
-            "\2\35\1\uffff\12\35\7\uffff\16\35\1\u0705\13\35\4\uffff\1"+
-            "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
             "\35\1\u0706\6\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u0707\13\35",
-            "",
-            "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0708\6\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
+            "\35\1\u0707\7\35",
+            "\2\35\1\uffff\12\35\7\uffff\16\35\1\u0708\13\35\4\uffff\1"+
+            "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
             "\35\1\u0709\6\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
+            "\35\1\u070a\13\35",
             "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u070a\10\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u070b\25\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u070c\10\35",
+            "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u070d\6\35",
+            "\35\1\u070b\6\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
+            "\35\1\u070c\6\35",
             "",
-            "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
-            "\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
+            "\35\1\u070d\10\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
+            "\1\u070e\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
             "\35\1\u070f\10\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
+            "\35\1\u0710\6\35",
+            "",
+            "",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
+            "\35",
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
+            "\35\1\u0712\10\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u0711\25\35",
+            "\1\u0714\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0713\16\35",
+            "\35\1\u0716\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0714\6\35",
+            "\35\1\u0717\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0716\6\35",
+            "\35\1\u0719\6\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u0717\10\35",
+            "\35\1\u071a\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\6\35"+
-            "\1\u0718\23\35",
+            "\1\u071b\23\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\16"+
-            "\35\1\u071a\13\35",
+            "\35\1\u071d\13\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u071b\25\35",
+            "\1\u071e\25\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\10\35\1\u071e\21\35\4\uffff\1"+
+            "\2\35\1\uffff\12\35\7\uffff\10\35\1\u0721\21\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\30"+
-            "\35\1\u071f\1\35",
+            "\35\1\u0722\1\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\13"+
-            "\35\1\u0720\16\35",
+            "\35\1\u0723\16\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
@@ -10779,14 +10813,14 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u0724\10\35",
+            "\35\1\u0727\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0727\6\35",
+            "\35\1\u072a\6\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
@@ -10801,17 +10835,17 @@ public class DocsisLexer extends Lexer {
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u072d\25\35",
+            "\1\u0730\25\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u072e\10\35",
+            "\35\1\u0731\10\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\21"+
-            "\35\1\u072f\10\35",
+            "\35\1\u0732\10\35",
             "",
             "",
-            "\2\35\1\uffff\12\35\7\uffff\3\35\1\u0730\26\35\4\uffff\1\35"+
+            "\2\35\1\uffff\12\35\7\uffff\3\35\1\u0733\26\35\4\uffff\1\35"+
             "\1\uffff\32\35",
-            "\2\35\1\uffff\12\35\7\uffff\15\35\1\u0731\14\35\4\uffff\1"+
+            "\2\35\1\uffff\12\35\7\uffff\15\35\1\u0734\14\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
@@ -10829,34 +10863,34 @@ public class DocsisLexer extends Lexer {
             "",
             "",
             "",
-            "\2\35\1\uffff\12\35\7\uffff\14\35\1\u0735\15\35\4\uffff\1"+
+            "\2\35\1\uffff\12\35\7\uffff\14\35\1\u0738\15\35\4\uffff\1"+
             "\35\1\uffff\32\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\23"+
-            "\35\1\u0736\6\35",
+            "\35\1\u0739\6\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u0739"+
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u073c"+
             "\31\35",
             "",
             "",
             "",
-            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u073a"+
+            "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\1\u073d"+
             "\31\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\14"+
-            "\35\1\u073c\15\35",
+            "\35\1\u073f\15\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\22"+
-            "\35\1\u073d\7\35",
+            "\35\1\u0740\7\35",
             "",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\4\35"+
-            "\1\u073e\25\35",
+            "\1\u0741\25\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\12"+
-            "\35\1\u073f\17\35",
+            "\35\1\u0742\17\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
             "\35",
             "\2\35\1\uffff\12\35\7\uffff\32\35\4\uffff\1\35\1\uffff\32"+
@@ -10895,7 +10929,7 @@ public class DocsisLexer extends Lexer {
             this.transition = DFA43_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( WS | COMMENT | LINE_COMMENT | STATIC_MAIN | ID_DOWNSTREAMFREQUENCY | ID_UPSTREAMCHANNELID | ID_NETWORKACCESS | ID_CLASSOFSERVICE | ID_CLASSID | ID_MAXRATEDOWN | ID_MAXRATEUP | ID_PRIORITYUP | ID_GUARANTEEDUP | ID_MAXBURSTUP | ID_PRIVACYENABLE | ID_MODEMCAPABILITIES | ID_CONCATENATIONSUPPORT | ID_MODEMDOCSISVERSION | ID_FRAGMENTATIONSUPPORT | ID_PHSSUPPORT | ID_IGMPSUPPORT | ID_BASELINEPRIVACYSUPPORT | ID_DOWNSTREAMSAIDSUPPORT | ID_UPSTREAMSIDSUPPORT | ID_DCCSUPPORT | ID_SWUPGRADEFILENAME | ID_SNMPWRITECONTROL | ID_SNMPMIBOBJECT | ID_CPEMACADDRESS | ID_BASELINEPRIVACY | ID_AUTHTIMEOUT | ID_REAUTHTIMEOUT | ID_AUTHGRACETIME | ID_OPERTIMEOUT | ID_REKEYTIMEOUT | ID_TEKGRACETIME | ID_AUTHREJECTTIMEOUT | ID_SAMAPWAITTIMEOUT | ID_SAMAPMAXRETRIES | ID_MAXCPE | ID_TFTPTIMESTAMP | ID_TFTPMODEMADDRESS | ID_SWUPGRADESERVER | ID_USPACKETCLASS | ID_DSPACKETCLASS | ID_CLASSIFIERREF | ID_CLASSIFIERID | ID_SERVICEFLOWREF | ID_SERVICEFLOWID | ID_RULEPRIORITY | ID_ACTIVATIONSTATE | ID_DSCACTION | ID_IPPACKETCLASSIFIER | ID_IPTOS | ID_IPPROTO | ID_IPSRCADDR | ID_IPSRCMASK | ID_IPDSTADDR | ID_IPDSTMASK | ID_SRCPORTSTART | ID_SRCPORTEND | ID_DSTPORTSTART | ID_DSTPORTEND | ID_LLCPACKETCLASSIFIER | ID_DSTMACADDRESS | ID_SRCMACADDRESS | ID_ETHERTYPE | ID_IEEE802CLASSIFIER | ID_USERPRIORITY | ID_VLANID | ID_IPV6PACKETCLASSIFIER | ID_IPV6TRAFFICCLASSRANGEMASK | ID_IPV6FLOWLABEL | ID_IPV6NEXTHEADERTYPE | ID_IPV6SRCADDR | ID_IPV6SRCPREFLENGTH | ID_IPV6DSTADDR | ID_IPV6DSTPREFLENGTH | ID_USSERVICEFLOW | ID_DSSERVICEFLOW | ID_USSERVICEFLOWREF | ID_USSERVICEFLOWID | ID_DSSERVICEFLOWREF | ID_DSSERVICEFLOWID | ID_SERVICECLASSNAME | ID_QOSPARAMSETTYPE | ID_TRAFFICPRIORITY | ID_MAXRATESUSTAINED | ID_MAXTRAFFICBURST | ID_MINRESERVEDRATE | ID_MINRESPACKETSIZE | ID_ACTQOSPARAMSTIMEOUT | ID_ADMQOSPARAMSTIMEOUT | ID_MAXCONCATENATEDBURST | ID_SCHEDULINGTYPE | ID_REQUESTORTXPOLICY | ID_NOMINALPOLLINTERVAL | ID_TOLERATEDPOLLJITTER | ID_UNSOLICITEDGRANTSIZE | ID_NOMINALGRANTINTERVAL | ID_TOLERATEDGRANTJITTER | ID_GRANTSPERINTERVAL | ID_IPTOSOVERWRITE | ID_MAXDSLATENCY | ID_PHS | ID_PHSCLASSIFIERREF | ID_PHSCLASSIFIERID | ID_PHSERVICEFLOWREF | ID_PHSSERVICEFLOWID | ID_PHSFIELD | ID_PHSINDEX | ID_PHSMASK | ID_PHSSIZE | ID_PHSVERIFY | ID_MAXCLASSIFIERS | ID_GLOBALPRIVACYENABLE | ID_MFGCVCDATA | ID_MANUFACTURERCVC | ID_COSIGNERCVCDATA | ID_COSIGNERCVC | ID_SNMPV3KICKSTART | ID_SNMPV3SECURITYNAME | ID_SNMPV3MGRPUBLICNUMBER | ID_SUBMGMTCONTROL | ID_SUBMGMTFILTERS | ID_SNMPV3TRAPRECEIVER | ID_SNMPV3TRAPRXIP | ID_SNMPV3TRAPRXPORT | ID_SNMPV3TRAPRXTYPE | ID_SNMPV3TRAPRXTIMEOUT | ID_SNMPV3TRAPRXRETRIES | ID_SNMPV3TRAPRXFILTEROID | ID_SNMPV3TRAPRXSECURITYNAME | ID_DOCSISTWOENABLE | ID_TESTMODEENABLE | ID_DSCHANNELLIST | ID_DEFAULTSCANTIMEOUT | ID_SINGLEDSCHANNEL | ID_SINGLEDSTIMEOUT | ID_SINGLEDSFREQUENCY | ID_DSFREQRANGE | ID_DSFREQRANGETIMEOUT | ID_DSFREQRANGESTART | ID_DSFREQRANGEEND | ID_DSFREQRANGESTEPSIZE | ID_VENDORSPECIFIC | ID_VENDORIDENTIFIER | ID_SNMPCPEACCESSCONTROL | ID_IPV6SWUPGRADESERVER | ID_MTACONFIGDELIMITER | ID_GENERICTLV | TLV_CODE | TLV_LENGTH | TLV_VALUE | SNMP_INTEGER | SNMP_COUNTER32 | SNMP_GAUGE32 | SNMP_TIMETICKS | SNMP_UNSIGNED32 | SNMP_COUNTER64 | SNMP_OCTETSTRING | SNMP_IPADDRESS | SNMP_Opaque | SNMP_OID | SNMP_BITSTRING | SNMP_STRING | SNMP_HEXSTRING | T_INTLIST4 | T_INT | T_HEXSTR | T_MACADDR | T_MACMASK | T_IP | T_IPV6 | T_OID | T_TIMETICKS | T_STRING | S_SEMICOLON | S_OPENBRACE | S_CLOSEBRACE );";
+            return "1:1: Tokens : ( WS | COMMENT | LINE_COMMENT | STATIC_MAIN | ID_DOWNSTREAMFREQUENCY | ID_UPSTREAMCHANNELID | ID_NETWORKACCESS | ID_CLASSOFSERVICE | ID_CLASSID | ID_MAXRATEDOWN | ID_MAXRATEUP | ID_PRIORITYUP | ID_GUARANTEEDUP | ID_MAXBURSTUP | ID_PRIVACYENABLE | ID_MODEMCAPABILITIES | ID_CONCATENATIONSUPPORT | ID_MODEMDOCSISVERSION | ID_FRAGMENTATIONSUPPORT | ID_PHSSUPPORT | ID_IGMPSUPPORT | ID_BASELINEPRIVACYSUPPORT | ID_DOWNSTREAMSAIDSUPPORT | ID_UPSTREAMSIDSUPPORT | ID_DCCSUPPORT | ID_SWUPGRADEFILENAME | ID_SNMPWRITECONTROL | ID_SNMPMIBOBJECT | ID_CPEMACADDRESS | ID_BASELINEPRIVACY | ID_AUTHTIMEOUT | ID_REAUTHTIMEOUT | ID_AUTHGRACETIME | ID_OPERTIMEOUT | ID_REKEYTIMEOUT | ID_TEKGRACETIME | ID_AUTHREJECTTIMEOUT | ID_SAMAPWAITTIMEOUT | ID_SAMAPMAXRETRIES | ID_MAXCPE | ID_TFTPTIMESTAMP | ID_TFTPMODEMADDRESS | ID_SWUPGRADESERVER | ID_USPACKETCLASS | ID_DSPACKETCLASS | ID_CLASSIFIERREF | ID_CLASSIFIERID | ID_SERVICEFLOWREF | ID_SERVICEFLOWID | ID_RULEPRIORITY | ID_ACTIVATIONSTATE | ID_DSCACTION | ID_IPPACKETCLASSIFIER | ID_IPTOS | ID_IPPROTO | ID_IPSRCADDR | ID_IPSRCMASK | ID_IPDSTADDR | ID_IPDSTMASK | ID_SRCPORTSTART | ID_SRCPORTEND | ID_DSTPORTSTART | ID_DSTPORTEND | ID_LLCPACKETCLASSIFIER | ID_DSTMACADDRESS | ID_SRCMACADDRESS | ID_ETHERTYPE | ID_IEEE802CLASSIFIER | ID_USERPRIORITY | ID_VLANID | ID_IPV6PACKETCLASSIFIER | ID_IPV6TRAFFICCLASSRANGEMASK | ID_IPV6FLOWLABEL | ID_IPV6NEXTHEADERTYPE | ID_IPV6SRCADDR | ID_IPV6SRCPREFLENGTH | ID_IPV6DSTADDR | ID_IPV6DSTPREFLENGTH | ID_USSERVICEFLOW | ID_DSSERVICEFLOW | ID_USSERVICEFLOWREF | ID_USSERVICEFLOWID | ID_DSSERVICEFLOWREF | ID_DSSERVICEFLOWID | ID_SERVICECLASSNAME | ID_QOSPARAMSETTYPE | ID_TRAFFICPRIORITY | ID_MAXRATESUSTAINED | ID_MAXTRAFFICBURST | ID_MINRESERVEDRATE | ID_MINRESPACKETSIZE | ID_ACTQOSPARAMSTIMEOUT | ID_ADMQOSPARAMSTIMEOUT | ID_MAXCONCATENATEDBURST | ID_SCHEDULINGTYPE | ID_REQUESTORTXPOLICY | ID_NOMINALPOLLINTERVAL | ID_TOLERATEDPOLLJITTER | ID_UNSOLICITEDGRANTSIZE | ID_NOMINALGRANTINTERVAL | ID_TOLERATEDGRANTJITTER | ID_GRANTSPERINTERVAL | ID_IPTOSOVERWRITE | ID_MAXDSLATENCY | ID_PHS | ID_PHSCLASSIFIERREF | ID_PHSCLASSIFIERID | ID_PHSERVICEFLOWREF | ID_PHSSERVICEFLOWID | ID_PHSFIELD | ID_PHSINDEX | ID_PHSMASK | ID_PHSSIZE | ID_PHSVERIFY | ID_MAXCLASSIFIERS | ID_GLOBALPRIVACYENABLE | ID_MFGCVCDATA | ID_MANUFACTURERCVC | ID_COSIGNERCVCDATA | ID_COSIGNERCVC | ID_SNMPV3KICKSTART | ID_SNMPV3SECURITYNAME | ID_SNMPV3MGRPUBLICNUMBER | ID_SUBMGMTCONTROL | ID_SUBMGMTFILTERS | ID_SNMPV3TRAPRECEIVER | ID_SNMPV3TRAPRXIP | ID_SNMPV3TRAPRXPORT | ID_SNMPV3TRAPRXTYPE | ID_SNMPV3TRAPRXTIMEOUT | ID_SNMPV3TRAPRXRETRIES | ID_SNMPV3TRAPRXFILTEROID | ID_SNMPV3TRAPRXSECURITYNAME | ID_SNMPV3TRAPRXIPV6 | ID_DOCSISTWOENABLE | ID_TESTMODEENABLE | ID_DSCHANNELLIST | ID_DEFAULTSCANTIMEOUT | ID_SINGLEDSCHANNEL | ID_SINGLEDSTIMEOUT | ID_SINGLEDSFREQUENCY | ID_DSFREQRANGE | ID_DSFREQRANGETIMEOUT | ID_DSFREQRANGESTART | ID_DSFREQRANGEEND | ID_DSFREQRANGESTEPSIZE | ID_VENDORSPECIFIC | ID_VENDORIDENTIFIER | ID_SNMPCPEACCESSCONTROL | ID_IPV6SWUPGRADESERVER | ID_MTACONFIGDELIMITER | ID_GENERICTLV | TLV_CODE | TLV_LENGTH | TLV_VALUE | SNMP_INTEGER | SNMP_COUNTER32 | SNMP_GAUGE32 | SNMP_TIMETICKS | SNMP_UNSIGNED32 | SNMP_COUNTER64 | SNMP_OCTETSTRING | SNMP_IPADDRESS | SNMP_Opaque | SNMP_OID | SNMP_BITSTRING | SNMP_STRING | SNMP_HEXSTRING | T_INTLIST4 | T_INT | T_HEXSTR | T_MACADDR | T_MACMASK | T_IP | T_IPV6 | T_OID | T_TIMETICKS | T_STRING | S_SEMICOLON | S_OPENBRACE | S_CLOSEBRACE );";
         }
     }
  
