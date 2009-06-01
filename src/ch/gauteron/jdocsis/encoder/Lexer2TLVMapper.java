@@ -60,7 +60,6 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_UPSTREAMCHANNELID,         "ch.gauteron.docsis.TLVs.TLV_UpstreamChannelId");         // TLV 2
       idTLV.put(DocsisLexer.ID_NETWORKACCESS,             "ch.gauteron.docsis.TLVs.TLV_NetworkAccess");             // TLV 3
       idTLV.put(DocsisLexer.ID_CLASSOFSERVICE,            "ch.gauteron.docsis.TLVs.TLV_ClassOfService");            // TLV 4
-/*
       idTLV.put(DocsisLexer.ID_CLASSID,                   "ch.gauteron.docsis.TLVs.TLV_ClassID");                   // TLV 4.1
       idTLV.put(DocsisLexer.ID_MAXRATEDOWN,               "ch.gauteron.docsis.TLVs.TLV_MaxRateDown");               // TLV 4.2
       idTLV.put(DocsisLexer.ID_MAXRATEUP,                 "ch.gauteron.docsis.TLVs.TLV_MaxRateUp");                 // TLV 4.3
@@ -68,6 +67,7 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_GUARANTEEDUP,              "ch.gauteron.docsis.TLVs.TLV_GuaranteedUp");              // TLV 4.5
       idTLV.put(DocsisLexer.ID_MAXBURSTUP,                "ch.gauteron.docsis.TLVs.TLV_MaxBurstUp");                // TLV 4.6
       idTLV.put(DocsisLexer.ID_PRIVACYENABLE,             "ch.gauteron.docsis.TLVs.TLV_PrivacyEnable");             // TLV 4.7
+/*
       idTLV.put(DocsisLexer.ID_MODEMCAPABILITIES,         "ch.gauteron.docsis.TLVs.TLV_ModemCapabilities");         // TLV 5
       idTLV.put(DocsisLexer.ID_CONCATENATIONSUPPORT,      "ch.gauteron.docsis.TLVs.TLV_ConcatenationSupport");      // TLV 5.1
       idTLV.put(DocsisLexer.ID_MODEMDOCSISVERSION,        "ch.gauteron.docsis.TLVs.TLV_ModemDocsisVersion");        // TLV 5.2
