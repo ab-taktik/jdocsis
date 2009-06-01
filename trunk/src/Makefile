@@ -72,16 +72,20 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_AuthRejectTimeout.class \
         $(DESTTLVCLASSDIR)/TLV_AuthTimeout.class \
         $(DESTTLVCLASSDIR)/TLV_BaselinePrivacy.class \
+        $(DESTTLVCLASSDIR)/TLV_BaselinePrivacySupport.class \
         $(DESTTLVCLASSDIR)/TLV_ClassID.class \
         $(DESTTLVCLASSDIR)/TLV_ClassifierId.class \
         $(DESTTLVCLASSDIR)/TLV_ClassifierRef.class \
         $(DESTTLVCLASSDIR)/TLV_ClassOfService.class \
         $(DESTTLVCLASSDIR)/TLV_CMMIC.class \
         $(DESTTLVCLASSDIR)/TLV_CMTSMIC.class \
+        $(DESTTLVCLASSDIR)/TLV_ConcatenationSupport.class \
         $(DESTTLVCLASSDIR)/TLV_CoSignerCVCData.class \
         $(DESTTLVCLASSDIR)/TLV_CpeMacAddress.class \
+        $(DESTTLVCLASSDIR)/TLV_DCCSupport.class \
         $(DESTTLVCLASSDIR)/TLV_DocsisTwoEnable.class \
         $(DESTTLVCLASSDIR)/TLV_DownstreamFrequency.class \
+        $(DESTTLVCLASSDIR)/TLV_DownstreamSAIDSupport.class \
         $(DESTTLVCLASSDIR)/TLV_DscAction.class \
         $(DESTTLVCLASSDIR)/TLV_DsPacketClass.class \
         $(DESTTLVCLASSDIR)/TLV_DsServiceFlow.class \
@@ -90,11 +94,13 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_DstPortStart.class \
         $(DESTTLVCLASSDIR)/TLV_EndOfDataMkr.class \
         $(DESTTLVCLASSDIR)/TLV_EtherType.class \
+        $(DESTTLVCLASSDIR)/TLV_FragmentationSupport.class \
         $(DESTTLVCLASSDIR)/TLV_GenericTLV.class \
         $(DESTTLVCLASSDIR)/TLV_GlobalPrivacyEnable.class \
         $(DESTTLVCLASSDIR)/TLV_GrantsPerInterval.class \
         $(DESTTLVCLASSDIR)/TLV_GuaranteedUp.class \
         $(DESTTLVCLASSDIR)/TLV_IEEE802Classifier.class \
+        $(DESTTLVCLASSDIR)/TLV_IGMPSupport.class \
         $(DESTTLVCLASSDIR)/TLV_IpDstAddr.class \
         $(DESTTLVCLASSDIR)/TLV_IpDstMask.class \
         $(DESTTLVCLASSDIR)/TLV_IpPacketClassifier.class \
@@ -103,6 +109,13 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_IpSrcMask.class \
         $(DESTTLVCLASSDIR)/TLV_IpTos.class \
         $(DESTTLVCLASSDIR)/TLV_IpTosOverwrite.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6DstAddr.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6DstPrefLength.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6FlowLabel.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6NextHeaderType.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6PacketClassifier.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6SrcAddr.class \
+        $(DESTTLVCLASSDIR)/TLV_IPv6SrcPrefLength.class \
         $(DESTTLVCLASSDIR)/TLV_IPv6SwUpgradeServer.class \
         $(DESTTLVCLASSDIR)/TLV_LLCPacketClassifier.class \
         $(DESTTLVCLASSDIR)/TLV_MaxBurstUp.class \
@@ -117,11 +130,14 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_MfgCVCData.class \
         $(DESTTLVCLASSDIR)/TLV_MinReservedRate.class \
         $(DESTTLVCLASSDIR)/TLV_MinResPacketSize.class \
+        $(DESTTLVCLASSDIR)/TLV_ModemCapabilities.class \
+        $(DESTTLVCLASSDIR)/TLV_ModemDocsisVersion.class \
         $(DESTTLVCLASSDIR)/TLV_MtaConfigDelimiter.class \
         $(DESTTLVCLASSDIR)/TLV_NetworkAccess.class \
         $(DESTTLVCLASSDIR)/TLV_NominalGrantInterval.class \
         $(DESTTLVCLASSDIR)/TLV_NominalPollInterval.class \
         $(DESTTLVCLASSDIR)/TLV_OperTimeout.class \
+        $(DESTTLVCLASSDIR)/TLV_PHSSupport.class \
         $(DESTTLVCLASSDIR)/TLV_PriorityUp.class \
         $(DESTTLVCLASSDIR)/TLV_PrivacyEnable.class \
         $(DESTTLVCLASSDIR)/TLV_QosParamSetType.class \
@@ -151,6 +167,7 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_TrafficPriority.class \
         $(DESTTLVCLASSDIR)/TLV_UnsolicitedGrantSize.class \
         $(DESTTLVCLASSDIR)/TLV_UpstreamChannelId.class \
+        $(DESTTLVCLASSDIR)/TLV_UpstreamSIDSupport.class \
         $(DESTTLVCLASSDIR)/TLV_UserPriority.class \
         $(DESTTLVCLASSDIR)/TLV_UsPacketClass.class \
         $(DESTTLVCLASSDIR)/TLV_UsServiceFlow.class \
@@ -241,6 +258,9 @@ $(DESTTLVCLASSDIR)/TLV_AuthTimeout.class: ch/gauteron/jdocsis/TLVs/TLV_AuthTimeo
 $(DESTTLVCLASSDIR)/TLV_BaselinePrivacy.class: ch/gauteron/jdocsis/TLVs/TLV_BaselinePrivacy.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_BaselinePrivacy.java
 
+$(DESTTLVCLASSDIR)/TLV_BaselinePrivacySupport.class: ch/gauteron/jdocsis/TLVs/TLV_BaselinePrivacySupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_BaselinePrivacySupport.java
+
 $(DESTTLVCLASSDIR)/TLV_ClassID.class: ch/gauteron/jdocsis/TLVs/TLV_ClassID.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_ClassID.java
 
@@ -258,18 +278,27 @@ $(DESTTLVCLASSDIR)/TLV_CMMIC.class: ch/gauteron/jdocsis/TLVs/TLV_CMMIC.java
 
 $(DESTTLVCLASSDIR)/TLV_CMTSMIC.class: ch/gauteron/jdocsis/TLVs/TLV_CMTSMIC.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_CMTSMIC.java
-	
+
+$(DESTTLVCLASSDIR)/TLV_ConcatenationSupport.class: ch/gauteron/jdocsis/TLVs/TLV_ConcatenationSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_ConcatenationSupport.java
+
 $(DESTTLVCLASSDIR)/TLV_CoSignerCVCData.class: ch/gauteron/jdocsis/TLVs/TLV_CoSignerCVCData.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_CoSignerCVCData.java	
 
 $(DESTTLVCLASSDIR)/TLV_CpeMacAddress.class: ch/gauteron/jdocsis/TLVs/TLV_CpeMacAddress.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_CpeMacAddress.java
 
+$(DESTTLVCLASSDIR)/TLV_DCCSupport.class: ch/gauteron/jdocsis/TLVs/TLV_DCCSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DCCSupport.java
+
 $(DESTTLVCLASSDIR)/TLV_DocsisTwoEnable.class: ch/gauteron/jdocsis/TLVs/TLV_DocsisTwoEnable.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DocsisTwoEnable.java
 
 $(DESTTLVCLASSDIR)/TLV_DownstreamFrequency.class: ch/gauteron/jdocsis/TLVs/TLV_DownstreamFrequency.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DownstreamFrequency.java
+
+$(DESTTLVCLASSDIR)/TLV_DownstreamSAIDSupport.class: ch/gauteron/jdocsis/TLVs/TLV_DownstreamSAIDSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DownstreamSAIDSupport.java
 
 $(DESTTLVCLASSDIR)/TLV_DscAction.class: ch/gauteron/jdocsis/TLVs/TLV_DscAction.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DscAction.java
@@ -295,6 +324,9 @@ $(DESTTLVCLASSDIR)/TLV_EndOfDataMkr.class: ch/gauteron/jdocsis/TLVs/TLV_EndOfDat
 $(DESTTLVCLASSDIR)/TLV_EtherType.class: ch/gauteron/jdocsis/TLVs/TLV_EtherType.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_EtherType.java
 
+$(DESTTLVCLASSDIR)/TLV_FragmentationSupport.class: ch/gauteron/jdocsis/TLVs/TLV_FragmentationSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_FragmentationSupport.java
+
 $(DESTTLVCLASSDIR)/TLV_GenericTLV.class: ch/gauteron/jdocsis/TLVs/TLV_GenericTLV.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_GenericTLV.java
 
@@ -309,6 +341,9 @@ $(DESTTLVCLASSDIR)/TLV_GuaranteedUp.class: ch/gauteron/jdocsis/TLVs/TLV_Guarante
 
 $(DESTTLVCLASSDIR)/TLV_IEEE802Classifier.class: ch/gauteron/jdocsis/TLVs/TLV_IEEE802Classifier.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IEEE802Classifier.java
+
+$(DESTTLVCLASSDIR)/TLV_IGMPSupport.class: ch/gauteron/jdocsis/TLVs/TLV_IGMPSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IGMPSupport.java
 
 $(DESTTLVCLASSDIR)/TLV_IpDstAddr.class: ch/gauteron/jdocsis/TLVs/TLV_IpDstAddr.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IpDstAddr.java
@@ -333,7 +368,29 @@ $(DESTTLVCLASSDIR)/TLV_IpTos.class: ch/gauteron/jdocsis/TLVs/TLV_IpTos.java
 
 $(DESTTLVCLASSDIR)/TLV_IpTosOverwrite.class: ch/gauteron/jdocsis/TLVs/TLV_IpTosOverwrite.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IpTosOverwrite.java
+
+
+$(DESTTLVCLASSDIR)/TLV_IPv6DstAddr.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6DstAddr.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6DstAddr.java
+
+$(DESTTLVCLASSDIR)/TLV_IPv6DstPrefLength.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6DstPrefLength.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6DstPrefLength.java
+
+$(DESTTLVCLASSDIR)/TLV_IPv6FlowLabel.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6FlowLabel.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6FlowLabel.java
+
+$(DESTTLVCLASSDIR)/TLV_IPv6NextHeaderType.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6NextHeaderType.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6NextHeaderType.java
+
+$(DESTTLVCLASSDIR)/TLV_IPv6PacketClassifier.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6PacketClassifier.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6PacketClassifier.java
+
+$(DESTTLVCLASSDIR)/TLV_IPv6SrcAddr.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6SrcAddr.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6SrcAddr.java
 	
+$(DESTTLVCLASSDIR)/TLV_IPv6SrcPrefLength.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6SrcPrefLength.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6SrcPrefLength.java
+
 $(DESTTLVCLASSDIR)/TLV_IPv6SwUpgradeServer.class: ch/gauteron/jdocsis/TLVs/TLV_IPv6SwUpgradeServer.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_IPv6SwUpgradeServer.java
 
@@ -376,6 +433,12 @@ $(DESTTLVCLASSDIR)/TLV_MinReservedRate.class: ch/gauteron/jdocsis/TLVs/TLV_MinRe
 $(DESTTLVCLASSDIR)/TLV_MinResPacketSize.class: ch/gauteron/jdocsis/TLVs/TLV_MinResPacketSize.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_MinResPacketSize.java
 
+$(DESTTLVCLASSDIR)/TLV_ModemCapabilities.class: ch/gauteron/jdocsis/TLVs/TLV_ModemCapabilities.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_ModemCapabilities.java
+
+$(DESTTLVCLASSDIR)/TLV_ModemDocsisVersion.class: ch/gauteron/jdocsis/TLVs/TLV_ModemDocsisVersion.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_ModemDocsisVersion.java
+
 $(DESTTLVCLASSDIR)/TLV_MtaConfigDelimiter.class: ch/gauteron/jdocsis/TLVs/TLV_MtaConfigDelimiter.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_MtaConfigDelimiter.java
 
@@ -390,6 +453,9 @@ $(DESTTLVCLASSDIR)/TLV_NominalPollInterval.class: ch/gauteron/jdocsis/TLVs/TLV_N
 
 $(DESTTLVCLASSDIR)/TLV_OperTimeout.class: ch/gauteron/jdocsis/TLVs/TLV_OperTimeout.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_OperTimeout.java
+
+$(DESTTLVCLASSDIR)/TLV_PHSSupport.class: ch/gauteron/jdocsis/TLVs/TLV_PHSSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_PHSSupport.java
 
 $(DESTTLVCLASSDIR)/TLV_PriorityUp.class: ch/gauteron/jdocsis/TLVs/TLV_PriorityUp.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_PriorityUp.java
@@ -477,6 +543,9 @@ $(DESTTLVCLASSDIR)/TLV_UnsolicitedGrantSize.class: ch/gauteron/jdocsis/TLVs/TLV_
 
 $(DESTTLVCLASSDIR)/TLV_UpstreamChannelId.class: ch/gauteron/jdocsis/TLVs/TLV_UpstreamChannelId.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_UpstreamChannelId.java
+
+$(DESTTLVCLASSDIR)/TLV_UpstreamSIDSupport.class: ch/gauteron/jdocsis/TLVs/TLV_UpstreamSIDSupport.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_UpstreamSIDSupport.java
 
 $(DESTTLVCLASSDIR)/TLV_UserPriority.class: ch/gauteron/jdocsis/TLVs/TLV_UserPriority.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_UserPriority.java

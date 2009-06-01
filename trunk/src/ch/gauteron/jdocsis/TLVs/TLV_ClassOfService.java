@@ -39,6 +39,5 @@ public class TLV_ClassOfService extends TLVaggregate // TLV 4
       this.tlvCode = 4;
       this.tlvName = "ClassOfService";
       this.parentTLV = new int[] {0};
-      this.tlvCmtsMIC = true;
    }
 }

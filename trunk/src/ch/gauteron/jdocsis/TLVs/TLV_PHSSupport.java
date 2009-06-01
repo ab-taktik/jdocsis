@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_PHSSupport.java                                           *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,13 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVaggregate // TLV 17
+public class TLV_PHSSupport extends TLVuchar // TLV 5.4
 {
-   public TLV_BaselinePrivacy()
+   public TLV_PHSSupport()
    {
-      super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      super(0, 1);
+      this.tlvCode = 4;
+      this.tlvName = "PHSSupport";
+      this.parentTLV = new int[] {5};
    }
 }

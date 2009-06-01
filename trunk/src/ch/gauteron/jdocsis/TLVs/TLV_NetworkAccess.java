@@ -38,6 +38,5 @@ public class TLV_NetworkAccess extends TLVuchar
       super(0, 1);
       this.tlvCode = 3;
       this.tlvName = "NetworkAccess";
-      this.tlvCmtsMIC = true;
    }
 }

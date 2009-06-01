@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_ModemCapabilities.java                                    *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,13 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVaggregate // TLV 17
+public class TLV_ModemCapabilities extends TLVaggregate // TLV 5
 {
-   public TLV_BaselinePrivacy()
+   public TLV_ModemCapabilities()
    {
       super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
+      this.tlvCode = 5;
+      this.tlvName = "ModemCapabilities";
       this.parentTLV = new int[] {0};
    }
 }

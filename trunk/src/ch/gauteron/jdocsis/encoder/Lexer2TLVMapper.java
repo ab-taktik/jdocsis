@@ -67,7 +67,6 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_GUARANTEEDUP,              "ch.gauteron.docsis.TLVs.TLV_GuaranteedUp");              // TLV 4.5
       idTLV.put(DocsisLexer.ID_MAXBURSTUP,                "ch.gauteron.docsis.TLVs.TLV_MaxBurstUp");                // TLV 4.6
       idTLV.put(DocsisLexer.ID_PRIVACYENABLE,             "ch.gauteron.docsis.TLVs.TLV_PrivacyEnable");             // TLV 4.7
-/*
       idTLV.put(DocsisLexer.ID_MODEMCAPABILITIES,         "ch.gauteron.docsis.TLVs.TLV_ModemCapabilities");         // TLV 5
       idTLV.put(DocsisLexer.ID_CONCATENATIONSUPPORT,      "ch.gauteron.docsis.TLVs.TLV_ConcatenationSupport");      // TLV 5.1
       idTLV.put(DocsisLexer.ID_MODEMDOCSISVERSION,        "ch.gauteron.docsis.TLVs.TLV_ModemDocsisVersion");        // TLV 5.2
@@ -77,10 +76,10 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_BASELINEPRIVACYSUPPORT ,   "ch.gauteron.docsis.TLVs.TLV_BaselinePrivacySupport");    // TLV 5.6
       idTLV.put(DocsisLexer.ID_DOWNSTREAMSAIDSUPPORT,     "ch.gauteron.docsis.TLVs.TLV_DownstreamSAIDSupport");     // TLV 5.7
       idTLV.put(DocsisLexer.ID_UPSTREAMSIDSUPPORT,        "ch.gauteron.docsis.TLVs.TLV_UpstreamSIDSupport");        // TLV 5.8
-      idTLV.put(DocsisLexer.ID_DCCSUPPORT,                "ch.gauteron.docsis.TLVs.TLV_DCCSupport");                // TLV 5.12 */
+      idTLV.put(DocsisLexer.ID_DCCSUPPORT,                "ch.gauteron.docsis.TLVs.TLV_DCCSupport");                // TLV 5.12
       idTLV.put(DocsisLexer.ID_SWUPGRADEFILENAME,         "ch.gauteron.docsis.TLVs.TLV_SwUpgradeFilename");         // TLV 9
 /*
-      idTLV.put(DocsisLexer.ID_SNMPWRITECONTROL,          "ch.gauteron.docsis.TLVs.TLV_SnmpWriteControl");          // TLV 10
+      idTLV.put(DocsisLexer.ID_SNMPWRITECONTROL,          "ch.gauteron.docsis.TLVs.TLV_SnmpWriteControl");          // TLV 10 // TODO!!!
 */
       idTLV.put(DocsisLexer.ID_SNMPMIBOBJECT,             "ch.gauteron.docsis.TLVs.TLV_SnmpMibObject");             // TLV 11
       idTLV.put(DocsisLexer.ID_CPEMACADDRESS,             "ch.gauteron.docsis.TLVs.TLV_CpeMacAddress");             // TLV 14
@@ -125,17 +124,16 @@ public class Lexer2TLVMapper
       idTLV.put(DocsisLexer.ID_IEEE802CLASSIFIER,         "ch.gauteron.docsis.TLVs.TLV_IEEE802Classifier");         // TLV [22|23].11
       idTLV.put(DocsisLexer.ID_USERPRIORITY,              "ch.gauteron.docsis.TLVs.TLV_UserPriority");              // TLV [22|23].11.1
       idTLV.put(DocsisLexer.ID_VLANID,                    "ch.gauteron.docsis.TLVs.TLV_VlanID");                    // TLV [22|23].11.2
-/*
       idTLV.put(DocsisLexer.ID_IPV6PACKETCLASSIFIER,      "ch.gauteron.docsis.TLVs.TLV_IPv6PacketClassifier");      // TLV [22|23].12
-      idTLV.put(DocsisLexer.ID_IPV6TRAFFICCLASSRANGEMASK, "ch.gauteron.docsis.TLVs.TLV_IPv6TrafficClassRangeMask"); // TLV [22|23].12.1
+/*
+      idTLV.put(DocsisLexer.ID_IPV6TRAFFICCLASSRANGEMASK, "ch.gauteron.docsis.TLVs.TLV_IPv6TrafficClassRangeMask"); // TLV [22|23].12.1 // TODO!!!
+*/
       idTLV.put(DocsisLexer.ID_IPV6FLOWLABEL,             "ch.gauteron.docsis.TLVs.TLV_IPv6FlowLabel");             // TLV [22|23].12.2
       idTLV.put(DocsisLexer.ID_IPV6NEXTHEADERTYPE,        "ch.gauteron.docsis.TLVs.TLV_IPv6NextHeaderType");        // TLV [22|23].12.3
       idTLV.put(DocsisLexer.ID_IPV6SRCADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6SrcAddr");               // TLV [22|23].12.4
       idTLV.put(DocsisLexer.ID_IPV6SRCPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6SrcPrefLength");         // TLV [22|23].12.5
       idTLV.put(DocsisLexer.ID_IPV6DSTADDR,               "ch.gauteron.docsis.TLVs.TLV_IPv6DstAddr");               // TLV [22|23].12.6
       idTLV.put(DocsisLexer.ID_IPV6DSTPREFLENGTH,         "ch.gauteron.docsis.TLVs.TLV_IPv6DstPrefLength");         // TLV [22|23].12.7
-*/
-
       idTLV.put(DocsisLexer.ID_USSERVICEFLOW,             "ch.gauteron.docsis.TLVs.TLV_UsServiceFlow");             // TLV 24
       idTLV.put(DocsisLexer.ID_DSSERVICEFLOW,             "ch.gauteron.docsis.TLVs.TLV_DsServiceFlow");             // TLV 25
       idTLV.put(DocsisLexer.ID_SERVICEFLOWREF,            "ch.gauteron.docsis.TLVs.TLV_ServiceFlowRef");            // TLV [22|23].3 + TLV [24|25].1
