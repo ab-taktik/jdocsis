@@ -55,7 +55,8 @@ import ch.gauteron.jdocsis.exceptions.BadFormatArgumentException;
 import ch.gauteron.jdocsis.exceptions.OutOfRangeTLVValueException;
 
 // TODO: Handle textual OID
-// ========================
+// TODO: Handle TLV 64 (SNMP MIB object with Length > 255)
+
 public class TLV_SnmpMibObject extends TLV
 {
    VariableBinding binding = null;

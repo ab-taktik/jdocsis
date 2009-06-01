@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_IPv6NextHeaderType.java                                   *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,12 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVaggregate // TLV 17
+public class TLV_IPv6NextHeaderType extends TLVushort // TLV [22|23|60].12.3
 {
-   public TLV_BaselinePrivacy()
+   public TLV_IPv6NextHeaderType()
    {
-      super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      super(0, 257);
+      this.tlvCode = 3;
+      this.tlvName = "IPv6NextHeaderType";
    }
 }

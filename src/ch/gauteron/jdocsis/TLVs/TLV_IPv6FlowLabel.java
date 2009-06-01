@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_IPv6FlowLabel.java                                        *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,13 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVaggregate // TLV 17
+public class TLV_IPv6FlowLabel extends TLVuint // TLV [22|23|60].12.2
 {
-   public TLV_BaselinePrivacy()
+   public TLV_IPv6FlowLabel()
    {
-      super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      super(0, 1048575);
+      this.tlvCode = 2;
+      this.tlvName = "IPv6FlowLabel";
+      this.parentTLV = new int[] {5};
    }
 }

@@ -38,6 +38,5 @@ public class TLV_DownstreamFrequency extends TLVuint
       super(88000000, 860000000);
       this.tlvCode = 1;
       this.tlvName = "DownstreamFrequency";
-      this.tlvCmtsMIC = true;
    }
 }

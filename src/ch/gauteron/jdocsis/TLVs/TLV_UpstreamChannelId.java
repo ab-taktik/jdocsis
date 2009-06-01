@@ -38,6 +38,5 @@ public class TLV_UpstreamChannelId extends TLVuchar
       super();
       this.tlvCode = 2;
       this.tlvName = "UpstreamChannelId";
-      this.tlvCmtsMIC = true;
    }
 }

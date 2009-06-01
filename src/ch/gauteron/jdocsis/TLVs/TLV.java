@@ -39,7 +39,6 @@ public abstract class TLV
 {
    int tlvCode = -1;
    int tlvLength = 0;
-   boolean tlvCmtsMIC = false;
    boolean tlvInit = false;
 
 
@@ -81,11 +80,6 @@ public abstract class TLV
    public void setParent(TLV parent)
    {
       this.parent = parent;
-   }
-
-   public boolean usedForCmtsMIC()
-   {
-      return this.tlvCmtsMIC;
    }
 
    public abstract byte[] getEncoding();

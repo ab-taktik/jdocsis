@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_IPv6PacketClassifier.java                                 *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,13 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVaggregate // TLV 17
+public class TLV_IPv6PacketClassifier extends TLVaggregate // TLV [22|23|60].12
 {
-   public TLV_BaselinePrivacy()
+   public TLV_IPv6PacketClassifier()
    {
       super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      this.tlvCode = 12;
+      this.tlvName = "IPv6PacketClassifier";
+      this.parentTLV = new int[] {22, 23, 60};
    }
 }
