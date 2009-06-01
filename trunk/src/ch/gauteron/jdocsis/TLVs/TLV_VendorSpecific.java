@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_VendorSpecific extends TLVaggregate // TLV 43
+public class TLV_VendorSpecific extends TLVcomposite // TLV 43
 {
    public TLV_VendorSpecific()
    {

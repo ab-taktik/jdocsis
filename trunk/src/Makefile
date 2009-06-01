@@ -53,7 +53,7 @@ default: \
         $(DESTEXCEPTIONCLASSDIR)/OutOfRangeTLVValueException.class \
         $(DESTCOMMONCLASSDIR)/TLVClassLoader.class \
         $(DESTTLVCLASSDIR)/TLV.class \
-        $(DESTTLVCLASSDIR)/TLVaggregate.class \
+        $(DESTTLVCLASSDIR)/TLVcomposite.class \
         $(DESTTLVCLASSDIR)/TLVscalar.class \
         $(DESTTLVCLASSDIR)/TLVuchar.class \
         $(DESTTLVCLASSDIR)/TLVushort.class \
@@ -83,11 +83,17 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_CoSignerCVCData.class \
         $(DESTTLVCLASSDIR)/TLV_CpeMacAddress.class \
         $(DESTTLVCLASSDIR)/TLV_DCCSupport.class \
+        $(DESTTLVCLASSDIR)/TLV_DefaultScanTimeout.class \
         $(DESTTLVCLASSDIR)/TLV_DocsisTwoEnable.class \
         $(DESTTLVCLASSDIR)/TLV_DownstreamFrequency.class \
         $(DESTTLVCLASSDIR)/TLV_DownstreamSAIDSupport.class \
         $(DESTTLVCLASSDIR)/TLV_DscAction.class \
         $(DESTTLVCLASSDIR)/TLV_DsChannelList.class \
+        $(DESTTLVCLASSDIR)/TLV_DsFreqRange.class \
+        $(DESTTLVCLASSDIR)/TLV_DsFreqRangeEnd.class \
+        $(DESTTLVCLASSDIR)/TLV_DsFreqRangeStart.class \
+        $(DESTTLVCLASSDIR)/TLV_DsFreqRangeStepSize.class \
+        $(DESTTLVCLASSDIR)/TLV_DsFreqRangeTimeout.class \
         $(DESTTLVCLASSDIR)/TLV_DsPacketClass.class \
         $(DESTTLVCLASSDIR)/TLV_DsServiceFlow.class \
         $(DESTTLVCLASSDIR)/TLV_DstMacAddress.class \
@@ -163,6 +169,9 @@ default: \
         $(DESTTLVCLASSDIR)/TLV_ServiceClassName.class \
         $(DESTTLVCLASSDIR)/TLV_ServiceFlowId.class \
         $(DESTTLVCLASSDIR)/TLV_ServiceFlowRef.class \
+        $(DESTTLVCLASSDIR)/TLV_SingleDsChannel.class \
+        $(DESTTLVCLASSDIR)/TLV_SingleDsFrequency.class \
+        $(DESTTLVCLASSDIR)/TLV_SingleDsTimeout.class \
         $(DESTTLVCLASSDIR)/TLV_SnmpMibObject.class \
         $(DESTTLVCLASSDIR)/TLV_SnmpV3MgrPublicNumber.class \
         $(DESTTLVCLASSDIR)/TLV_SnmpV3Kickstart.class \
@@ -224,8 +233,8 @@ $(DESTCOMMONCLASSDIR)/TLVClassLoader.class: ch/gauteron/jdocsis/common/TLVClassL
 $(DESTTLVCLASSDIR)/TLV.class: ch/gauteron/jdocsis/TLVs/TLV.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV.java
 
-$(DESTTLVCLASSDIR)/TLVaggregate.class: ch/gauteron/jdocsis/TLVs/TLVaggregate.java
-	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLVaggregate.java
+$(DESTTLVCLASSDIR)/TLVcomposite.class: ch/gauteron/jdocsis/TLVs/TLVcomposite.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLVcomposite.java
 
 $(DESTTLVCLASSDIR)/TLVscalar.class: ch/gauteron/jdocsis/TLVs/TLVscalar.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLVscalar.java
@@ -314,6 +323,9 @@ $(DESTTLVCLASSDIR)/TLV_CpeMacAddress.class: ch/gauteron/jdocsis/TLVs/TLV_CpeMacA
 $(DESTTLVCLASSDIR)/TLV_DCCSupport.class: ch/gauteron/jdocsis/TLVs/TLV_DCCSupport.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DCCSupport.java
 
+$(DESTTLVCLASSDIR)/TLV_DefaultScanTimeout.class: ch/gauteron/jdocsis/TLVs/TLV_DefaultScanTimeout.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DefaultScanTimeout.java
+
 $(DESTTLVCLASSDIR)/TLV_DocsisTwoEnable.class: ch/gauteron/jdocsis/TLVs/TLV_DocsisTwoEnable.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DocsisTwoEnable.java
 
@@ -328,6 +340,21 @@ $(DESTTLVCLASSDIR)/TLV_DscAction.class: ch/gauteron/jdocsis/TLVs/TLV_DscAction.j
 
 $(DESTTLVCLASSDIR)/TLV_DsChannelList.class: ch/gauteron/jdocsis/TLVs/TLV_DsChannelList.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsChannelList.java
+
+$(DESTTLVCLASSDIR)/TLV_DsFreqRange.class: ch/gauteron/jdocsis/TLVs/TLV_DsFreqRange.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsFreqRange.java
+
+$(DESTTLVCLASSDIR)/TLV_DsFreqRangeEnd.class: ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeEnd.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeEnd.java
+
+$(DESTTLVCLASSDIR)/TLV_DsFreqRangeStart.class: ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeStart.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeStart.java
+
+$(DESTTLVCLASSDIR)/TLV_DsFreqRangeStepSize.class: ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeStepSize.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeStepSize.java
+
+$(DESTTLVCLASSDIR)/TLV_DsFreqRangeTimeout.class: ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeTimeout.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsFreqRangeTimeout.java
 
 $(DESTTLVCLASSDIR)/TLV_DsPacketClass.class: ch/gauteron/jdocsis/TLVs/TLV_DsPacketClass.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_DsPacketClass.java
@@ -554,6 +581,15 @@ $(DESTTLVCLASSDIR)/TLV_ServiceFlowId.class: ch/gauteron/jdocsis/TLVs/TLV_Service
 
 $(DESTTLVCLASSDIR)/TLV_ServiceFlowRef.class: ch/gauteron/jdocsis/TLVs/TLV_ServiceFlowRef.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_ServiceFlowRef.java
+
+$(DESTTLVCLASSDIR)/TLV_SingleDsChannel.class: ch/gauteron/jdocsis/TLVs/TLV_SingleDsChannel.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_SingleDsChannel.java
+	
+$(DESTTLVCLASSDIR)/TLV_SingleDsFrequency.class: ch/gauteron/jdocsis/TLVs/TLV_SingleDsFrequency.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_SingleDsFrequency.java
+
+$(DESTTLVCLASSDIR)/TLV_SingleDsTimeout.class: ch/gauteron/jdocsis/TLVs/TLV_SingleDsTimeout.java
+	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_SingleDsTimeout.java
 
 $(DESTTLVCLASSDIR)/TLV_SnmpMibObject.class: ch/gauteron/jdocsis/TLVs/TLV_SnmpMibObject.java
 	$(JCC) $(JFLAGS) ch/gauteron/jdocsis/TLVs/TLV_SnmpMibObject.java

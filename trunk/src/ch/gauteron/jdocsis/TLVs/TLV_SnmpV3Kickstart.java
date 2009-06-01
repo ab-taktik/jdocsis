@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_SnmpV3Kickstart extends TLVaggregate // TLV 34
+public class TLV_SnmpV3Kickstart extends TLVcomposite // TLV 34
 {
    public TLV_SnmpV3Kickstart()
    {

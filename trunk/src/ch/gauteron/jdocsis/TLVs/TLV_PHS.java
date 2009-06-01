@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_PHS extends TLVaggregate // TLV 26
+public class TLV_PHS extends TLVcomposite // TLV 26
 {
    public TLV_PHS()
    {

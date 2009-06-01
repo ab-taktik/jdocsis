@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_ModemCapabilities extends TLVaggregate // TLV 5
+public class TLV_ModemCapabilities extends TLVcomposite // TLV 5
 {
    public TLV_ModemCapabilities()
    {

@@ -1,6 +1,6 @@
 /****************************************************************************
  *                                                                          *
- *  jdocsis - TLV_BaselinePrivacy.java                                      *
+ *  jdocsis - TLV_SingleDsChannel.java                                      *
  *                                                                          *
  *  Copyright (C) 2009, Yann Gauteron <yann.gauteron@gauteron.ch>           *
  *  All rights reserved.                                                    *
@@ -31,13 +31,12 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_BaselinePrivacy extends TLVcomposite // TLV 17
+public class TLV_SingleDsChannel extends TLVcomposite // TLV 41.1
 {
-   public TLV_BaselinePrivacy()
+   public TLV_SingleDsChannel()
    {
       super();
-      this.tlvCode = 17;
-      this.tlvName = "BaselinePrivacy";
-      this.parentTLV = new int[] {0};
+      this.tlvCode = 1;
+      this.tlvName = "SingleDsChannel";
    }
 }

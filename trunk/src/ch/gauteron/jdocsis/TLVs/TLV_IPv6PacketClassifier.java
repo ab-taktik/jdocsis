@@ -31,7 +31,7 @@
 
 package ch.gauteron.jdocsis.TLVs;
 
-public class TLV_IPv6PacketClassifier extends TLVaggregate // TLV [22|23|60].12
+public class TLV_IPv6PacketClassifier extends TLVcomposite // TLV [22|23|60].12
 {
    public TLV_IPv6PacketClassifier()
    {
