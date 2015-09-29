@@ -1,0 +1,1 @@
+JDocsis is a java-based Docsis CM configuration file (de)compiler. It permits the compilation of a text file into a binary TLV-Docsis/PacketCable configuration file or the decompilation of the binary TLV-Docsis/PacketCable into text file.
